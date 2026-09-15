@@ -16,6 +16,7 @@ try:
     import jax
     import jax.numpy as jnp
     import optax
+    import paramax
 except ImportError as exc:  # pragma: no cover - exercised by installation
     raise ImportError(
         "The LnL surrogate requires its GPJax runtime dependencies. "
@@ -266,10 +267,13 @@ def fit_exact_gp(
     )
     posterior = prior * likelihood
     if not config.optimise_noise:
+        # A one-time stop_gradient on the initial array is not a freeze: the
+        # optimizer differentiates a new model argument each step. The wrapper
+        # reapplies stop_gradient whenever GPJax unwraps that model in its loss.
         posterior = eqx.tree_at(
-            lambda model: model.likelihood.obs_stddev._unconstrained,
+            lambda model: model.likelihood.obs_stddev,
             posterior,
-            replace_fn=jax.lax.stop_gradient,
+            replace_fn=lambda parameter: paramax.NonTrainable(parameter.unwrap()),
         )
     negative_mll = lambda model, train: -gpx.objectives.conjugate_mll(
         model, train

@@ -1,0 +1,99 @@
+% Superseded standalone draft. Active appendix text and captions are in
+% overleaf/sections/cosmic_integration.tex.
+\paragraph{Proposed caption.}
+Cosmic integration of a fixed COMPAS population.
+(a) Metallicity-specific star formation per unit natural-log metallicity,
+$\psi_u$ from Eq.~\eqref{eq:ci_illustration_formation}, where $u=\ln Z$.
+Dashed horizontal lines mark the metallicity range sampled by COMPAS;
+the formation distribution is shown over its full numerical normalization grid.
+(b) The empirical compact-binary merger yield $Y(u,t_{\rm d})$ per unit formed
+stellar mass, per $\mathrm{d}u$ and per Gyr of delay
+[Eq.~\eqref{eq:ci_illustration_yield}]. The yield is corrected
+for the population's uniform-$\ln Z$ sampling density. Grey cells contain no
+selected binaries; positive values use the colour scale, without smoothing.
+(c) Metallicity-weighted formation contributions as a function of formation
+time and delay. Each diagonal is a fixed merger time in Gyr; integrating
+$C(t_{\rm m}-t_{\rm d},t_{\rm d})$ over delay gives the source-frame merger-rate
+density at that epoch [Eqs.~\eqref{eq:ci_illustration_contribution}
+and \eqref{eq:ci_illustration_merger}]. The solid diagonal marks the present age in WMAP9;
+points above it would merge after the present epoch. Formation is restricted
+to $z_{\rm f}\leq10$, with earliest time $t_{\min}=t(z=10)$.
+(d) Predicted observer-frame rates in redshift bins of width 0.1,
+summed over binary masses. Both curves include the same comoving volume and
+time dilation; they differ only in detection probability
+[Eq.~\eqref{eq:ci_illustration_detection}]. The vertical axis
+is logarithmic above $1\,\mathrm{yr}^{-1}$ and linear below it, retaining
+zeros and negligible positive rates. Here $\vartheta=(\mathcal M_c,q)$;
+the selection integral retains the dependence on binary properties before
+marginalizing them. Colour densities in (a) and (b) are per $\mathrm{d}\ln Z$,
+not per $\mathrm{d}Z$, despite displaying metallicity on a logarithmic axis.
+Colour scales are independent between panels; lower extensions indicate
+positive values below the displayed range.
+The illustration uses 512 million initial systems, yielding 1,326,573 selected
+double compact objects, with the existing Hubble-time, pessimistic-common-envelope
+and no-immediate-RLOF selection. Cosmic-history parameters are
+$(\alpha,\sigma,a_{\rm SFR},d_{\rm SFR})=(-0.3,0.35,0.01,4.7)$,
+with $a_{\rm SFR}$ in $M_\odot\,\mathrm{yr}^{-1}\,\mathrm{Mpc}^{-3}$;
+detection uses the fixed O3 approximation and SNR threshold 8.
+Panels (b) and (c) are display histograms of the finite population.
+Rates in (d) use the existing integrator's formation-redshift discretization
+and unbinned binary properties, not quadrature of the plotted histograms.
+
+\paragraph{Supporting appendix text.}
+Write the cosmic-history model per unit natural-log metallicity,
+\begin{equation}
+\psi_u(t_{\rm f},u\mid\lambda)
+=\dot\rho_\star(t_{\rm f}\mid a,d)\,p_u(u\mid t_{\rm f},\alpha,\sigma),
+\qquad u=\ln Z.
+\label{eq:ci_illustration_formation}
+\end{equation}
+Thus $\psi_u=Z\psi$ when $\psi$ is expressed per unit $Z$ in the main text.
+
+If $M_{\rm sim}$ is the effective formed stellar mass represented by the
+archive and $p_{\rm draw}(u)$ its metallicity sampling density, the empirical
+yield, marginalized over binary masses, is
+\begin{equation}
+Y(u,t_{\rm d}) = \frac{1}{M_{\rm sim}}\sum_i
+\frac{\delta(u-u_i)\,\delta(t_{\rm d}-t_{{\rm d},i})}
+{p_{\rm draw}(u_i)}.
+\label{eq:ci_illustration_yield}
+\end{equation}
+Here $M_{\rm sim}=N_{\rm initial}\langle M_{\rm formed}\rangle$, using the
+existing study's normalization of $79.29365659505004\,M_\odot$ per initial
+system. The continuum equations describe the integration structure; the
+numerical panels preserve the implementation's metallicity digitization and,
+for the rate calculation, formation-redshift rounding convention.
+$\mathcal R_{\rm src}(t)$ denotes the rate density per source-frame year and
+comoving volume, marginalized over $\vartheta$;
+$\mathcal R_{\rm src}(\vartheta,z)$ denotes its differential counterpart.
+No additional time-dilation or selection factor is applied after the detected
+rates have been computed.
+
+The metallicity integral weights this yield by the formation history,
+\begin{equation}
+C(t_{\rm f},t_{\rm d})=
+\int\psi_u(t_{\rm f},u)Y(u,t_{\rm d})\,\mathrm{d}u.
+\label{eq:ci_illustration_contribution}
+\end{equation}
+The source-frame merger-rate density follows along a constant-merger-time
+line, with $t_{\min}=t(z=10)$:
+\begin{equation}
+\mathcal R_{\rm src}(t_{\rm m})=
+\int_0^{t_{\rm m}-t_{\min}}
+C(t_{\rm m}-t_{\rm d},t_{\rm d})\,\mathrm{d}t_{\rm d}.
+\label{eq:ci_illustration_merger}
+\end{equation}
+Retaining the binary properties $\vartheta=(\mathcal M_c,q)$ until selection
+has been applied gives the observer-frame detected rate,
+\begin{equation}
+\frac{\mathrm{d}R_{\rm det}}{\mathrm{d}z_{\rm m}}=
+\frac{\mathrm{d}V_c}{\mathrm{d}z_{\rm m}}\frac{1}{1+z_{\rm m}}
+\int p_{\rm detect}(\vartheta,z_{\rm m})
+\mathcal R_{\rm src}(\vartheta,z_{\rm m})\,\mathrm{d}\vartheta.
+\label{eq:ci_illustration_detection}
+\end{equation}
+Setting $p_{\rm detect}=1$ yields the complete-selection curve; it is still
+an observer-frame rate integrated over cosmological volume, rather than an
+intrinsic rate density. The illustration uses the full population to reduce
+finite-sample structure in the histograms. It does not establish population
+convergence or change the population used for inference.

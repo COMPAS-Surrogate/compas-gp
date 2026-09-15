@@ -1,6 +1,6 @@
 #!/bin/bash
-#SBATCH --job-name=logs/generate_data_%j
-#SBATCH --output=logs/generate_data_%j.out
+#SBATCH --job-name=generate_data_%A_%a
+#SBATCH --output=generate_data_%A_%a.out
 #SBATCH --error=generate_data_%j.err
 #SBATCH --time=20:00:00
 #SBATCH --ntasks=1
@@ -8,10 +8,17 @@
 #SBATCH --mem=32G
 #SBATCH --array=0-5
 
-export PYTHONUNBUFFERED=1
-
-
-echo "Starting job"
-
-ml gcc/11.2.0 python/3.9.6 && source /fred/oz303/avajpeyi/venvs/compas_env/bin/activate
-generate_random_samples /fred/oz101/avajpeyi/COMPAS_DATA/h5out_512M.h5 -s $SLURM_ARRAY_TASK_ID -o "out_{$SLURM_ARRAY_TASK_ID}_512M.h5"
+set -euo pipefail
+: "${COMPAS_REPO:?Set COMPAS_REPO}"
+: "${COMPAS_INPUT:?Set COMPAS_INPUT to the input HDF5 file}"
+: "${COMPAS_OUTPUT:?Set COMPAS_OUTPUT to a new output path}"
+: "${SLURM_ARRAY_TASK_ID:?This script requires a Slurm array}"
+COMPAS_OUTPUT="${COMPAS_OUTPUT}_${SLURM_ARRAY_TASK_ID}.csv"
+source "$COMPAS_REPO/scripts/ozstar/runtime.sh"
+test -f "$COMPAS_INPUT"
+if [[ -e "$COMPAS_OUTPUT" ]]; then
+    echo "Output already exists: $COMPAS_OUTPUT" >&2
+    exit 1
+fi
+mkdir -p "$(dirname "$COMPAS_OUTPUT")"
+exec generate_random_samples "$COMPAS_INPUT" -s "$SLURM_ARRAY_TASK_ID" -o "$COMPAS_OUTPUT"

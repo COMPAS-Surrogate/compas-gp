@@ -1,62 +1,46 @@
-# COMPAS cosmic integration GP surrogate
+# COMPAS cosmic integration and likelihood surrogates
 
-This code uses (most of) Jeff's rateSampler (cosmic integration tool), and adds a bayesian-optimisation layer to it.
-The goal of the bayesian-optimisation is to build an LnL surrogate (given some observed data), and thereby put some constraints on 
-cosmic-integration parameters. 
+Compute population rates, evaluate observational likelihoods, and train a
+Gaussian-process surrogate using Bayesian optimisation.
 
+## Start here
 
+| Location | Purpose |
+|---|---|
+| [`src/cosmic_integration/`](src/cosmic_integration/) | Reusable package code and command-line tools |
+| [`tests/`](tests/) | Automated tests; large local datasets are ignored |
+| [`docs/studies/`](docs/studies/README.md) | Current research workflows and their dependencies |
+| [`scripts/ozstar/`](scripts/ozstar/README.md) | Locked environment setup and Slurm smoke test |
+| `overleaf/` | Separate manuscript checkout |
 
+The current research target is the **four-input likelihood GP**, including
+SFR amplitude. Its development runs are in
+[`docs/studies/amplitude_gp/`](docs/studies/amplitude_gp/README.md).
+The analytical calculation remains the accuracy reference.
 
- 
+## Install and test
 
-## Jeff's Cosmic integration code
-
-Author: Jeff Riley
-
-**Install:**
 ```bash
-pip install -e .
+uv sync --locked --python 3.12.12
+uv run --locked pytest
 ```
 
-**Repo hygiene (local artifacts):**
-- Clean large, gitignored artifacts (dry-run): `python3 scripts/clean_local_artifacts.py`
-- Actually delete: `python3 scripts/clean_local_artifacts.py --yes`
-- Include simulation outputs: `python3 scripts/clean_local_artifacts.py --include-simulation-outputs --yes`
-- Include large HDF5 datasets: `python3 scripts/clean_local_artifacts.py --include-datasets --yes`
-- Override test output dir (avoid `tests/out` bloat): set `COSMIC_INTEGRATION_TEST_OUTDIR=/path/to/dir`
-- Point tests at an external COMPAS HDF5 (avoid copying `h5out_5M.h5` into the repo): set `COSMIC_INTEGRATION_COMPAS_H5=/path/to/file.h5`
+The default test suite excludes slow and network tests. Use `pytest -m slow`
+for heavy tests or `pytest -m ""` for the complete suite.
+For cluster installation, follow the [OzSTAR instructions](scripts/ozstar/README.md).
 
-**Usage:**
-```bash
-usage: run_cosmic_integration [-h] [-i INPUTNAME] [-p INPUTPATH] [-v [VERBOSE]]
-                              [-n NUMSAMPLES] [-a FALPHA] [-s FSIGMA] [-A FSFRA]
-                              [-D FSFRD]
-                              output
+## Package commands
 
-Detection rates sampler.
+- `run_cosmic_integration --help`: generate rate grids from COMPAS data.
+- `run_surrogate_workflow --help`: run the packaged surrogate workflow.
+- `run_1d_lnl_check --help`: inspect a likelihood slice.
 
-positional arguments:
-  output
-    output file name
+The packaged workflow and the experimental four-input study are separate
+entry points; see the study guide before launching the research campaign.
 
-optional arguments:
-  -h, --help
-    show this help message and exit
-  -i INPUTNAME, --inputFilename INPUTNAME
-    COMPAS HDF5 file name (def = COMPAS_Output.h5)
-  -p INPUTPATH, --inputFilepath INPUTPATH
-    COMPAS HDF5 file path (def = .)
-  -v [VERBOSE], --verbose [VERBOSE]
-    verbose flag (def = True)
-  -n NUMSAMPLES, --numSamples NUMSAMPLES
-    Number of samples (def = 10)
-  -a FALPHA, --alpha FALPHA
-    alpha
-  -s FSIGMA, --sigma FSIGMA
-    sigma
-  -A FSFRA, --sfrA FSFRA
-    sfrA
-  -D FSFRD, --sfrD FSFRD
-    sfrD
+## Historical work
 
-```
+Superseded standalone studies have been archived outside this checkout,
+with source hashes and restoration instructions. See the
+[study index](docs/studies/README.md#archived-studies).
+Datasets, existing environments and the manuscript were left in place.

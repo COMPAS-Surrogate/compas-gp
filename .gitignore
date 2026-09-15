@@ -1,4 +1,20 @@
 
+
+.npy
+.pkl
+.err
+tests.xml
+
+
+
+
+**/source_snapshot/
+**/frozen_runtime/
+cleanup.sh
+
+docs/studies/
+
+*.csv
 outputs
 tests/test_data
 tests/out
@@ -6,13 +22,11 @@ tests/out
 wiki
 
 *.txt
-*.csv
 *.png
 *.json
 *.npz
 *.h5
 *.log
-*.csv
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -72,7 +86,6 @@ cover/
 *.pot
 
 # Django stuff:
-*.log
 local_settings.py
 db.sqlite3
 db.sqlite3-journal
@@ -175,22 +188,17 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 .DS_Store
-.ipynb_checkpoints
-*.log
 build
 __pycache__
 output
 *idea
 *.gif
 venv
-*.csv
 .mypy_cache
 *_version.py
 *.egg-info
 .temp
-*.png
 tests/out_test/
-*.npz
 out_*
 out1
 out/
@@ -200,13 +208,11 @@ studies/uncertainty_testing/out
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof
-*.log
 *.lot
 *.fls
 *.out
 *.toc
 *.fmt
-*.h5
 *.fot
 *.cb
 *.cb2
@@ -235,3 +241,15 @@ docs/studies/finite_sample_bias/*.png
 # subset_training study: regenerable run outputs and logs
 docs/studies/subset_training/*_out/
 docs/studies/subset_training/*.log
+
+# ------------------------------------------------------------
+# Generated study / runtime artefacts
+
+**/source_snapshot/
+**/frozen_runtime/
+
+*.npy
+*.pkl
+
+*.err
+**/tests.xml

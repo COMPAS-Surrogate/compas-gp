@@ -7,10 +7,15 @@
 #SBATCH --cpus-per-task=1
 #SBATCH --mem=32G
 
-export PYTHONUNBUFFERED=1
-
-
-echo "Starting job"
-
-ml gcc/11.2.0 python/3.9.6 && source /fred/oz303/avajpeyi/venvs/compas_env/bin/activate
-run_cosmic_integration out_32M -i h5out_32M.h5 -p /fred/oz101/avajpeyi/COMPAS_DATA/ -n 1 -v
+set -euo pipefail
+: "${COMPAS_REPO:?Set COMPAS_REPO}"
+: "${COMPAS_INPUT:?Set COMPAS_INPUT to the input HDF5 file}"
+: "${COMPAS_OUTPUT:?Set COMPAS_OUTPUT to a new output path}"
+source "$COMPAS_REPO/scripts/ozstar/runtime.sh"
+test -f "$COMPAS_INPUT"
+if [[ -e "$COMPAS_OUTPUT" || -e "$COMPAS_OUTPUT.csv" ]]; then
+    echo "Output already exists: $COMPAS_OUTPUT" >&2
+    exit 1
+fi
+mkdir -p "$(dirname "$COMPAS_OUTPUT")"
+exec run_cosmic_integration "$COMPAS_OUTPUT" -i "$(basename "$COMPAS_INPUT")" -p "$(dirname "$COMPAS_INPUT")" -n 1 -v

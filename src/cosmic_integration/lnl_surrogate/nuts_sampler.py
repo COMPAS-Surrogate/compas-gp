@@ -1,30 +1,9 @@
-"""Gradient-based sampling of the GP surrogate likelihood with NUTS.
+"""NUTS sampling of a deterministic GP plug-in likelihood.
 
-The surrogate is a GPJax posterior, so its predictive mean and variance are
-already differentiable JAX functions. This module samples them with numpyro's
-NUTS instead of emcee.
-
-Why not emcee: emcee's stretch move is affine-invariant, so it is untroubled by
-*linear* parameter correlations however strong. Observed autocorrelation times
-of ~10^4 steps therefore point at something affine invariance cannot fix -- a
-curved degeneracy, multimodality, or a rough surrogate surface. NUTS follows the
-local geometry and handles the first two; :func:`surface_roughness` diagnoses
-the third.
-
-Why not sample the GP uncertainty: it is tempting to draw
-``lnL ~ Normal(mu, sigma)`` afresh at each call, but that makes the target
-density stochastic -- it breaks Hamiltonian trajectories outright, and leaves
-even a random-walk sampler converging to nothing well defined. The
-marginalisation has a closed form instead: if ``lnL ~ Normal(mu, sigma^2)`` then
-
-    E[L] = E[exp(lnL)] = exp(mu + sigma^2 / 2)
-
-so ``target="marginal"`` uses ``mu + sigma^2/2``. That is exactly what the
-random draws would give in expectation, but deterministic and differentiable,
-and it widens the posterior where the surrogate is uncertain.
-
-Comparing the ``"mean"`` and ``"marginal"`` posteriors is the surrogate
-convergence test: if they agree, the GP uncertainty no longer matters.
+Converged chains validate exploration of the chosen target, not GP accuracy.
+The legacy marginal target is an approximation for uncompressed, unclipped
+scalers only; it is not a calibrated uncertainty safeguard. NUTS does not
+by itself establish that separated modes have been explored.
 """
 
 from __future__ import annotations
@@ -40,6 +19,10 @@ import numpy as np
 import numpyro
 import numpyro.distributions as dist
 from numpyro.infer import MCMC, NUTS
+from numpyro.infer.util import unconstrain_fn
+from numpyro.diagnostics import gelman_rubin, effective_sample_size
+from scipy.special import ndtri
+from scipy.stats import rankdata
 
 from .adaptive_robust_scalar import AdaptiveRobustScaler
 from .jax_active_learner import FittedJaxGP, JaxActiveLearner
@@ -50,10 +33,8 @@ logger = logging.getLogger(__name__)
 TargetName = Literal["mean", "marginal"]
 
 # Cap on the GP standard deviation, in lnL units, used by the "marginal"
-# target. Outside the training envelope sigma grows without bound and
-# exp(mu + sigma^2/2) would drag the sampler into unexplored regions; the cap
-# keeps that pull finite. Chosen well above the Delta lnL ~ 0.5 that sets a
-# 1-sigma credible interval, so it never bites inside the posterior bulk.
+# target. This limits attraction to uncertain regions; its effect must be
+# checked rather than assumed irrelevant within the posterior.
 DEFAULT_SIGMA_CAP = 20.0
 
 
@@ -85,13 +66,18 @@ def make_log_likelihood(
     target: TargetName = "mean",
     sigma_cap: float = DEFAULT_SIGMA_CAP,
 ):
-    """Build a differentiable lnL(theta) from the surrogate.
+    """Invert the predicted transformed mean to define a deterministic target.
 
-    The GP is trained on the *negated, scaled* log-likelihood, so we undo both.
-    The scaler is affine (slope ``scale``) on the high-lnL side where the
-    posterior lives -- soft clipping only compresses the low tail -- so the GP
-    standard deviation maps to lnL units as ``scale * sigma``.
+    ``mean`` is a plug-in prediction, not generally the mean of raw lnL.
+    The legacy ``marginal`` approximation is unavailable for nonlinear scalers.
     """
+    if target not in ("mean", "marginal"):
+        raise ValueError(f"Unknown target: {target}")
+    if target == "marginal" and (
+        scaler.soft_clipping or getattr(scaler, "compression", "none") != "none"
+    ):
+        raise ValueError("marginal uncertainty propagation is invalid for nonlinear "
+                         "scalers; use target='mean' and direct-likelihood validation")
 
     def log_likelihood(theta):
         neg_mean, neg_var = model.predict_f_jax(theta.reshape(1, -1))
@@ -130,7 +116,8 @@ def _init_points(log_likelihood, model: FittedJaxGP, num_chains: int, *, seed: i
         for _ in range(60):
             g = grad(theta)
             step = 0.01 * jnp.asarray(span) * jnp.sign(g)
-            theta = jnp.clip(theta + step, jnp.asarray(low), jnp.asarray(high))
+            theta = jnp.clip(theta + step, jnp.asarray(low + 1e-6*span),
+                             jnp.asarray(high - 1e-6*span))
         climbed.append((float(log_likelihood(theta)), np.asarray(theta, float)))
 
     climbed.sort(key=lambda kv: -kv[0])
@@ -240,7 +227,7 @@ def run_nuts(
         log_likelihood,
         low,
         high,
-        init_params={"theta": jnp.asarray(init_theta)},
+        init_params=_unconstrained_starts(log_likelihood, low, high, init_theta),
         extra_fields=("diverging",),
     )
 
@@ -251,7 +238,8 @@ def run_nuts(
     grouped = np.asarray(
         mcmc.get_samples(group_by_chain=True)["theta"], dtype=float
     )
-    r_hat, ess = _rhat_ess(grouped)
+    r_hat, ess, tail_ess = chain_diagnostics(grouped)
+    np.save(outdir / "posterior_chains.npy", grouped)
     divergences = int(np.sum(np.asarray(
         mcmc.get_extra_fields().get("diverging", np.zeros(1))
     )))
@@ -261,7 +249,8 @@ def run_nuts(
     converged = bool(
         np.all(r_hat < 1.01)
         and np.all(ess > 400)
-        and divergences <= 0.01 * num_samples * num_chains
+        and np.all(tail_ess > 400)
+        and divergences == 0
     )
     summary = {
         "sampler": "numpyro-NUTS",
@@ -271,6 +260,9 @@ def run_nuts(
         "converged": converged,
         "r_hat": {p: float(r) for p, r in zip(PARAMETERS, r_hat)},
         "ess": {p: float(e) for p, e in zip(PARAMETERS, ess)},
+        "tail_ess": {p: float(e) for p, e in zip(PARAMETERS, tail_ess)},
+        "diagnostic_method": "rank/folded split R-hat; NumPyro bulk/tail ESS",
+        "initial_points": init_theta.tolist(),
         "divergences": divergences,
         "gp_surface_roughness": roughness,
         "median": {p: float(np.median(samples[:, i])) for i, p in enumerate(PARAMETERS)},
@@ -293,32 +285,51 @@ def run_nuts(
     return summary
 
 
+def _unconstrained_starts(log_likelihood, low, high, points):
+    """Map physical starts through the model support transform for NumPyro."""
+    points = np.asarray(points, float)
+    lo, hi = np.asarray(low), np.asarray(high)
+    if not np.all(np.isfinite(points)) or np.any(points <= lo) or np.any(points >= hi):
+        raise ValueError("NUTS starting points must be strictly inside prior bounds")
+    values = [unconstrain_fn(_numpyro_model, (log_likelihood, low, high), {},
+                            {"theta": jnp.asarray(p)})["theta"] for p in points]
+    # A single chain's initial state has no leading chain dimension.
+    return {"theta": values[0] if len(values) == 1 else jnp.stack(values)}
+
+
+def chain_diagnostics(grouped: np.ndarray) -> tuple[np.ndarray, np.ndarray, np.ndarray]:
+    """Rank/folded split R-hat and bulk/tail ESS (Vehtari et al. 2021).
+
+    NumPyro supplies the between/within-chain and autocorrelation estimators;
+    ranks use the Blom transform. Unavailable diagnostics fail closed as NaN.
+    """
+    grouped = np.asarray(grouped, float)
+    if grouped.ndim != 3:
+        raise ValueError("expected (chains, draws, parameters)")
+    nc, nd, dim = grouped.shape
+    out = np.full((3, dim), np.nan)
+    if nc < 2 or nd < 4:
+        return tuple(out)
+    half = nd // 2
+    split = np.concatenate([grouped[:, :half], grouped[:, -half:]], axis=0)
+    def normalized(values):
+        ranks = rankdata(values.ravel(), method="average")
+        return ndtri((ranks - .375)/(ranks.size + .25)).reshape(values.shape)
+    for i in range(dim):
+        x = split[:, :, i]
+        if not np.all(np.isfinite(x)) or np.any(np.var(x, axis=1) == 0):
+            continue
+        z = normalized(x)
+        folded = normalized(np.abs(x - np.median(x)))
+        out[0, i] = max(float(gelman_rubin(z)), float(gelman_rubin(folded)))
+        out[1, i] = float(effective_sample_size(z))
+        q05, q95 = np.quantile(x, [.05, .95])
+        out[2, i] = min(float(effective_sample_size((x <= q05).astype(float))),
+                        float(effective_sample_size((x <= q95).astype(float))))
+    return tuple(out)
+
+
 def _rhat_ess(grouped: np.ndarray) -> tuple[np.ndarray, np.ndarray]:
-    """Split-R-hat and bulk ESS for an array of shape (chains, draws, dim)."""
-    n_chains, n_draws, n_dim = grouped.shape
-    if n_chains < 2:
-        return np.ones(n_dim), np.full(n_dim, float(n_draws))
-
-    chain_mean = grouped.mean(axis=1)
-    chain_var = grouped.var(axis=1, ddof=1)
-    W = chain_var.mean(axis=0)
-    B = n_draws * chain_mean.var(axis=0, ddof=1)
-    var_hat = (n_draws - 1) / n_draws * W + B / n_draws
-    r_hat = np.sqrt(np.where(W > 0, var_hat / W, 1.0))
-
-    # ESS from the summed positive autocorrelations, averaged over chains.
-    ess = np.empty(n_dim)
-    for d in range(n_dim):
-        taus = []
-        for c in range(n_chains):
-            x = grouped[c, :, d] - grouped[c, :, d].mean()
-            denom = np.dot(x, x)
-            if denom <= 0:
-                taus.append(1.0)
-                continue
-            acf = np.correlate(x, x, mode="full")[n_draws - 1:] / denom
-            cut = np.argmax(acf < 0.05)
-            cut = len(acf) if cut == 0 and acf[0] >= 0.05 else max(cut, 1)
-            taus.append(1.0 + 2.0 * float(np.sum(acf[1:cut])))
-        ess[d] = n_chains * n_draws / max(float(np.mean(taus)), 1.0)
-    return r_hat, ess
+    """Compatibility wrapper returning rank-normalized split R-hat and bulk ESS."""
+    rhat, bulk, _ = chain_diagnostics(grouped)
+    return rhat, bulk
