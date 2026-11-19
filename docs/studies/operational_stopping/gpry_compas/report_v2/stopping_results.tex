@@ -1,0 +1,84 @@
+\subsection{Operational stopping and a matched random baseline}
+\label{sec:stopping_results}
+The stopping extension uses three injections,
+$(-0.3,0.35,0.01,4.7)$, $(-0.46,0.15,0.006,4.35)$ and
+$(-0.12,0.52,0.013,5.05)$ in $(\alpha,\sigma,a,d)$ order.
+At each injection, exposures give 100 or 1000 expected events, with two fresh
+Poisson catalogues per exposure. Paired perfect and uncertain measurements of
+these 12 latent catalogues yield 24 likelihood cases and 48 BO/random
+trajectories. Each pair has identical initialization and GP settings. These
+data are separate from the twelve-run development experiment used to choose
+the initial extension's tolerances. All stopping decisions precede direct-reference
+scoring; trajectories continue to 658 training evaluations for validation.
+
+\begin{figure*}\centering
+\includegraphics[width=.92\textwidth]{figures/bo_study/bo_random_stopping_convergence.pdf}
+\caption{Matched training-budget comparison of the GPry-inspired BO acquisition
+and IID uniform random continuation. Top/bottom rows have 100/1000 expected
+events; left/right columns use perfect/uncertain measurements. Solid blue and
+dashed orange curves show median symmetric KL for BO and random sampling,
+respectively, with interquartile bands over six cases per panel. These are
+descriptive spreads across injections and catalogue realizations, not
+confidence intervals. Hollow markers indicate that one or more contributing
+cases have unresolved numerical integration; these estimates remain visible.
+Symmetric KL is half the sum of the two directions;
+accuracy requires each direction to be below 0.01. The full four-dimensional
+joint KL equals this shape-posterior KL under the shared exact amplitude
+conditional. The axis counts training evaluations, including initialization;
+held-out stopping audits and independent validation costs are separate.}
+\label{fig:bo_random_stopping}\end{figure*}
+
+\begin{table*}\centering
+\caption{Operational stopping outcomes on the same 16 confirmation cases per
+method, from the second and third injections. The first injection was used to
+develop the mass-weighted audit and is excluded from this table.
+All four marginal posterior checks and both directed KL tests must pass for
+an accurate stop. Unresolved denotes an accepted stop whose numerical
+validation fails; no stop denotes a censored run. Median total evaluations
+include all accepted stops and their audits, exclude censored runs, and are
+not a paired speedup estimate. All cases, including development cases, remain
+in the acquisition comparison in Figure~\ref{fig:bo_random_stopping}.}
+\label{tab:operational_stopping}
+\begin{tabular}{llrrrrr}\toprule
+Method & Rule & Accurate & Premature & Unresolved & No stop & Median total\\
+\midrule
+BO & Counter + Gaussian & 14 & 0 & 0 & 2 & 328 \\
+BO & Refined precision & 15 & 1 & 0 & 0 & 328 \\
+BO & Pointwise audit & 10 & 0 & 0 & 6 & 691 \\
+BO & Mass-weighted audit & 13 & 0 & 0 & 3 & 484 \\
+Random & Counter + Gaussian & 0 & 2 & 0 & 14 & 463 \\
+Random & Refined precision & 0 & 3 & 0 & 13 & 448 \\
+Random & Pointwise audit & 0 & 0 & 0 & 16 & -- \\
+Random & Mass-weighted audit & 0 & 0 & 0 & 16 & -- \\
+\bottomrule\end{tabular}\end{table*}
+
+At 658 training evaluations, the full accuracy criterion passes for 24/24 BO and 5/24 random fits. BO has lower symmetric KL in 24/24 numerically resolved matched pairs (out of 24 pairs), with a median paired random-to-BO KL ratio of 108.
+
+The pointwise tail veto motivated a mass-weighted audit variant after inspection
+of the first injection's audit residuals, before any direct-reference scores
+were revealed. The first injection is therefore development evidence for this
+variant; the remaining two injections provide 16 confirmation cases per method.
+BO gives 13 accurate, 0 premature, 0 numerically unresolved acceptances and 3 non-stopping cases in that confirmation set.
+Random sampling gives 0 accurate, 0 premature, 0 numerically unresolved acceptances and 16 non-stopping cases in that confirmation set.
+Across all 24 cases per method, 24 BO and 0 random trajectories reach the mass-audit eligibility conditions. Runs that never reach eligibility do not test the audit acceptance thresholds.
+
+In one development example with 1000 expected events and perfect measurements,
+the pointwise veto never accepted by the resource limit. The mass-weighted rule
+accepted the 328-point GP after 96 audit evaluations; its maximum directed
+reference KL is 0.00240 and all four marginal checks pass. This illustrates the
+cost of demanding small absolute errors throughout low-probability tails,
+without treating this development example as independent confirmation.
+
+At injection 3, 100 expected events and uncertain measurements, one confirmation case never satisfies the original rule. Precision refinement plus the mass audit accepts after 298 training and 96 audit evaluations (394 total). Independent validation passes all four marginal checks, with maximum directed KL 0.00577.
+The improvement is not uniform across cases: 1 BO confirmation case accepted by the pointwise audit remains non-stopping under the independent mass-audit draws.
+
+The finite stopping experiment tests the specified prior, injections, population
+and measurement model. Neither a passing counter nor stable successive GP
+posteriors establishes accuracy for every COMPAS case. The guarded audit tests
+fresh likelihood predictions, and its extra calls are included in
+Table~\ref{tab:operational_stopping}. Cached direct references remain an offline
+benchmark tool rather than an input required by the stopping method.
+The counter checks each method's selected locations, so inaccurate predictions
+at random tail points can delay a stop even for an adequate posterior.
+Random non-stops therefore reflect both acquisition and the shared counter;
+the matched-budget accuracy comparison is the primary acquisition result.

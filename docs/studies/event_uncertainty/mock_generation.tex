@@ -1,0 +1,67 @@
+\subsection{Continuous event-level measurement uncertainty}\label{sec:continuous_measurements}
+We analyse both perfect and uncertain measurements for ten independent
+catalogues at each of 50 and 500 expected detections. The injection is
+$\lambda_*=(-0.3,0.35,0.01,4.7)$ and generation and inference use the same
+fixed 256-million-system COMPAS population. For each observation time we draw
+$N\sim\mathrm{Poisson}(T\sum_b r_b(\lambda_*))$, assign each event to a bin
+with probability $P_b(\lambda_*)$, and draw its latent mass and redshift
+uniformly in linear coordinates inside that bin. Each catalogue supplies a
+paired perfect-measurement and uncertain-measurement dataset with identical
+latent events and event counts.
+
+To generate uncertain measurements, we draw an independent SNR for each event
+from $p(\rho)\propto\rho^{-4}$ for $\rho\geq12$. With
+$x_i=(\mathcal M_{c,i},z_i)$, the measurement model is
+\begin{align}
+ y_i&=\ln x_i+s_i\odot\eta_i,\qquad\eta_i\sim\mathcal N_2(0,I),\\
+ s_i&=(0.03,0.3)\,12/\rho_i.
+\end{align}
+The logarithm and multiplication apply coordinate by coordinate. Thus each
+measured centre is randomly displaced from the true value. The data are
+$\mathcal D=\{(y_i,\rho_i)\}$, with event likelihood
+$\mathcal L_i(y_i\mid x)=\mathcal N_2(y_i\mid\ln x,\mathrm{diag}(s_i^2))$.
+This model follows the SNR scaling of \citet[Section 3.2.2]{Riley:2023:ApJ},
+but uses Gaussian errors in log coordinates rather than their fractional
+linear-coordinate errors. Our two analysis priors below also differ from
+their component-mass-derived mass prior and bounded $z^2$ prior.
+This is a controlled measurement model conditional on detection, not a
+strain-data parameter-estimation calculation. No observed values are clipped
+to the latent population support.
+
+We generate mock event posterior samples from Bayes' theorem,
+\begin{equation}
+ p_{\rm PE}(x\mid y_i,\rho_i)\propto
+ \mathcal L_i(y_i\mid x)\,\pi_{\rm PE}(x).
+\end{equation}
+For every event in the first small catalogue, containing 56 detections, we
+use two normalized analysis priors on the rectangle spanning all populated
+bins. Their linear-coordinate densities are constant and proportional to
+$\mathcal M_c z^2$, respectively. More generally, for
+$\pi_{\rm PE}(x)\propto\prod_j x_j^{h_j}$, exact independent posterior draws
+are obtained from
+\begin{equation}
+ \ln x_j\sim\mathcal N\!\left(y_{ij}+(h_j+1)s_{ij}^2,s_{ij}^2\right),
+\end{equation}
+truncated to the logarithms of the prior bounds. We use $h=(0,0)$ and
+$h=(1,2)$ and generate 8192 and 32768 samples per event. The extra $+1$
+arises from converting the linear-coordinate prior density to log coordinates.
+
+Posterior samples recover the event coefficients through inverse-prior weighting,
+\begin{equation}
+ C_{ib}\propto\frac{1}{A_b K}\sum_{k=1}^{K}
+ \frac{\mathbf 1(x_{ik}\in B_b)}{\pi_{\rm PE}(x_{ik})}.
+\end{equation}
+The omitted event evidence is independent of $\lambda$. Samples outside
+populated bins remain in the Monte Carlo denominator and contribute zero
+population density. Both priors recover the analytic population posterior
+within the numerical tolerances at 32768 samples per event.
+
+For the paired GP acquisition comparison, we evaluate $C_{ib}$ by analytic
+within-bin integration of the specified event likelihood. This resolves
+measurement widths narrower than a population bin and separates measurement
+uncertainty from finite-posterior-sample integration error. The mock samples
+are a separate check of prior removal, not the training likelihood for every
+catalogue. All acquisition settings and accuracy criteria are unchanged.
+This fixed-injection pilot is not a coverage ensemble over different true
+hyperparameters.
+

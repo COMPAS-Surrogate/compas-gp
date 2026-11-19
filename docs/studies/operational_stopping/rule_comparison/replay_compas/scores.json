@@ -1,0 +1,90 @@
+[
+  {
+    "case": "n100_perfect",
+    "rule": "best_plateau",
+    "decision": {
+      "checkpoint": 4,
+      "calls": 738
+    },
+    "reference_kl": 0.0016702611998013197,
+    "outcome": "accurate"
+  },
+  {
+    "case": "n100_perfect",
+    "rule": "prediction",
+    "decision": {
+      "checkpoint": 14,
+      "calls": 2018
+    },
+    "reference_kl": 0.0002466907854465005,
+    "outcome": "accurate"
+  },
+  {
+    "case": "n100_perfect",
+    "rule": "stability",
+    "decision": {
+      "checkpoint": 5,
+      "calls": 866
+    },
+    "reference_kl": 0.001218857228998473,
+    "outcome": "accurate"
+  },
+  {
+    "case": "n100_perfect",
+    "rule": "combined",
+    "decision": {
+      "checkpoint": 14,
+      "calls": 2018
+    },
+    "reference_kl": 0.0002466907854465005,
+    "outcome": "accurate"
+  },
+  {
+    "case": "n100_perfect",
+    "rule": "combined_audit",
+    "decision": {
+      "checkpoint": 14,
+      "calls": 2098
+    },
+    "reference_kl": 0.0002466907854465005,
+    "outcome": "accurate"
+  },
+  {
+    "case": "n500_uncertain",
+    "rule": "best_plateau",
+    "decision": {
+      "checkpoint": 4,
+      "calls": 738
+    },
+    "reference_kl": 0.001010272896769682,
+    "outcome": "accurate"
+  },
+  {
+    "case": "n500_uncertain",
+    "rule": "prediction",
+    "decision": null,
+    "outcome": "censored"
+  },
+  {
+    "case": "n500_uncertain",
+    "rule": "stability",
+    "decision": {
+      "checkpoint": 6,
+      "calls": 994
+    },
+    "reference_kl": 0.0004958033997578832,
+    "outcome": "accurate"
+  },
+  {
+    "case": "n500_uncertain",
+    "rule": "combined",
+    "decision": null,
+    "outcome": "censored"
+  },
+  {
+    "case": "n500_uncertain",
+    "rule": "combined_audit",
+    "decision": null,
+    "outcome": "censored"
+  }
+]

@@ -1,0 +1,188 @@
+{
+  "host": "dave1",
+  "jax": "0.10.2",
+  "devices": "[CpuDevice(id=0)]",
+  "fit_steps": 20,
+  "capacity": 3008,
+  "source_sha256": "f4a554c6c1aef5f5e03f9d152dbd19fd0d871433094a24a07ba1aef25113cbbf",
+  "job_id": "16578223",
+  "timings": [
+    {
+      "labels": 504,
+      "operation": "condition_padded_first",
+      "seconds": 1.7591083389997948
+    },
+    {
+      "labels": 504,
+      "operation": "condition_padded_repeat",
+      "seconds": 1.4891170400078408
+    },
+    {
+      "labels": 504,
+      "operation": "direct_labels_3_first",
+      "seconds": 0.020932796993292868
+    },
+    {
+      "labels": 504,
+      "operation": "direct_labels_3_repeat",
+      "seconds": 0.013086859980830923
+    },
+    {
+      "labels": 504,
+      "operation": "acquisition_first",
+      "seconds": 3.246018730016658
+    },
+    {
+      "labels": 504,
+      "operation": "acquisition_repeat",
+      "seconds": 1.7728466679982375
+    },
+    {
+      "labels": 504,
+      "operation": "append_3_first",
+      "seconds": 0.5703470839944202
+    },
+    {
+      "labels": 504,
+      "operation": "append_3_repeat",
+      "seconds": 0.03557347500463948
+    },
+    {
+      "labels": 504,
+      "operation": "fit_first",
+      "seconds": 2.185996531014098
+    },
+    {
+      "labels": 504,
+      "operation": "fit_repeat",
+      "seconds": 1.6567911030142568
+    },
+    {
+      "labels": 1494,
+      "operation": "condition_padded_first",
+      "seconds": 1.463813537004171
+    },
+    {
+      "labels": 1494,
+      "operation": "condition_padded_repeat",
+      "seconds": 1.454676551016746
+    },
+    {
+      "labels": 1494,
+      "operation": "direct_labels_3_first",
+      "seconds": 0.014960311003960669
+    },
+    {
+      "labels": 1494,
+      "operation": "direct_labels_3_repeat",
+      "seconds": 0.012526140984846279
+    },
+    {
+      "labels": 1494,
+      "operation": "acquisition_first",
+      "seconds": 1.8844010260072537
+    },
+    {
+      "labels": 1494,
+      "operation": "acquisition_repeat",
+      "seconds": 1.9645259300014004
+    },
+    {
+      "labels": 1494,
+      "operation": "append_3_first",
+      "seconds": 0.03275837501860224
+    },
+    {
+      "labels": 1494,
+      "operation": "append_3_repeat",
+      "seconds": 0.03446712298318744
+    },
+    {
+      "labels": 1494,
+      "operation": "fit_first",
+      "seconds": 10.228765122010373
+    },
+    {
+      "labels": 1494,
+      "operation": "fit_repeat",
+      "seconds": 10.125578966981266
+    },
+    {
+      "labels": 2994,
+      "operation": "condition_padded_first",
+      "seconds": 1.467643483018037
+    },
+    {
+      "labels": 2994,
+      "operation": "condition_padded_repeat",
+      "seconds": 1.476659103995189
+    },
+    {
+      "labels": 2994,
+      "operation": "direct_labels_3_first",
+      "seconds": 0.015404651989229023
+    },
+    {
+      "labels": 2994,
+      "operation": "direct_labels_3_repeat",
+      "seconds": 0.013197418011259288
+    },
+    {
+      "labels": 2994,
+      "operation": "acquisition_first",
+      "seconds": 2.4755416800035164
+    },
+    {
+      "labels": 2994,
+      "operation": "acquisition_repeat",
+      "seconds": 2.5500890010152943
+    },
+    {
+      "labels": 2994,
+      "operation": "append_3_first",
+      "seconds": 0.03625338998972438
+    },
+    {
+      "labels": 2994,
+      "operation": "append_3_repeat",
+      "seconds": 0.0332538379880134
+    },
+    {
+      "labels": 2994,
+      "operation": "fit_first",
+      "seconds": 62.87416392299929
+    },
+    {
+      "labels": 2994,
+      "operation": "fit_repeat",
+      "seconds": 62.911161327996524
+    }
+  ],
+  "checks": [
+    {
+      "labels": 504,
+      "checkpoint_sha256": "218ff755161bc680e5da3857879ae1b532cf2ecd12a25e5dc0331b8e0012a527",
+      "prediction_max_abs": 5.688605142495362e-11,
+      "acquisition_max_abs": 3.3452351999585517e-11,
+      "prediction_parity": true,
+      "acquisition_parity": true
+    },
+    {
+      "labels": 1494,
+      "checkpoint_sha256": "b078250a917d91349e472b28d734b430a5a6a59a14ba1d68a164203bb678c686",
+      "prediction_max_abs": 9.074199169845087e-10,
+      "acquisition_max_abs": 9.33142452197444e-10,
+      "prediction_parity": true,
+      "acquisition_parity": true
+    },
+    {
+      "labels": 2994,
+      "checkpoint_sha256": "b373deaf96a92da248df3c35195f4f750aaf503bee62ffc2aa7e3941a531f3fe",
+      "prediction_max_abs": 6.205027602845803e-09,
+      "acquisition_max_abs": 7.4444219677616275e-09,
+      "prediction_parity": true,
+      "acquisition_parity": true
+    }
+  ],
+  "complete": true
+}

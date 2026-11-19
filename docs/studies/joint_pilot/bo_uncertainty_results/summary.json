@@ -1,0 +1,24 @@
+{
+  "catalogues": 3,
+  "cases": [
+    0,
+    1,
+    2
+  ],
+  "training_seeds": [
+    17,
+    29,
+    43
+  ],
+  "checkpoints": [
+    226,
+    354,
+    482,
+    610,
+    738
+  ],
+  "seconds": 118.01690866600256,
+  "cache_seconds": 71.62546658300562,
+  "source_sha256": "4c860ded192eb47df63c602086f6ae1215b957295aea3c3fac3b23f6811a4731",
+  "scope": "Paired targets at identical training data. Initial 128 Sobol plus 98 anchors; four 128-point EI/variance batches. Latent GP uncertainty through exact sqrt inverse. Three shape parameters; full-joint KL equal only when both use same exact conditional amplitude. Quadrature KL, not an exact integral. Cached candidate labels never enter acquisition; cache cost is not per-trajectory direct-call cost."
+}

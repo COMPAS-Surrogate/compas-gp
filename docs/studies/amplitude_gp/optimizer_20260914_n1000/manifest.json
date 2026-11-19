@@ -1,0 +1,47 @@
+{
+  "job": {
+    "name": "n1000_perfect_s17_bo",
+    "expected": 1000,
+    "mode": "perfect",
+    "seed": 17,
+    "strategy": "bo"
+  },
+  "training_labels": 744,
+  "checkpoint_sha256": "624011d977bdbca6c3742b228cc4c53d16dce02529bcd3566f6766f239ab4a00",
+  "script_sha256": "37c50395eadde1a7d10666b169a6ecb8d3288be15b158f40f77bd17542061014",
+  "reference": {
+    "analytic_reference": {
+      "passed": true,
+      "shape": {
+        "mean_sd": 0.0022968000076049894,
+        "endpoint_sd": 0.009444698566626296,
+        "width_fraction": 0.005097678454548005
+      },
+      "four": {
+        "max_mean_shift_sd": 0.0022968000091293274,
+        "max_endpoint_shift_sd": 0.01265554934490909,
+        "width68_ratio": [
+          0.999538581324381,
+          1.001557261563475,
+          1.0012339130838952,
+          0.9949018801970893
+        ],
+        "width95_ratio": [
+          0.9987767222042093,
+          1.0019576222175384,
+          1.0034824883079925,
+          0.9990584107414721
+        ]
+      }
+    },
+    "source_sha256": {
+      "docs/studies/event_uncertainty/convergence_20260910/ensemble/reference_n1000_p17_0.npz": "5a296ff3e0aecded3e4acdee5aa20fe91022227e016db73f9466ebd9b5c58e33",
+      "docs/studies/event_uncertainty/convergence_20260910/ensemble/proposal_n1000_p17_0.npz": "9435a5c43d79813aeeeed5c209f4518bb21055ef88cb3cc54c31830f74aa6d41",
+      "docs/studies/event_uncertainty/convergence_20260910/ensemble/reference_n1000_p17_1.npz": "8d501d40c546df3bd3eabc0de2cad92b10efe2d36dd910590911d8499c3c85a2",
+      "docs/studies/event_uncertainty/convergence_20260910/ensemble/proposal_n1000_p17_1.npz": "77d90560de6be3766843b151385731ef882fb1892984d50cdf2ba00225ac05af"
+    },
+    "events": 986
+  },
+  "complete": true,
+  "scope": "Fixed labels and transform, optimizer iterations only; no new acquisition"
+}

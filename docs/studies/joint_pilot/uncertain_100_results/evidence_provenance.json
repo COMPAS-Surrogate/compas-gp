@@ -1,0 +1,21 @@
+{
+  "python": "3.12.12",
+  "versions": {
+    "numpy": "2.5.2",
+    "scipy": "1.18.0",
+    "jax": "0.10.2",
+    "gpjax": "0.18.0",
+    "matplotlib": "3.11.1"
+  },
+  "source_sha256": {
+    "docs/studies/joint_pilot/uncertain_measurements.py": "7b46a97a45a9222ad1a9eda78bef9d84e5c54649e3b9773c5f1d52781599e00a",
+    "docs/studies/joint_pilot/uncertain_rank_control.py": "3402c9fecb04f09ed009ab400eb4fadcb06ff2c3b03fbc28926e016432c84e14",
+    "docs/studies/joint_pilot/summarize_uncertain_measurements.py": "ccc9a6c22c53ff377d11d26b260ff4cffe7c65f96f0b0be5cd2dd89d12509dee",
+    "docs/studies/joint_pilot/plot_uncertain_measurements.py": "517df2e46d5571c9e7fbe44792294d82d003a5bab4968709737b12cb665bee7c",
+    "src/cosmic_integration/observation/binned_response.py": "d1c2b64d7b44ff41dc5afc4381e5d556fa33c6b5d12a8639037532a86eaacab3",
+    "tests/test_binned_response.py": "1935217f2f77b8bc978c313565b89c7b82dfaac0f8fc0094962af22bc18477e5"
+  },
+  "fast_suite": "60 passed, 3 deselected, 1 existing Matplotlib warning; 10.69 seconds",
+  "visual_qa": "Inspected pp_plot, posterior_predictive, predictive_marginals and acquired_parameters PNGs from uncertain_100_results.",
+  "scope": "100 uncertain GP comparisons, three paired pilot cases; larger follow-up is direct only."
+}

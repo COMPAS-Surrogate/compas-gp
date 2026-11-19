@@ -1,0 +1,72 @@
+{
+  "host": "dave10",
+  "jax": "0.10.2",
+  "devices": "[CpuDevice(id=0)]",
+  "fit_steps": 1,
+  "capacity": 3008,
+  "source_sha256": "f4a554c6c1aef5f5e03f9d152dbd19fd0d871433094a24a07ba1aef25113cbbf",
+  "job_id": "16578318",
+  "timings": [
+    {
+      "labels": 2994,
+      "operation": "condition_padded_first",
+      "seconds": 1.7268000290059717
+    },
+    {
+      "labels": 2994,
+      "operation": "condition_padded_repeat",
+      "seconds": 1.428644223997253
+    },
+    {
+      "labels": 2994,
+      "operation": "direct_labels_3_first",
+      "seconds": 0.020148615003563464
+    },
+    {
+      "labels": 2994,
+      "operation": "direct_labels_3_repeat",
+      "seconds": 0.012785482991603203
+    },
+    {
+      "labels": 2994,
+      "operation": "acquisition_first",
+      "seconds": 3.632534916003351
+    },
+    {
+      "labels": 2994,
+      "operation": "acquisition_repeat",
+      "seconds": 2.2309712580026826
+    },
+    {
+      "labels": 2994,
+      "operation": "append_3_first",
+      "seconds": 0.5445667949970812
+    },
+    {
+      "labels": 2994,
+      "operation": "append_3_repeat",
+      "seconds": 0.029706827001064084
+    },
+    {
+      "labels": 2994,
+      "operation": "fit_first",
+      "seconds": 4.202006021994748
+    },
+    {
+      "labels": 2994,
+      "operation": "fit_repeat",
+      "seconds": 3.921210255997721
+    }
+  ],
+  "checks": [
+    {
+      "labels": 2994,
+      "checkpoint_sha256": "b373deaf96a92da248df3c35195f4f750aaf503bee62ffc2aa7e3941a531f3fe",
+      "prediction_max_abs": 6.205027602845803e-09,
+      "acquisition_max_abs": 7.4444219677616275e-09,
+      "prediction_parity": true,
+      "acquisition_parity": true
+    }
+  ],
+  "complete": true
+}

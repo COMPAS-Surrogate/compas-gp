@@ -1,0 +1,39 @@
+{
+  "name": "t0_n100_perfect_c101_random",
+  "truth_index": 0,
+  "expected_events": 100,
+  "mode": "perfect",
+  "case": 101,
+  "strategy": "random",
+  "seed": 6112,
+  "actual_events": 100,
+  "rules": {
+    "original": {
+      "training": 508,
+      "audit": 0,
+      "total": 508
+    },
+    "precision_refined": {
+      "training": 508,
+      "audit": 0,
+      "total": 508
+    },
+    "guarded": {
+      "training": 628,
+      "audit": 96,
+      "total": 724
+    }
+  },
+  "training_labels": 658,
+  "audit_labels": 96,
+  "reference_accessed": false,
+  "complete": true,
+  "timing": {
+    "labels": 1.7466700513323303,
+    "fit": 22.81860054298886,
+    "acquisition": 0.26402088010217994,
+    "stability": 2.417302001034841,
+    "audit": 0.2609027499856893
+  },
+  "wall_seconds": 28.028449083009036
+}

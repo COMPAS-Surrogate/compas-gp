@@ -1,0 +1,47 @@
+# Frozen first pilot configuration; not a claim that training has converged.
+# The joint runner must consume this explicitly; it has not been run yet.
+[data]
+compas_file = "tests/large_test_data/h5out_32M_reduced.h5"
+catalogue = "docs/studies/grid_resolution/results/pilot_catalogue.npz"
+grid = "mass10"
+duration_years = 0.1
+mass_cut = "none"
+
+[prior]
+parameters = ["alpha", "sigma", "sfr_a", "sfr_d"]
+low = [-0.5, 0.1, 0.005, 4.2]
+high = [-0.001, 0.6, 0.015, 5.2]
+
+[gp]
+kernel = "matern52"
+compression = "sqrt"
+soft_clipping = false
+lower_clip = "minimum_initial_lnl"
+max_scale = 1000000000.0
+target = "mean"
+optimise_noise = false
+noise_variance = 0.00001
+optimisation_steps = 250
+candidate_count = 4096
+initial_points = 128
+active_steps = 128
+refit_every = 15
+cycle_length = 30
+exploration_fraction = 0.3333333333333333
+training_seeds = [17, 29, 43]
+keep_all_training_points = true
+
+[sampler]
+num_chains = 4
+num_warmup = 1000
+num_samples = 2000
+seed = 42
+target_accept_prob = 0.9
+
+[validation]
+heldout_points = 100
+max_rhat = 1.01
+min_bulk_ess = 400
+min_tail_ess = 400
+max_divergences = 0
+# First execute one seed and review accuracy/cost before expanding to all three.

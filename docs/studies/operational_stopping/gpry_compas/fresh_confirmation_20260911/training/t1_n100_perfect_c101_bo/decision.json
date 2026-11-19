@@ -1,0 +1,39 @@
+{
+  "name": "t1_n100_perfect_c101_bo",
+  "truth_index": 1,
+  "expected_events": 100,
+  "mode": "perfect",
+  "case": 101,
+  "strategy": "bo",
+  "seed": 6112,
+  "actual_events": 96,
+  "rules": {
+    "original": {
+      "training": 388,
+      "audit": 0,
+      "total": 388
+    },
+    "precision_refined": {
+      "training": 388,
+      "audit": 0,
+      "total": 388
+    },
+    "guarded": {
+      "training": 448,
+      "audit": 192,
+      "total": 640
+    }
+  },
+  "training_labels": 658,
+  "audit_labels": 192,
+  "reference_accessed": false,
+  "complete": true,
+  "timing": {
+    "labels": 2.133738291769987,
+    "fit": 29.64555266703246,
+    "acquisition": 19.24754583815229,
+    "stability": 3.5725434600026347,
+    "audit": 0.8140780419635121
+  },
+  "wall_seconds": 56.35532441700343
+}

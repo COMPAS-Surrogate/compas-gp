@@ -1,0 +1,80 @@
+{
+  "truth_index": 1,
+  "expected_events": 100,
+  "case": 1,
+  "mode": "perfect",
+  "strategy": "bo",
+  "name": "t1_n100_perfect_c1_bo",
+  "rules": {
+    "fixed96": {
+      "training": 238,
+      "audit": 96,
+      "total": 334
+    },
+    "adaptive384": {
+      "training": 238,
+      "audit": 96,
+      "total": 334
+    }
+  },
+  "audit_labels": {
+    "fixed96": 96,
+    "adaptive384": 96
+  },
+  "training_labels": 658,
+  "history": [
+    {
+      "training": 238,
+      "checkpoint_sha256": "0a465f2325115ff77acf4dc83934bd39ec5718e127327b61abf63b7089d425b6",
+      "numerical_checks": [
+        {
+          "power": 14,
+          "numerical": true,
+          "posterior_precision": {
+            "mean_sd": 0.0022024242440037618,
+            "endpoint_sd": 0.017111366205932208,
+            "width_fraction": 0.0008960573474880995
+          },
+          "maximum_log_normalizer_difference": 0.006200216178513074,
+          "ess": [
+            4126.7223600017005,
+            4167.2558397810035
+          ]
+        }
+      ],
+      "diagnostics": {
+        "counter": 0,
+        "streaks": {
+          "original": 4,
+          "gaussian": 4,
+          "joint": 1
+        }
+      },
+      "stages": [
+        {
+          "size": 96,
+          "increment": 96,
+          "result": {
+            "action": "stop",
+            "reason": "posterior_change_small",
+            "passed": true,
+            "samples": 96,
+            "kl_gp_to_direct": 0.0013666927513255518,
+            "kl_direct_to_gp": 0.0013748075921833057,
+            "maximum_directed_kl": 0.0013748075921833057,
+            "bootstrap_05_kl": 0.0007589730801484718,
+            "bootstrap_95_kl": 0.002031863638472479,
+            "gp_ess": 83.6354379490485,
+            "direct_ess": 83.94609529417598,
+            "posterior_rms": 0.04974913018943862,
+            "posterior_q95": 0.1374527198450849
+          },
+          "path": "t1_n100_perfect_c1_bo/audit_238_96.npz"
+        }
+      ]
+    }
+  ],
+  "reference_accessed": false,
+  "cohort": "development_replay",
+  "wall_seconds": 0.44632641700445674
+}

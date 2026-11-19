@@ -1,0 +1,26 @@
+{
+  "source_sha256": {
+    "docs/studies/operational_stopping/gpry_compas/run_scheduled_audit.py": "8973f19d6dff261cf2b9dc8172d3de3e4836ff6a4ec9b77828b4fa5a7085ee28",
+    "docs/studies/operational_stopping/gpry_compas/SCHEDULED_AUDIT_PROTOCOL.md": "748af971b89113a3756e8a4d0d5c4965b79be53f101093211e9d6cebe0a570cb",
+    "docs/studies/operational_stopping/gpry_compas/compare_random.py": "f8010396cb6209e7aaaf1b3b2bb55f146ad08fdb8ee963929b0285ada4b30eee",
+    "docs/studies/operational_stopping/gpry_compas/run_experiment.py": "d9d196306dc172d46d06ae08d9bea4ab9ad1efb59fdaca3e83d08164d3750775",
+    "docs/studies/operational_stopping/gpry_compas/check_precision.py": "a28b9100ea7e00516ee45760bb3220dbd6b9882307a800057d846fc7fd6d33d6",
+    "src/cosmic_integration/lnl_surrogate/scheduled_audit.py": "4ec5e54758cc4f9d783c3e14cbd22b8af4fa3a042cf48bc46861a9c369c1a3d4"
+  },
+  "policy": {
+    "first_training": 238,
+    "interval": 60,
+    "sizes": [
+      96,
+      192,
+      384
+    ],
+    "kl_limit": 0.003,
+    "bootstrap_limit": 0.005,
+    "minimum_ess": 32.0,
+    "bootstrap_samples": 256
+  },
+  "training_root": "/Users/avi/Documents/projects/compas/cosmic_integration/docs/studies/operational_stopping/gpry_compas/extension_v2",
+  "training_decision_sha256": "4b9c217c7a526d1f8b42ec60da5cf8fbd32da370c139d234e395995e6f178630",
+  "scope": "Known-catalogue development replay; new independent audit draws"
+}

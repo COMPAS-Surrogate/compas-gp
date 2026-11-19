@@ -28,3 +28,13 @@ def test_repeated_append_preserves_predictions_and_acquisition():
         np.testing.assert_allclose(acquisition_values(state,query,a,.3),acquisition_values(expected,query,b,.3),rtol=1e-9,atol=1e-9)
     with pytest.raises(ValueError):profile.append_frozen(state,unit[:12],values[:12])
     with pytest.raises(ValueError):profile.append_frozen(state,unit[:3],values[:2])
+
+
+def test_offline_scoring_can_remove_inactive_padding():
+    rng = np.random.default_rng(19)
+    unit = rng.random((41,4)); values = -100*np.sum((unit-.6)**2,axis=1)
+    params = dict(lengthscale=jnp.ones(4)*.3,amplitude=jnp.array(2.),constant=jnp.array(.2),
+        noise=jnp.array(1e-5),jitter=jnp.array(1e-6),reference=jnp.array(0.),floor=jnp.array(-100.),scale=jnp.array(3.))
+    states=[condition_on_data(dict(**params,x=jnp.zeros((n,4)),mask=jnp.zeros(n)),unit,values) for n in (41,64)]
+    query=jnp.asarray(rng.random((64,4)))
+    np.testing.assert_allclose(predict_lnl(states[0],query),predict_lnl(states[1],query),rtol=1e-10,atol=1e-8)

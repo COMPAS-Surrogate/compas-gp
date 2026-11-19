@@ -1,0 +1,42 @@
+{
+  "configuration": {
+    "initial_sobol": 32,
+    "boundary_points": 16,
+    "batch": 32,
+    "candidate_points": 2048,
+    "gp_quadrature_power": 14,
+    "audit_posterior": 64,
+    "audit_prior": 16,
+    "maximum_calls": 800,
+    "fit_steps": 250,
+    "consecutive": 2
+  },
+  "tolerances": {
+    "prediction_abs": 0.1,
+    "prediction_rel": 0.01,
+    "prediction_q90": 1.0,
+    "prediction_max": 3.0,
+    "stability_kl": 0.001,
+    "mean_sd": 0.05,
+    "endpoint_sd": 0.05,
+    "width_fraction": 0.03,
+    "minimum_ess": 100.0,
+    "consecutive": 2,
+    "audit_rms": 0.1,
+    "audit_q95": 0.2,
+    "audit_weight_ess_fraction": 0.95
+  },
+  "families": [
+    "correlated"
+  ],
+  "seeds": [
+    1000
+  ],
+  "created_unix": 1789017109.164941,
+  "source_sha256": {
+    "docs/studies/operational_stopping/run_study.py": "9fe771889e109ecd69559fc884f9b1ff1866169c11d8175fdacaf7495921dcb1",
+    "docs/studies/operational_stopping/toys.py": "228651f3f325402292b34d0f08598719e8b7e471548b6d1d066961a93ec2c43a",
+    "docs/studies/operational_stopping/PROTOCOL.md": "1ab7e128f6344055841c0896ab034103c61cf2266f0503f070a7aab69a4fbe65",
+    "src/cosmic_integration/lnl_surrogate/stopping.py": "c80c85f5d2143118781ec70b33c2850b3d5318a6c7f252adb24aa91214e5922f"
+  }
+}

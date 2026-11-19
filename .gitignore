@@ -10,6 +10,8 @@ tests.xml
 
 **/source_snapshot/
 **/frozen_runtime/
+
+
 cleanup.sh
 
 docs/studies/
@@ -253,3 +255,16 @@ docs/studies/subset_training/*.log
 
 *.err
 **/tests.xml
+
+# Keep study source and reports visible while excluding generated data by default.
+!docs/studies/
+docs/studies/**
+!docs/studies/**/
+!docs/studies/**/*.py
+!docs/studies/**/*.md
+!docs/studies/**/*.sh
+!docs/studies/**/*.slurm
+!docs/studies/**/*.tex
+!docs/studies/**/*.toml
+**/source_snapshot/
+**/frozen_runtime/

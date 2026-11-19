@@ -1,0 +1,33 @@
+{
+  "name": "t0_n10_uncertain_c204_bo",
+  "truth_index": 0,
+  "expected_events": 10,
+  "mode": "uncertain",
+  "case": 204,
+  "strategy": "bo",
+  "iteration": 5,
+  "outcome": "accurate",
+  "stop": {
+    "state": "stopped",
+    "selected": {
+      "training": 238,
+      "audit": 96,
+      "total": 334
+    },
+    "posterior_evaluation": 7,
+    "posterior_comparisons": 6,
+    "bo_batches": 60,
+    "trajectory_elapsed_seconds": 11.48794987500878,
+    "trajectory_checkpoint_unix": 1789191693.417582,
+    "audit_replay_seconds": 0.524265291984193,
+    "decision_recorded_unix": 1789191883.859819,
+    "diagnostic_endpoint": 1258,
+    "post_stop_labels": 1020,
+    "stop_is_shadow_replay": true,
+    "reference_accessed": false
+  },
+  "late_reference_accepted": true,
+  "checkpoints": 41,
+  "maximum_directed_kl": 0.0004823318759943602,
+  "symmetric_kl_to_late_gp": 0.0004267084622912235
+}

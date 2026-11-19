@@ -1,0 +1,62 @@
+{
+  "job_id": 16578410,
+  "indices": [
+    8,
+    9,
+    10,
+    11
+  ],
+  "expected_count": 100,
+  "catalogue": 200,
+  "seed": 17,
+  "checkpoints": [
+    744,
+    774,
+    1254,
+    1284
+  ],
+  "paired_modes": [
+    "perfect",
+    "uncertain"
+  ],
+  "strategies": [
+    "bo",
+    "random"
+  ],
+  "source_sha256": "cb6cf37ed11118e18c0987eb134b1b58471b2494a693b4c4750707fcba0857c3",
+  "scope": "Coarse screen of existing checkpoints. First confirmed tested pair is not an exhaustive minimum budget; accuracy reference is independent of the GP.",
+  "fixed_design_refit": {
+    "job": 16578447,
+    "indices": [
+      8,
+      10
+    ],
+    "checkpoints": [
+      1254,
+      1284
+    ],
+    "optimizer": "L-BFGS-B",
+    "maximum_iterations": 100,
+    "source_sha256": "f5f034041ea85eab913e9cc7560592f912dc14810457a73d860207e058efa960",
+    "scope": "Warm initialization from previous saved checkpoint; fixed labels; independent posterior scoring. Not a new BO trajectory."
+  },
+  "fixed_design_random_refit": {
+    "job": 16578458,
+    "indices": [
+      9,
+      11
+    ],
+    "checkpoints": [
+      1254,
+      1284
+    ],
+    "dependency": "afterok:16578447",
+    "scope": "Same optimizer, bounds, reference designs, and budgets as BO refit; needed for a fair comparison."
+  },
+  "completed": true,
+  "original_checkpoint_scores": 16,
+  "refitted_checkpoint_scores": 8,
+  "refitted_accurate": 4,
+  "refitted_inaccurate": 4,
+  "numerically_unresolved": 0
+}

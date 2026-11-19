@@ -1,0 +1,163 @@
+{
+  "uncertain": {
+    "attempted": 100,
+    "evaluated": 100,
+    "event_range": [
+      0,
+      141
+    ],
+    "empty_catalogues": 9,
+    "failed_cases": [],
+    "posterior_gate_failures": [],
+    "kl_gate_failures": [],
+    "numerical_gate_failures": [],
+    "max_mean_shift_sd": 0.011886962308953137,
+    "max_endpoint_shift_sd": 0.045758710667624616,
+    "median_case_max_forward_kl": 0.0005648266451050127,
+    "max_forward_kl": 0.0052290120305967394,
+    "max_reverse_kl": 0.005093668892025153,
+    "width68_ratio_range": [
+      0.9904368982582074,
+      1.009433412634036
+    ],
+    "width95_ratio_range": [
+      0.9874647788562364,
+      1.0057741792327017
+    ],
+    "direct_max_rank_difference_between_scrambles": [
+      0.003011405554417146,
+      0.0013077784517811913,
+      0.00026544403540457173,
+      0.0020574735322173576
+    ],
+    "direct_max_cdf_deviation": [
+      0.08636122180575029,
+      0.089338235129789,
+      0.05603216999651672,
+      0.08827665253086586
+    ],
+    "gp_max_rank_difference_between_scrambles": [
+      0.003898037461419923,
+      0.001325500559864981,
+      0.0008068345406437305,
+      0.0027736826666276415
+    ],
+    "gp_max_cdf_deviation": [
+      0.0860549114214757,
+      0.08921064995356409,
+      0.05634307676593342,
+      0.08828442454386348
+    ],
+    "dkw_per_panel_95_threshold": 0.13581015157406195
+  },
+  "posterior_predictive": {
+    "0": {
+      "direct": {
+        "statistic_names": [
+          "event_count",
+          "mean_measured_mass_bin",
+          "mean_measured_redshift_bin"
+        ],
+        "observed_statistics": [
+          21.0,
+          36.666666666666664,
+          2.9523809523809526
+        ],
+        "tail_probability_ge_observed": [
+          0.565,
+          0.638,
+          0.237
+        ]
+      },
+      "gp": {
+        "statistic_names": [
+          "event_count",
+          "mean_measured_mass_bin",
+          "mean_measured_redshift_bin"
+        ],
+        "observed_statistics": [
+          21.0,
+          36.666666666666664,
+          2.9523809523809526
+        ],
+        "tail_probability_ge_observed": [
+          0.579,
+          0.655,
+          0.273
+        ]
+      }
+    },
+    "1": {
+      "direct": {
+        "statistic_names": [
+          "event_count",
+          "mean_measured_mass_bin",
+          "mean_measured_redshift_bin"
+        ],
+        "observed_statistics": [
+          92.0,
+          39.869565217391305,
+          2.967391304347826
+        ],
+        "tail_probability_ge_observed": [
+          0.481,
+          0.166,
+          0.515
+        ]
+      },
+      "gp": {
+        "statistic_names": [
+          "event_count",
+          "mean_measured_mass_bin",
+          "mean_measured_redshift_bin"
+        ],
+        "observed_statistics": [
+          92.0,
+          39.869565217391305,
+          2.967391304347826
+        ],
+        "tail_probability_ge_observed": [
+          0.491,
+          0.166,
+          0.502
+        ]
+      }
+    },
+    "2": {
+      "direct": {
+        "statistic_names": [
+          "event_count",
+          "mean_measured_mass_bin",
+          "mean_measured_redshift_bin"
+        ],
+        "observed_statistics": [
+          39.0,
+          37.12820512820513,
+          2.6666666666666665
+        ],
+        "tail_probability_ge_observed": [
+          0.489,
+          0.799,
+          0.631
+        ]
+      },
+      "gp": {
+        "statistic_names": [
+          "event_count",
+          "mean_measured_mass_bin",
+          "mean_measured_redshift_bin"
+        ],
+        "observed_statistics": [
+          39.0,
+          37.12820512820513,
+          2.6666666666666665
+        ],
+        "tail_probability_ge_observed": [
+          0.498,
+          0.812,
+          0.663
+        ]
+      }
+    }
+  }
+}

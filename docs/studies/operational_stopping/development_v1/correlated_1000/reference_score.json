@@ -1,0 +1,164 @@
+{
+  "decision_sha256": "da09c4c8aa65e24744bbad8ee47265d7db16c3060d2f223e40c5ebdedd180364",
+  "reference_power": 17,
+  "reference_precision_pass": true,
+  "reference_evaluations": 262144,
+  "scores": [
+    {
+      "checkpoint": 0,
+      "calls": 48,
+      "reference_kl": [
+        0.0906004178663879,
+        0.09059890917535975
+      ],
+      "numerical_pass": true,
+      "accuracy_pass": false,
+      "marginal_errors": [
+        {
+          "mean_sd": 0.1178038694376087,
+          "endpoint_sd": 0.33990465314140356,
+          "width_fraction": 0.2815804227986285
+        },
+        {
+          "mean_sd": 0.11779753272288891,
+          "endpoint_sd": 0.33989485042640777,
+          "width_fraction": 0.2816749171366697
+        }
+      ]
+    },
+    {
+      "checkpoint": 1,
+      "calls": 80,
+      "reference_kl": [
+        0.00584311605594006,
+        0.005843628242102461
+      ],
+      "numerical_pass": true,
+      "accuracy_pass": true,
+      "marginal_errors": [
+        {
+          "mean_sd": 0.009121439518797339,
+          "endpoint_sd": 0.03777541964220046,
+          "width_fraction": 0.03477810818448557
+        },
+        {
+          "mean_sd": 0.009118579642304446,
+          "endpoint_sd": 0.03820978423611857,
+          "width_fraction": 0.03498115434512994
+        }
+      ]
+    },
+    {
+      "checkpoint": 2,
+      "calls": 112,
+      "reference_kl": [
+        0.0017240809488742266,
+        0.0017243151038561617
+      ],
+      "numerical_pass": true,
+      "accuracy_pass": true,
+      "marginal_errors": [
+        {
+          "mean_sd": 0.00675035769791243,
+          "endpoint_sd": 0.01667620218427808,
+          "width_fraction": 0.014323464906959682
+        },
+        {
+          "mean_sd": 0.00675038201750092,
+          "endpoint_sd": 0.01721596452754331,
+          "width_fraction": 0.014751089470842915
+        }
+      ]
+    },
+    {
+      "checkpoint": 3,
+      "calls": 144,
+      "reference_kl": [
+        0.0014985768699247752,
+        0.001498855707111968
+      ],
+      "numerical_pass": true,
+      "accuracy_pass": true,
+      "marginal_errors": [
+        {
+          "mean_sd": 0.00263621576168335,
+          "endpoint_sd": 0.01634623412331029,
+          "width_fraction": 0.015568364785610411
+        },
+        {
+          "mean_sd": 0.0026374096988853713,
+          "endpoint_sd": 0.016522373875602413,
+          "width_fraction": 0.01565062600111311
+        }
+      ]
+    },
+    {
+      "checkpoint": 4,
+      "calls": 176,
+      "reference_kl": [
+        0.0009314336432192207,
+        0.0009317085904680703
+      ],
+      "numerical_pass": true,
+      "accuracy_pass": true,
+      "marginal_errors": [
+        {
+          "mean_sd": 0.0018270872586573375,
+          "endpoint_sd": 0.011986977972461111,
+          "width_fraction": 0.011235850133722192
+        },
+        {
+          "mean_sd": 0.0018267149923225487,
+          "endpoint_sd": 0.012070508177376918,
+          "width_fraction": 0.011524569520821482
+        }
+      ]
+    },
+    {
+      "checkpoint": 5,
+      "calls": 208,
+      "reference_kl": [
+        0.0009170080472598479,
+        0.0009172668519121193
+      ],
+      "numerical_pass": true,
+      "accuracy_pass": true,
+      "marginal_errors": [
+        {
+          "mean_sd": 0.0016905772562833075,
+          "endpoint_sd": 0.011176944416242143,
+          "width_fraction": 0.010804186656344195
+        },
+        {
+          "mean_sd": 0.0016896896171865415,
+          "endpoint_sd": 0.011032885164425955,
+          "width_fraction": 0.010608152369685486
+        }
+      ]
+    },
+    {
+      "checkpoint": 6,
+      "calls": 240,
+      "reference_kl": [
+        3.9293888342889055e-05,
+        3.9243840500746384e-05
+      ],
+      "numerical_pass": true,
+      "accuracy_pass": true,
+      "marginal_errors": [
+        {
+          "mean_sd": 0.0001269126758521037,
+          "endpoint_sd": 0.0008876583573990087,
+          "width_fraction": 0.0007750896321494505
+        },
+        {
+          "mean_sd": 0.00012761907083788334,
+          "endpoint_sd": 0.0006154155291123196,
+          "width_fraction": 0.00044980990960064027
+        }
+      ]
+    }
+  ],
+  "premature_stop": false,
+  "final_numerical_pass": true
+}

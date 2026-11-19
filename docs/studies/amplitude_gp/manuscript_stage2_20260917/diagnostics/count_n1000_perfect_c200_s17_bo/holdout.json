@@ -1,0 +1,64 @@
+{
+  "job": {
+    "name": "count_n1000_perfect_c200_s17_bo",
+    "catalogue": "count_n1000_perfect_c200.npz",
+    "group": "count_history",
+    "seed": 17,
+    "strategy": "bo",
+    "truth_index": 0,
+    "reference_count": 1000,
+    "catalogue_sha256": "cf78f0d2b218372c98c0ba3c7df085a22167ef408e27251dde28904cb2325ba3"
+  },
+  "labels": 1884,
+  "rows": [
+    {
+      "scramble": 0,
+      "points": 32768,
+      "raw_rmse": 0.13473396236364454,
+      "centered_rmse": 0.13353124587006346,
+      "ess": 5068.692385097243,
+      "max_weight": 0.0004593327168998179,
+      "levels": [
+        0.5,
+        0.68,
+        0.9,
+        0.95,
+        0.99
+      ],
+      "coverage": [
+        0.6109619306663752,
+        0.622936693400689,
+        0.629868407384945,
+        0.6305271339297076,
+        0.6314619596360153
+      ],
+      "minimum_training_distance": 0.0032603910417045956,
+      "reference_sha256": "bc689164f816122d7ce781a13e03b7c99e18f149faff4e7e3ba468e83315b682"
+    },
+    {
+      "scramble": 1,
+      "points": 32768,
+      "raw_rmse": 0.13531330966650965,
+      "centered_rmse": 0.13430769420771246,
+      "ess": 5083.7693502063,
+      "max_weight": 0.0004766210529189689,
+      "levels": [
+        0.5,
+        0.68,
+        0.9,
+        0.95,
+        0.99
+      ],
+      "coverage": [
+        0.6144756349488512,
+        0.6295437373452325,
+        0.6363961480969424,
+        0.6372943802623704,
+        0.6386503835738024
+      ],
+      "minimum_training_distance": 0.003481749202657696,
+      "reference_sha256": "9909288eeedf9234a02cea1c4567c744b3ded9ef28cb64c3b021df7e17557dc9"
+    }
+  ],
+  "scope": "Withheld from training; subsamples of existing independent numerical reference designs. No calibration tuning. Importance ESS does not replace between-design precision checks."
+}

@@ -1,0 +1,70 @@
+{
+  "expected_events": 300,
+  "observed_events": 307,
+  "case": 0,
+  "strategy": "bo",
+  "trace": [
+    {
+      "points": 32,
+      "reference_kl": 2.3380072355963226,
+      "previous_kl": null
+    },
+    {
+      "points": 128,
+      "reference_kl": 0.6440247082273934,
+      "previous_kl": 1.0063317162299996
+    },
+    {
+      "points": 226,
+      "reference_kl": 0.33502159859353103,
+      "previous_kl": 0.3534197510980912
+    },
+    {
+      "points": 354,
+      "reference_kl": 0.055531687395483476,
+      "previous_kl": 0.1675080650031182
+    },
+    {
+      "points": 482,
+      "reference_kl": 0.009542257399586845,
+      "previous_kl": 0.0313576100866365
+    },
+    {
+      "points": 610,
+      "reference_kl": 0.0035818348307399724,
+      "previous_kl": 0.0029743994757386867
+    },
+    {
+      "points": 738,
+      "reference_kl": 0.0016341191689182386,
+      "previous_kl": 0.0012613671862943435
+    },
+    {
+      "points": 866,
+      "reference_kl": 0.0008116836694865268,
+      "previous_kl": 0.0005397820260087197
+    },
+    {
+      "points": 994,
+      "reference_kl": 0.0004438349196666083,
+      "previous_kl": 0.00016973674873851027
+    }
+  ],
+  "benchmark_outcome": {
+    "exposure": 300,
+    "mode": "perfect",
+    "case": 0,
+    "events": 307,
+    "strategy": "bo",
+    "state": "reference_verified_convergence",
+    "points": 994,
+    "training_rate_calls": 994,
+    "timing": {
+      "training_rate_seconds": 2.489886708033737,
+      "fit_seconds": 14.937160708010197,
+      "acquisition_seconds": 0.5516876649635378,
+      "reference_scoring_seconds": 13.707249750965275
+    }
+  },
+  "scope": "Unsmoothed importance weights; maximum of both directed KLs and both reference scrambles. Initialization prefixes are included. KL alone is not the full stopping rule."
+}

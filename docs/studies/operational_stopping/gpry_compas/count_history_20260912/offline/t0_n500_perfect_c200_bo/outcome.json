@@ -1,0 +1,33 @@
+{
+  "name": "t0_n500_perfect_c200_bo",
+  "truth_index": 0,
+  "expected_events": 500,
+  "mode": "perfect",
+  "case": 200,
+  "strategy": "bo",
+  "iteration": 1,
+  "outcome": "accurate",
+  "stop": {
+    "state": "stopped",
+    "selected": {
+      "training": 418,
+      "audit": 384,
+      "total": 802
+    },
+    "posterior_evaluation": 13,
+    "posterior_comparisons": 12,
+    "bo_batches": 120,
+    "trajectory_elapsed_seconds": 24.567975584010128,
+    "trajectory_checkpoint_unix": 1789174927.905061,
+    "audit_replay_seconds": 1.441419166047126,
+    "decision_recorded_unix": 1789175086.136951,
+    "diagnostic_endpoint": 1258,
+    "post_stop_labels": 840,
+    "stop_is_shadow_replay": true,
+    "reference_accessed": false
+  },
+  "late_reference_accepted": true,
+  "checkpoints": 41,
+  "maximum_directed_kl": 0.002179794203275859,
+  "symmetric_kl_to_late_gp": 0.0010013574705350714
+}

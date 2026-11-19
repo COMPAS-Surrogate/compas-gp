@@ -1,0 +1,31 @@
+[
+  {
+    "rule": "correct_counter",
+    "label": "Four-correct counter",
+    "counts": {
+      "accurate": 8,
+      "premature": 4
+    },
+    "median_stop": 268.0
+  },
+  {
+    "rule": "counter_and_gaussian",
+    "label": "Counter + Gaussian KL",
+    "counts": {
+      "accurate": 10,
+      "premature": 1,
+      "budget_limit": 1
+    },
+    "median_stop": 328.0
+  },
+  {
+    "rule": "joint_stability",
+    "label": "Joint posterior stability",
+    "counts": {
+      "accurate": 10,
+      "premature": 1,
+      "budget_limit": 1
+    },
+    "median_stop": 358.0
+  }
+]

@@ -1,0 +1,164 @@
+{
+  "decision_sha256": "7682981a7f9d8978a97385e209a221828f6cbed8c6a3a8218d20c96aa967e23d",
+  "reference_power": 17,
+  "reference_precision_pass": true,
+  "reference_evaluations": 262144,
+  "scores": [
+    {
+      "checkpoint": 0,
+      "calls": 48,
+      "reference_kl": [
+        0.14869427009630282,
+        0.1487015490501946
+      ],
+      "numerical_pass": true,
+      "accuracy_pass": false,
+      "marginal_errors": [
+        {
+          "mean_sd": 0.2280639469780596,
+          "endpoint_sd": 0.31838731846215057,
+          "width_fraction": 0.09975662900513871
+        },
+        {
+          "mean_sd": 0.22806581780546456,
+          "endpoint_sd": 0.3182982547822841,
+          "width_fraction": 0.09978129199014085
+        }
+      ]
+    },
+    {
+      "checkpoint": 1,
+      "calls": 80,
+      "reference_kl": [
+        0.0034613567281307654,
+        0.003459969306811612
+      ],
+      "numerical_pass": true,
+      "accuracy_pass": true,
+      "marginal_errors": [
+        {
+          "mean_sd": 0.009679049303000594,
+          "endpoint_sd": 0.05220643909533773,
+          "width_fraction": 0.015187782704718877
+        },
+        {
+          "mean_sd": 0.009676609415082265,
+          "endpoint_sd": 0.052724276574262194,
+          "width_fraction": 0.015441692670907448
+        }
+      ]
+    },
+    {
+      "checkpoint": 2,
+      "calls": 112,
+      "reference_kl": [
+        0.0014098748856196733,
+        0.0014083436510551493
+      ],
+      "numerical_pass": true,
+      "accuracy_pass": true,
+      "marginal_errors": [
+        {
+          "mean_sd": 0.0038101844617311697,
+          "endpoint_sd": 0.015445991821401257,
+          "width_fraction": 0.002485724952288937
+        },
+        {
+          "mean_sd": 0.0038114492630158133,
+          "endpoint_sd": 0.015948413081075915,
+          "width_fraction": 0.00297169095162797
+        }
+      ]
+    },
+    {
+      "checkpoint": 3,
+      "calls": 144,
+      "reference_kl": [
+        0.0009063293662642751,
+        0.0009047590723424786
+      ],
+      "numerical_pass": true,
+      "accuracy_pass": true,
+      "marginal_errors": [
+        {
+          "mean_sd": 0.0022832915228702304,
+          "endpoint_sd": 0.0056060727544347995,
+          "width_fraction": 0.0011907576247094376
+        },
+        {
+          "mean_sd": 0.0022848103868310238,
+          "endpoint_sd": 0.005731603967272193,
+          "width_fraction": 0.0013037067949692727
+        }
+      ]
+    },
+    {
+      "checkpoint": 4,
+      "calls": 176,
+      "reference_kl": [
+        0.0006234206324176108,
+        0.0006221383270523617
+      ],
+      "numerical_pass": true,
+      "accuracy_pass": true,
+      "marginal_errors": [
+        {
+          "mean_sd": 0.001355206700991219,
+          "endpoint_sd": 0.004398258041425163,
+          "width_fraction": 0.0019608668700261678
+        },
+        {
+          "mean_sd": 0.0013563066904566366,
+          "endpoint_sd": 0.0046551087307626,
+          "width_fraction": 0.002020743832607419
+        }
+      ]
+    },
+    {
+      "checkpoint": 5,
+      "calls": 208,
+      "reference_kl": [
+        0.0005043177554816546,
+        0.000503337215634041
+      ],
+      "numerical_pass": true,
+      "accuracy_pass": true,
+      "marginal_errors": [
+        {
+          "mean_sd": 0.0012575511457538187,
+          "endpoint_sd": 0.003326307840336375,
+          "width_fraction": 0.0014462000840944622
+        },
+        {
+          "mean_sd": 0.0012595748481101727,
+          "endpoint_sd": 0.0034293288315686865,
+          "width_fraction": 0.0015794175857442028
+        }
+      ]
+    },
+    {
+      "checkpoint": 6,
+      "calls": 240,
+      "reference_kl": [
+        0.0004176152561011342,
+        0.00041660984366064755
+      ],
+      "numerical_pass": true,
+      "accuracy_pass": true,
+      "marginal_errors": [
+        {
+          "mean_sd": 0.0013564660973959372,
+          "endpoint_sd": 0.002549888091305784,
+          "width_fraction": 0.0010655798362761981
+        },
+        {
+          "mean_sd": 0.0013576159886174001,
+          "endpoint_sd": 0.00279878667074667,
+          "width_fraction": 0.0013324195121822147
+        }
+      ]
+    }
+  ],
+  "premature_stop": false,
+  "final_numerical_pass": true
+}

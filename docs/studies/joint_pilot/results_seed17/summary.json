@@ -1,0 +1,85 @@
+{
+  "sampler": {
+    "sampler": "numpyro-NUTS",
+    "target": "mean",
+    "n_samples": 8000,
+    "num_chains": 4,
+    "converged": true,
+    "r_hat": {
+      "alpha": 1.0005663727730183,
+      "sigma": 1.00123771822048,
+      "sfr_a": 0.9998824199274968,
+      "sfr_d": 1.0000901248208764
+    },
+    "ess": {
+      "alpha": 8114.372084121389,
+      "sigma": 8294.381104334154,
+      "sfr_a": 8215.834438650008,
+      "sfr_d": 8173.305368472836
+    },
+    "tail_ess": {
+      "alpha": 4874.673878836505,
+      "sigma": 5174.366448102334,
+      "sfr_a": 3970.7593355860777,
+      "sfr_d": 4713.497427792625
+    },
+    "diagnostic_method": "rank/folded split R-hat; NumPyro bulk/tail ESS",
+    "initial_points": [
+      [
+        -0.39306954345829365,
+        0.3615244766212272,
+        0.010047621559078184,
+        4.667509732434221
+      ],
+      [
+        -0.3952491688375997,
+        0.3578524631129669,
+        0.010269093490508828,
+        4.669813994682515
+      ],
+      [
+        -0.3910266349601925,
+        0.3573193539259839,
+        0.010067210037270338,
+        4.640000999999991
+      ],
+      [
+        -0.393235931770574,
+        0.37943921987602625,
+        0.010385979199113844,
+        4.677368029059369
+      ]
+    ],
+    "divergences": 0,
+    "gp_surface_roughness": {
+      "alpha": 4.378756062558371e-05,
+      "sigma": 4.2603089995260015e-05,
+      "sfr_a": 2.2778835806158832e-05,
+      "sfr_d": 2.2581886865473224e-05
+    },
+    "median": {
+      "alpha": -0.3932343081717641,
+      "sigma": 0.3580292012416084,
+      "sfr_a": 0.010150199740909104,
+      "sfr_d": 4.671600680786893
+    },
+    "truths": {}
+  },
+  "posterior_centered_lnl_rmse": 2.639911253538685,
+  "posterior_max_centered_error": 9.454362626145773,
+  "diagnostic_reweighting_ess_of_70": 2.032487947176967,
+  "diagnostic_reweighted_mean_shift_sigma": [
+    2.393392511627987,
+    1.3646451502627062,
+    0.15264644535994354,
+    1.0652989002368247
+  ],
+  "training_points_above_initial_transform_ceiling": 0,
+  "largest_training_improvement_above_ceiling": 0.0,
+  "ready_for_direct_reference": false,
+  "direct_reference_completed": false,
+  "decision": "Reject this GP pilot before expensive direct-reference sampling",
+  "scope": "One seed; held-out rejection gate and reweighting diagnostic, not a reference posterior",
+  "direct_evaluations": 356,
+  "wall_seconds_this_run": 238.38888662499085
+}

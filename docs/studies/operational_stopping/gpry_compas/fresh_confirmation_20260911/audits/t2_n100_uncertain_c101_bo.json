@@ -1,0 +1,144 @@
+{
+  "truth_index": 2,
+  "expected_events": 100,
+  "case": 101,
+  "mode": "uncertain",
+  "strategy": "bo",
+  "name": "t2_n100_uncertain_c101_bo",
+  "rules": {
+    "fixed96": {
+      "training": 298,
+      "audit": 192,
+      "total": 490
+    },
+    "adaptive384": {
+      "training": 298,
+      "audit": 192,
+      "total": 490
+    }
+  },
+  "audit_labels": {
+    "fixed96": 192,
+    "adaptive384": 192
+  },
+  "training_labels": 658,
+  "history": [
+    {
+      "training": 238,
+      "checkpoint_sha256": "3e8b60507e3fef4f2a3caf4c071f8ffe969b06c20e4762bdef17925a2771fad8",
+      "numerical_checks": [
+        {
+          "power": 14,
+          "numerical": false,
+          "posterior_precision": {
+            "mean_sd": 0.010187472967017715,
+            "endpoint_sd": 0.06589723987131794,
+            "width_fraction": 0.00627265859531434
+          },
+          "maximum_log_normalizer_difference": 0.004907421577986071,
+          "ess": [
+            2780.8408166796507,
+            2767.041396738778
+          ]
+        },
+        {
+          "power": 15,
+          "numerical": true,
+          "posterior_precision": {
+            "mean_sd": 0.010229746338282698,
+            "endpoint_sd": 0.020532631643689254,
+            "width_fraction": 0.0038978482814362447
+          },
+          "maximum_log_normalizer_difference": 0.006467961907375752,
+          "ess": [
+            5536.858958421849,
+            5538.921719355268
+          ]
+        }
+      ],
+      "diagnostics": {
+        "counter": 3,
+        "streaks": {
+          "original": 0,
+          "gaussian": 4,
+          "joint": 0
+        }
+      },
+      "stages": [
+        {
+          "size": 96,
+          "increment": 96,
+          "result": {
+            "action": "continue_training",
+            "reason": "audit_budget_inconclusive",
+            "passed": false,
+            "samples": 96,
+            "kl_gp_to_direct": 0.009386339053906225,
+            "kl_direct_to_gp": 0.005850333140175675,
+            "maximum_directed_kl": 0.009386339053906225,
+            "bootstrap_05_kl": 0.0027994863089813972,
+            "bootstrap_95_kl": 0.016312901759607066,
+            "gp_ess": 78.88110616833696,
+            "direct_ess": 77.97111145398038,
+            "posterior_rms": 0.039213509506410865,
+            "posterior_q95": 0.07120786351658874
+          },
+          "path": "t2_n100_uncertain_c101_bo/audit_238_96.npz"
+        }
+      ]
+    },
+    {
+      "training": 298,
+      "checkpoint_sha256": "42ed388827ad319ef4e0f5de34f8cfd03c7fee411283c118595ab13d2d741316",
+      "numerical_checks": [
+        {
+          "power": 14,
+          "numerical": true,
+          "posterior_precision": {
+            "mean_sd": 0.012907402321839248,
+            "endpoint_sd": 0.04348023868430201,
+            "width_fraction": 0.006372038835310345
+          },
+          "maximum_log_normalizer_difference": 0.001023585394221982,
+          "ess": [
+            2770.539133593946,
+            2766.6438754660417
+          ]
+        }
+      ],
+      "diagnostics": {
+        "counter": 4,
+        "streaks": {
+          "original": 1,
+          "gaussian": 6,
+          "joint": 2
+        }
+      },
+      "stages": [
+        {
+          "size": 96,
+          "increment": 96,
+          "result": {
+            "action": "stop",
+            "reason": "posterior_change_small",
+            "passed": true,
+            "samples": 96,
+            "kl_gp_to_direct": 0.0004737151831763278,
+            "kl_direct_to_gp": 0.0005067284261529852,
+            "maximum_directed_kl": 0.0005067284261529852,
+            "bootstrap_05_kl": 0.0003265492900490153,
+            "bootstrap_95_kl": 0.0007208966722507361,
+            "gp_ess": 77.9045720053924,
+            "direct_ess": 77.72970501842353,
+            "posterior_rms": 0.03187431715576139,
+            "posterior_q95": 0.0740943135342803
+          },
+          "path": "t2_n100_uncertain_c101_bo/audit_298_96.npz"
+        }
+      ]
+    }
+  ],
+  "reference_accessed": false,
+  "cohort": "fresh_confirmation",
+  "wall_seconds": 1.2519897500169463
+}

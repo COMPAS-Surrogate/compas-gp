@@ -1,0 +1,13 @@
+{
+  "corners": 4,
+  "displayed_posteriors": [
+    "118 training evaluations",
+    "recorded BO stop",
+    "2000-label reference GP"
+  ],
+  "reference_overlay": "Actual GP, internally checked; no numerical-target contour",
+  "bo_color": "monochrome",
+  "bivariate_smoothing": "Covariance-oriented Gaussian, bandwidth 0.2 posterior SD plus 0.45-bin isotropic grid regularization, reflected prior boundaries; unsmoothed validation",
+  "audit_score": "max(KL/0.003, bootstrap95/0.005, 32/minimum_ESS)",
+  "stability_gate": "at least two consecutive resolved checks"
+}

@@ -1,0 +1,80 @@
+{
+  "case": "docs/studies/operational_stopping/gpry_compas/ensemble_v1/n1000_uncertain_case2",
+  "points": 658,
+  "exact_likelihood_calls": 0,
+  "stopping_decisions_changed": false,
+  "checks": [
+    {
+      "power": 14,
+      "base_points_per_design": 16384,
+      "seconds": 0.1251071669976227,
+      "numerical": false,
+      "numerical_current": {
+        "mean_sd": 0.015784136259795786,
+        "endpoint_sd": 0.05751683490631757,
+        "width_fraction": 0.015221097504976244
+      },
+      "ess": [
+        3120.7480565224314,
+        3134.845921304584
+      ],
+      "gaussian_pass": false,
+      "joint_pass": false,
+      "numerical_previous": {
+        "mean_sd": 0.01579507805973663,
+        "endpoint_sd": 0.05708665563988961,
+        "width_fraction": 0.015209591932535238
+      },
+      "joint_kl": 1.0267077125771239e-05,
+      "gaussian_kl": 1.9360636560605826e-07
+    },
+    {
+      "power": 15,
+      "base_points_per_design": 32768,
+      "seconds": 0.16637462499784306,
+      "numerical": true,
+      "numerical_current": {
+        "mean_sd": 0.0035914895542295583,
+        "endpoint_sd": 0.015320309475729531,
+        "width_fraction": 0.0033299292862549734
+      },
+      "ess": [
+        6264.5203478295925,
+        6267.701263651644
+      ],
+      "gaussian_pass": true,
+      "joint_pass": true,
+      "numerical_previous": {
+        "mean_sd": 0.0035577914130316118,
+        "endpoint_sd": 0.016362919128703458,
+        "width_fraction": 0.0032562721398636807
+      },
+      "joint_kl": 9.808306681431296e-06,
+      "gaussian_kl": 2.385703163909625e-07
+    },
+    {
+      "power": 16,
+      "base_points_per_design": 65536,
+      "seconds": 0.3720350840012543,
+      "numerical": true,
+      "numerical_current": {
+        "mean_sd": 0.0013794478974341817,
+        "endpoint_sd": 0.020916552200842934,
+        "width_fraction": 0.001959327582231607
+      },
+      "ess": [
+        12529.31303858936,
+        12528.650847720328
+      ],
+      "gaussian_pass": true,
+      "joint_pass": true,
+      "numerical_previous": {
+        "mean_sd": 0.001353050647630847,
+        "endpoint_sd": 0.020716379893852242,
+        "width_fraction": 0.0018734147461982875
+      },
+      "joint_kl": 9.865083226839907e-06,
+      "gaussian_kl": 2.4458899261503575e-07
+    }
+  ]
+}

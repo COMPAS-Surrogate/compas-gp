@@ -1,0 +1,164 @@
+{
+  "decision_sha256": "4fd3421a970e634094bee0696582da8d1efc89fbc5dc3a016e3a88a180b02127",
+  "reference_power": 17,
+  "reference_precision_pass": true,
+  "reference_evaluations": 262144,
+  "scores": [
+    {
+      "checkpoint": 0,
+      "calls": 48,
+      "reference_kl": [
+        0.011496320212713549,
+        0.011496235524327603
+      ],
+      "numerical_pass": true,
+      "accuracy_pass": false,
+      "marginal_errors": [
+        {
+          "mean_sd": 0.023549012035559407,
+          "endpoint_sd": 0.09013774719265631,
+          "width_fraction": 0.024325804193428446
+        },
+        {
+          "mean_sd": 0.02354983097371346,
+          "endpoint_sd": 0.09039057686023627,
+          "width_fraction": 0.02411839890856249
+        }
+      ]
+    },
+    {
+      "checkpoint": 1,
+      "calls": 80,
+      "reference_kl": [
+        0.0016262073723519014,
+        0.0016262243048139674
+      ],
+      "numerical_pass": true,
+      "accuracy_pass": true,
+      "marginal_errors": [
+        {
+          "mean_sd": 0.009618224648308693,
+          "endpoint_sd": 0.01977397543643896,
+          "width_fraction": 0.012226475833081674
+        },
+        {
+          "mean_sd": 0.00961872659489349,
+          "endpoint_sd": 0.019349780467513733,
+          "width_fraction": 0.012368881546531929
+        }
+      ]
+    },
+    {
+      "checkpoint": 2,
+      "calls": 112,
+      "reference_kl": [
+        0.0004951344452093901,
+        0.0004951913673675551
+      ],
+      "numerical_pass": true,
+      "accuracy_pass": true,
+      "marginal_errors": [
+        {
+          "mean_sd": 0.0056045842699141086,
+          "endpoint_sd": 0.006739041472616883,
+          "width_fraction": 0.005748367185206549
+        },
+        {
+          "mean_sd": 0.0056053359170792965,
+          "endpoint_sd": 0.0067360851373360585,
+          "width_fraction": 0.005743702633516201
+        }
+      ]
+    },
+    {
+      "checkpoint": 3,
+      "calls": 144,
+      "reference_kl": [
+        0.00014614389247733314,
+        0.00014608619361833358
+      ],
+      "numerical_pass": true,
+      "accuracy_pass": true,
+      "marginal_errors": [
+        {
+          "mean_sd": 0.0008849159080169907,
+          "endpoint_sd": 0.0026222397256560883,
+          "width_fraction": 0.00020071191817860878
+        },
+        {
+          "mean_sd": 0.0008843878158621089,
+          "endpoint_sd": 0.00237614907285467,
+          "width_fraction": 8.578987740670563e-05
+        }
+      ]
+    },
+    {
+      "checkpoint": 4,
+      "calls": 176,
+      "reference_kl": [
+        0.0001349026845616242,
+        0.00013482638525931826
+      ],
+      "numerical_pass": true,
+      "accuracy_pass": true,
+      "marginal_errors": [
+        {
+          "mean_sd": 0.00047848124806042696,
+          "endpoint_sd": 0.0008773512430492843,
+          "width_fraction": 0.00014273173790613214
+        },
+        {
+          "mean_sd": 0.00047802639603281347,
+          "endpoint_sd": 0.0007152837228493863,
+          "width_fraction": 9.63554345145834e-05
+        }
+      ]
+    },
+    {
+      "checkpoint": 5,
+      "calls": 208,
+      "reference_kl": [
+        0.00011117458015580557,
+        0.00011107027381864409
+      ],
+      "numerical_pass": true,
+      "accuracy_pass": true,
+      "marginal_errors": [
+        {
+          "mean_sd": 0.0003587430845636746,
+          "endpoint_sd": 0.0022692232796976664,
+          "width_fraction": 0.0017924805083078255
+        },
+        {
+          "mean_sd": 0.0003581006113586122,
+          "endpoint_sd": 0.0021669286560310882,
+          "width_fraction": 0.0016964324562074307
+        }
+      ]
+    },
+    {
+      "checkpoint": 6,
+      "calls": 240,
+      "reference_kl": [
+        0.00010522140332356775,
+        0.00010512410341241118
+      ],
+      "numerical_pass": true,
+      "accuracy_pass": true,
+      "marginal_errors": [
+        {
+          "mean_sd": 0.00044045496874362195,
+          "endpoint_sd": 0.0022965724320643116,
+          "width_fraction": 0.0018629709082025325
+        },
+        {
+          "mean_sd": 0.00043956021480548137,
+          "endpoint_sd": 0.0021911417728558763,
+          "width_fraction": 0.0017600997899402948
+        }
+      ]
+    }
+  ],
+  "premature_stop": false,
+  "final_numerical_pass": true
+}

@@ -1,5 +1,6 @@
 """Pairing, expansion gates, and generative posterior predictive contracts."""
 from pathlib import Path
+from types import SimpleNamespace
 
 import numpy as np
 import pytest
@@ -69,8 +70,10 @@ def test_predictive_counts_include_posterior_amplitude_uncertainty(modules):
     assert all(len(x)==n for x,n in zip(uncertain, counts))
 
 
-def test_reference_cache_refuses_changed_coordinates(modules, tmp_path):
+def test_reference_cache_refuses_changed_coordinates(modules, tmp_path, monkeypatch):
     campaign, _ = modules
+    monkeypatch.setattr(campaign.shutil, 'disk_usage',
+                        lambda path: SimpleNamespace(free=10 * 2**30))
     run = campaign.PairedExperiment.__new__(campaign.PairedExperiment)
     run.out = tmp_path / 'pilot'
     run.out.mkdir()
@@ -84,3 +87,17 @@ def test_reference_cache_refuses_changed_coordinates(modules, tmp_path):
     assert run.cache_calls == 1
     with pytest.raises(AssertionError):
         run.rates(phi+.01, 'synthetic')
+
+
+def test_reference_cache_preserves_disk_reserve(modules, tmp_path, monkeypatch):
+    campaign, _ = modules
+    monkeypatch.setattr(campaign.shutil, 'disk_usage',
+                        lambda path: SimpleNamespace(free=2**30))
+    run = campaign.PairedExperiment.__new__(campaign.PairedExperiment)
+    run.out = tmp_path / 'pilot'
+    run.out.mkdir()
+    run.active = np.arange(2)
+    run.fast = lambda *args: pytest.fail('Low-space cache must not evaluate rates')
+    with pytest.raises(RuntimeError, match='less than 5 GiB free'):
+        run.rates(np.array([[-.3, .35, 4.7]]), 'synthetic')
+    assert not (tmp_path / 'reference_cache' / 'synthetic.npz').exists()

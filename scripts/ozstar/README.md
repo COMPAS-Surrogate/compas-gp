@@ -40,3 +40,9 @@ Jobs use explicit paths, CPU JAX, 64-bit arithmetic, and Slurm's allocated
 thread count. The one-CPU, 8-GB smoke allocation is a test allocation, not a
 measured recommendation for full GP training. Existing environments and
 population files are left in place.
+
+The reproducible four-input manuscript campaign is in
+[`gp4/README.md`](gp4/README.md): versioned parent-checkpoint continuation,
+matched BO/random task selection, a required compute-node pilot, and recorded
+Slurm submissions. Use this warm-fit workflow for the new manuscript analyses;
+`paper.slurm` is the historical cold-fit campaign wrapper.

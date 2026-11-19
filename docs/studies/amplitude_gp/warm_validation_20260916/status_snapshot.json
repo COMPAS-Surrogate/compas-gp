@@ -1,0 +1,4526 @@
+{
+  "checked_at_utc": "2026-09-16T01:36:19.863272+00:00",
+  "campaign": "/fred/oz303/avajpeyi/studies/compas_gp4_warm_validation_20260916",
+  "tasks": [
+    {
+      "task": 0,
+      "kind": "saved_design",
+      "name": "count_n100_perfect_c200_s17_bo",
+      "status": {
+        "state": "complete",
+        "checkpoints": 4,
+        "first_confirmed_tested": 744
+      },
+      "rows": [
+        {
+          "labels": 504,
+          "checkpoint_sha256": "218ff755161bc680e5da3857879ae1b532cf2ecd12a25e5dc0331b8e0012a527",
+          "optimizer": {
+            "seconds": 3.9848379920003936,
+            "iterations": 100,
+            "evaluations": 106,
+            "success": false,
+            "message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT",
+            "initial_loss": 126741.7871851863,
+            "final_loss": 1098.3057166870071,
+            "transform_reference_change": 0.0,
+            "scope": "Optimized fixed saved design, not a new warm-start BO trajectory.",
+            "previous_checkpoint_sha256": "c91cf836cf309861f99ca8c88d5a2bde094b7c1788a898b533abfd2ca0132665",
+            "candidate_checkpoint_sha256": "540ffa29044138d14781bccf6ad012d15bed62415bc5222c5f6dcf56a008a408"
+          },
+          "outcome": "inaccurate",
+          "seconds": 28.547372701999848,
+          "maximum_directed_kl": 0.024638072753750448,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 534,
+          "checkpoint_sha256": "cec6a4b91d9405c73a70d4bed4ad36587934ced7efbee97a4eb15aa8f8c1bdba",
+          "optimizer": {
+            "seconds": 4.592621702002361,
+            "iterations": 100,
+            "evaluations": 109,
+            "success": false,
+            "message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT",
+            "initial_loss": 143384.2107555414,
+            "final_loss": 1049.793351082967,
+            "transform_reference_change": 0.0,
+            "scope": "Optimized fixed saved design, not a new warm-start BO trajectory.",
+            "previous_checkpoint_sha256": "218ff755161bc680e5da3857879ae1b532cf2ecd12a25e5dc0331b8e0012a527",
+            "candidate_checkpoint_sha256": "f860fad097e57538455b255a04d5e6b05853f861e95101dece75841f31c4801a"
+          },
+          "outcome": "inaccurate",
+          "seconds": 30.26337499800138,
+          "maximum_directed_kl": 0.021010691154443942,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 744,
+          "checkpoint_sha256": "5fd362e89618bfe18a056e04414335747a724b84bd540cf8230b14438d64b17a",
+          "optimizer": {
+            "seconds": 9.708282533989404,
+            "iterations": 100,
+            "evaluations": 106,
+            "success": false,
+            "message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT",
+            "initial_loss": 88277.65119106976,
+            "final_loss": 1118.9894876106882,
+            "transform_reference_change": 0.0,
+            "scope": "Optimized fixed saved design, not a new warm-start BO trajectory.",
+            "previous_checkpoint_sha256": "7a591d05428d0f88da433d603cd3f20ff2ae23a5064b9f5b092d8ef4bdd80131",
+            "candidate_checkpoint_sha256": "a402cb744e158f52ccbd2e7a6309d2bde45a7ff3cb491a5b4d1a9b0d7a2e7f02"
+          },
+          "outcome": "accurate",
+          "seconds": 44.57208445300057,
+          "maximum_directed_kl": 0.00886218616085951,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "accurate"
+            }
+          ]
+        },
+        {
+          "labels": 774,
+          "checkpoint_sha256": "ae06ffb536ab8ae0218db950461cd8735f6e81e507d8b54ceaea49ab17bbc022",
+          "optimizer": {
+            "seconds": 11.645802804996492,
+            "iterations": 100,
+            "evaluations": 106,
+            "success": false,
+            "message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT",
+            "initial_loss": 113998.39432866091,
+            "final_loss": 1094.7572730915274,
+            "transform_reference_change": 0.0,
+            "scope": "Optimized fixed saved design, not a new warm-start BO trajectory.",
+            "previous_checkpoint_sha256": "5fd362e89618bfe18a056e04414335747a724b84bd540cf8230b14438d64b17a",
+            "candidate_checkpoint_sha256": "7eee6f20b18da19f5c654c0ff88eed53d8966c6a94977bd6ce19374455dda862"
+          },
+          "outcome": "accurate",
+          "seconds": 47.58539701800328,
+          "maximum_directed_kl": 0.008049269227320213,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "accurate"
+            }
+          ]
+        }
+      ],
+      "first_confirmed_tested": 744
+    },
+    {
+      "task": 1,
+      "kind": "saved_design",
+      "name": "count_n100_perfect_c200_s17_random",
+      "status": {
+        "state": "complete",
+        "checkpoints": 4,
+        "first_confirmed_tested": null
+      },
+      "rows": [
+        {
+          "labels": 504,
+          "checkpoint_sha256": "680d6ee93e2e18f307c41ec07260c46b5298f91f9b8d89290c847a2cb82a9e37",
+          "optimizer": {
+            "seconds": 3.9846791330055567,
+            "iterations": 100,
+            "evaluations": 106,
+            "success": false,
+            "message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT",
+            "initial_loss": 80815.2396289227,
+            "final_loss": 1104.7858064797492,
+            "transform_reference_change": 0.0,
+            "scope": "Optimized fixed saved design, not a new warm-start BO trajectory.",
+            "previous_checkpoint_sha256": "5334302c31c245267f948acb00cf69ae6081fd119cfe514b0e49deb702b9698f",
+            "candidate_checkpoint_sha256": "6b8b70bbea25da8d5cbb5a2d2a95afbfd8dec98292885ae01232e7ce49dc20e4"
+          },
+          "outcome": "inaccurate",
+          "seconds": 28.693327180997585,
+          "maximum_directed_kl": 0.22817557703144417,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 534,
+          "checkpoint_sha256": "5f0da41674e385e267cb9d2cd26e23fc0579b65807b6cc6190c439f31920b4f8",
+          "optimizer": {
+            "seconds": 4.510412010000437,
+            "iterations": 100,
+            "evaluations": 106,
+            "success": false,
+            "message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT",
+            "initial_loss": 84612.82366190081,
+            "final_loss": 1023.5567167897873,
+            "transform_reference_change": 0.0,
+            "scope": "Optimized fixed saved design, not a new warm-start BO trajectory.",
+            "previous_checkpoint_sha256": "680d6ee93e2e18f307c41ec07260c46b5298f91f9b8d89290c847a2cb82a9e37",
+            "candidate_checkpoint_sha256": "eeca797bf3a8450bdf47a4bfd4b2765d59b36b786885a0571ad5759b70b0a28d"
+          },
+          "outcome": "inaccurate",
+          "seconds": 29.973208682000404,
+          "maximum_directed_kl": 0.19917315857115134,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 744,
+          "checkpoint_sha256": "0068ab35ba08b89ec3cfcea0f26a97e87d3171ee3b7d8f37fce59ba623f8bd96",
+          "optimizer": {
+            "seconds": 9.977786625007866,
+            "iterations": 100,
+            "evaluations": 110,
+            "success": false,
+            "message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT",
+            "initial_loss": 42006.050409164964,
+            "final_loss": 1050.0505844480067,
+            "transform_reference_change": 0.0,
+            "scope": "Optimized fixed saved design, not a new warm-start BO trajectory.",
+            "previous_checkpoint_sha256": "401c47653f84ac28f27ced5afb30ecb2733064cdc8d7aab66a563d46a835b100",
+            "candidate_checkpoint_sha256": "d1676f22614e073aae6cded3a0c1f59728550e50ecaaa46b5a09679ddcba5db6"
+          },
+          "outcome": "inaccurate",
+          "seconds": 44.10025386199413,
+          "maximum_directed_kl": 0.16582828162757815,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 774,
+          "checkpoint_sha256": "875f957af840dba30fc768d1f254c84b4be8d436267137a8e18858d7ecf08c49",
+          "optimizer": {
+            "seconds": 11.715938076988095,
+            "iterations": 100,
+            "evaluations": 107,
+            "success": false,
+            "message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT",
+            "initial_loss": 43098.6647644589,
+            "final_loss": 1045.598493827607,
+            "transform_reference_change": 0.0,
+            "scope": "Optimized fixed saved design, not a new warm-start BO trajectory.",
+            "previous_checkpoint_sha256": "0068ab35ba08b89ec3cfcea0f26a97e87d3171ee3b7d8f37fce59ba623f8bd96",
+            "candidate_checkpoint_sha256": "639dc7e5037d33e51482d022c2e2f33ec790dec5754d6c9b298627b2d0bc3acd"
+          },
+          "outcome": "inaccurate",
+          "seconds": 47.613552305003395,
+          "maximum_directed_kl": 0.14642689524898292,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        }
+      ],
+      "first_confirmed_tested": null
+    },
+    {
+      "task": 2,
+      "kind": "saved_design",
+      "name": "count_n100_uncertain_c200_s17_bo",
+      "status": {
+        "state": "complete",
+        "checkpoints": 4,
+        "first_confirmed_tested": null
+      },
+      "rows": [
+        {
+          "labels": 504,
+          "checkpoint_sha256": "5428aa7ce517ea1318a6c379451c0989af114a58d6d6a4494c63ead1d0405ef4",
+          "optimizer": {
+            "seconds": 3.3988806040142663,
+            "iterations": 100,
+            "evaluations": 112,
+            "success": false,
+            "message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT",
+            "initial_loss": 271921.7665882016,
+            "final_loss": 1228.443324654768,
+            "transform_reference_change": 0.0,
+            "scope": "Optimized fixed saved design, not a new warm-start BO trajectory.",
+            "previous_checkpoint_sha256": "f325ae37b6c4b026af35b62169378874a653f62b6b29d43a00b8c53022fac847",
+            "candidate_checkpoint_sha256": "8489e52ff79ad7904c9e2b8619d73bef58357c040119f268cd57579bc1f261da"
+          },
+          "outcome": "inaccurate",
+          "seconds": 28.746637567004655,
+          "maximum_directed_kl": 0.019489914938643903,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 534,
+          "checkpoint_sha256": "e83871bdba893ddc4484b38021ffed2c3b22a763bff3b2c44432f251d29c0a5d",
+          "optimizer": {
+            "seconds": 3.5780719960457645,
+            "iterations": 100,
+            "evaluations": 106,
+            "success": false,
+            "message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT",
+            "initial_loss": 270326.45582214894,
+            "final_loss": 1246.5314660653567,
+            "transform_reference_change": 0.0,
+            "scope": "Optimized fixed saved design, not a new warm-start BO trajectory.",
+            "previous_checkpoint_sha256": "5428aa7ce517ea1318a6c379451c0989af114a58d6d6a4494c63ead1d0405ef4",
+            "candidate_checkpoint_sha256": "edf5fe7add8c97f48cec6dbcadbe5a6e56a96969e157bcfafcdcf45658ca8341"
+          },
+          "outcome": "inaccurate",
+          "seconds": 29.680063278996386,
+          "maximum_directed_kl": 0.019362370001736514,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 744,
+          "checkpoint_sha256": "6778de64dec5083d812861817e408d9ea32b4f0fb44f200008517fd03084f152",
+          "optimizer": {
+            "seconds": 7.747396889026277,
+            "iterations": 100,
+            "evaluations": 107,
+            "success": false,
+            "message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT",
+            "initial_loss": 192630.51764213387,
+            "final_loss": 1309.4683418517243,
+            "transform_reference_change": 0.0,
+            "scope": "Optimized fixed saved design, not a new warm-start BO trajectory.",
+            "previous_checkpoint_sha256": "0eb9f6195e00f5428da2f70bafb5125de114279296c747e9b80bd3692d2ffcfe",
+            "candidate_checkpoint_sha256": "7407a603d1ace0aa5d43f6d049be7b01e285069d45ae37fb45fe17ab4fecfc42"
+          },
+          "outcome": "inaccurate",
+          "seconds": 43.419207438011654,
+          "maximum_directed_kl": 0.008427280574483166,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 774,
+          "checkpoint_sha256": "68c57fd2d5c60aab8d95235878ca7b1de6f8f7e5e52377f6ae7533c9dec9d7ab",
+          "optimizer": {
+            "seconds": 9.122717419988476,
+            "iterations": 100,
+            "evaluations": 112,
+            "success": false,
+            "message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT",
+            "initial_loss": 190002.09120296693,
+            "final_loss": 1262.896116511989,
+            "transform_reference_change": 0.0,
+            "scope": "Optimized fixed saved design, not a new warm-start BO trajectory.",
+            "previous_checkpoint_sha256": "6778de64dec5083d812861817e408d9ea32b4f0fb44f200008517fd03084f152",
+            "candidate_checkpoint_sha256": "37f214c7d39aa2a915643b6211724211973f7d775c4ced7d3ea22a7dc73c6f3a"
+          },
+          "outcome": "inaccurate",
+          "seconds": 46.02110984997125,
+          "maximum_directed_kl": 0.007974299412888526,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        }
+      ],
+      "first_confirmed_tested": null
+    },
+    {
+      "task": 3,
+      "kind": "saved_design",
+      "name": "count_n100_uncertain_c200_s17_random",
+      "status": {
+        "state": "complete",
+        "checkpoints": 4,
+        "first_confirmed_tested": null
+      },
+      "rows": [
+        {
+          "labels": 504,
+          "checkpoint_sha256": "967b04c5bce184dacab58b170999f01e4ce252d2099407f10d263307b7d58b44",
+          "optimizer": {
+            "seconds": 3.5568965529673733,
+            "iterations": 100,
+            "evaluations": 113,
+            "success": false,
+            "message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT",
+            "initial_loss": 76058.82134907004,
+            "final_loss": 1071.4611676612742,
+            "transform_reference_change": 0.0,
+            "scope": "Optimized fixed saved design, not a new warm-start BO trajectory.",
+            "previous_checkpoint_sha256": "fd66f331e30221417eb96559e3ad64c187082632af17cfd8ee2d137487365cad",
+            "candidate_checkpoint_sha256": "0e251e4abefe75e81c9c807d628d05ae1b711c47a51fe9ddf909a72d39b9eb72"
+          },
+          "outcome": "inaccurate",
+          "seconds": 28.80358856904786,
+          "maximum_directed_kl": 0.20516021424421027,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 534,
+          "checkpoint_sha256": "2cd8fa00a40687f8bc8c9145845f73340b0aebd0eb4bf6969d9f00bfa9856093",
+          "optimizer": {
+            "seconds": 3.815311669022776,
+            "iterations": 100,
+            "evaluations": 110,
+            "success": false,
+            "message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT",
+            "initial_loss": 71794.74040645281,
+            "final_loss": 1033.5407356819983,
+            "transform_reference_change": 0.0,
+            "scope": "Optimized fixed saved design, not a new warm-start BO trajectory.",
+            "previous_checkpoint_sha256": "967b04c5bce184dacab58b170999f01e4ce252d2099407f10d263307b7d58b44",
+            "candidate_checkpoint_sha256": "5805ab7c8609f832337daf5f51edfccfefbc794f15038c00b83ea484414ac832"
+          },
+          "outcome": "inaccurate",
+          "seconds": 30.262900850968435,
+          "maximum_directed_kl": 0.1846918321157252,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 744,
+          "checkpoint_sha256": "eaaa22af5dcfae2a597775774a1cffc5c1e1a0bc4f5f025f1862582e62c466e3",
+          "optimizer": {
+            "seconds": 8.28557622700464,
+            "iterations": 100,
+            "evaluations": 111,
+            "success": false,
+            "message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT",
+            "initial_loss": 72240.70375365928,
+            "final_loss": 1278.102125450841,
+            "transform_reference_change": 0.0,
+            "scope": "Optimized fixed saved design, not a new warm-start BO trajectory.",
+            "previous_checkpoint_sha256": "d86d85a999f5b23ee7ab71ac322bf16aafe7890be77a17b743baea669f815606",
+            "candidate_checkpoint_sha256": "a6d2a8014725388cdbbb016d3182309f9ca4cebbbca532f70a2dacedcc88e19b"
+          },
+          "outcome": "inaccurate",
+          "seconds": 44.773715167015325,
+          "maximum_directed_kl": 0.15571948547221978,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 774,
+          "checkpoint_sha256": "d2b4678a28f0f1cda9e5d44da0e8414e75e8e4e64add5dbd15e0e7f7164d3bfc",
+          "optimizer": {
+            "seconds": 9.408417626982555,
+            "iterations": 100,
+            "evaluations": 111,
+            "success": false,
+            "message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT",
+            "initial_loss": 76678.10669065475,
+            "final_loss": 1255.3710396973129,
+            "transform_reference_change": 0.0,
+            "scope": "Optimized fixed saved design, not a new warm-start BO trajectory.",
+            "previous_checkpoint_sha256": "eaaa22af5dcfae2a597775774a1cffc5c1e1a0bc4f5f025f1862582e62c466e3",
+            "candidate_checkpoint_sha256": "8252b0c176ed2a6ccbed5ed003abe87ba0d62417f0972be7c97598ae3c68874c"
+          },
+          "outcome": "inaccurate",
+          "seconds": 47.27730870904634,
+          "maximum_directed_kl": 0.1362215359707864,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        }
+      ],
+      "first_confirmed_tested": null
+    },
+    {
+      "task": 4,
+      "kind": "saved_design",
+      "name": "count_n500_perfect_c200_s17_bo",
+      "status": {
+        "state": "complete",
+        "checkpoints": 4,
+        "first_confirmed_tested": null
+      },
+      "rows": [
+        {
+          "labels": 504,
+          "checkpoint_sha256": "ad5b60acf1a56d3e81f023ebe43e1b40993ec7e8512e2f396610898289a64c51",
+          "optimizer": {
+            "seconds": 3.187767313000222,
+            "iterations": 100,
+            "evaluations": 110,
+            "success": false,
+            "message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT",
+            "initial_loss": 500629.3359479157,
+            "final_loss": 1343.1821516217108,
+            "transform_reference_change": 0.0,
+            "scope": "Optimized fixed saved design, not a new warm-start BO trajectory.",
+            "previous_checkpoint_sha256": "796dddc8ba5391aebef551c8fc24c2fd9188fba1112ff09976856c819ca5dfc8",
+            "candidate_checkpoint_sha256": "990d71e451ee58df97e533bb93c54ddc165ea10732340f5f9257bcc028208cd2"
+          },
+          "outcome": "inaccurate",
+          "seconds": 58.35642442400422,
+          "maximum_directed_kl": 0.10164600749343755,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 534,
+          "checkpoint_sha256": "22168a6f3e4a4fd065e8ae537b7139b0f0aab7ee2eb7cbeb2318b0819740ae61",
+          "optimizer": {
+            "seconds": 3.234515725001984,
+            "iterations": 96,
+            "evaluations": 98,
+            "success": true,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+            "initial_loss": 499567.9850738585,
+            "final_loss": 1342.8123979635327,
+            "transform_reference_change": 0.0,
+            "scope": "Optimized fixed saved design, not a new warm-start BO trajectory.",
+            "previous_checkpoint_sha256": "ad5b60acf1a56d3e81f023ebe43e1b40993ec7e8512e2f396610898289a64c51",
+            "candidate_checkpoint_sha256": "ba470480f81fd987822fecf685555ad4f5611f970eed90b168adde54ec8dedb6"
+          },
+          "outcome": "inaccurate",
+          "seconds": 58.26606462200289,
+          "maximum_directed_kl": 0.09001073440946361,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 744,
+          "checkpoint_sha256": "f60c37377c8d76b7bda1c54a4586c7e0b239d483063e2c37027c0543b838c636",
+          "optimizer": {
+            "seconds": 7.612645974004408,
+            "iterations": 100,
+            "evaluations": 111,
+            "success": false,
+            "message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT",
+            "initial_loss": 498521.1578565387,
+            "final_loss": 1566.062523109273,
+            "transform_reference_change": 0.0,
+            "scope": "Optimized fixed saved design, not a new warm-start BO trajectory.",
+            "previous_checkpoint_sha256": "e5a2308d67c838f8e7778c0710af23d71d7ac832000664736be9af001652f07b",
+            "candidate_checkpoint_sha256": "fe1901a1d1e5a300f4aaca88cef9ed573c7d08d08fac902197124123d7584728"
+          },
+          "outcome": "inaccurate",
+          "seconds": 83.85264313000516,
+          "maximum_directed_kl": 0.04402246390454938,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 774,
+          "checkpoint_sha256": "043a5c1367607eb4e813bb6b69ef9f0e141a31500d6a47d48720801b223f41dd",
+          "optimizer": {
+            "seconds": 8.550137362995883,
+            "iterations": 100,
+            "evaluations": 108,
+            "success": false,
+            "message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT",
+            "initial_loss": 529921.1871648738,
+            "final_loss": 1517.0254290107753,
+            "transform_reference_change": 0.0,
+            "scope": "Optimized fixed saved design, not a new warm-start BO trajectory.",
+            "previous_checkpoint_sha256": "f60c37377c8d76b7bda1c54a4586c7e0b239d483063e2c37027c0543b838c636",
+            "candidate_checkpoint_sha256": "e1bba7c872fd4abad42b2864ff44254851ae61566070d3b4789720f91fa68a14"
+          },
+          "outcome": "inaccurate",
+          "seconds": 87.90462398099771,
+          "maximum_directed_kl": 0.04709547676879125,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        }
+      ],
+      "first_confirmed_tested": null
+    },
+    {
+      "task": 5,
+      "kind": "saved_design",
+      "name": "count_n500_perfect_c200_s17_random",
+      "status": {
+        "state": "complete",
+        "checkpoints": 4,
+        "first_confirmed_tested": null
+      },
+      "rows": [
+        {
+          "labels": 504,
+          "checkpoint_sha256": "6c0db55932786e1ce45548bd1987a6ccd861fb9facea9a3f7b695f68196f4d07",
+          "optimizer": {
+            "seconds": 4.005338524002582,
+            "iterations": 100,
+            "evaluations": 106,
+            "success": false,
+            "message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT",
+            "initial_loss": 37305.31927626523,
+            "final_loss": 936.9883517741905,
+            "transform_reference_change": 0.0,
+            "scope": "Optimized fixed saved design, not a new warm-start BO trajectory.",
+            "previous_checkpoint_sha256": "ef50d3a1511c1bc9efa2282707dcbc64b410f515f1cd57e5381bc9be50479303",
+            "candidate_checkpoint_sha256": "fe970d920f5560073afb31e17c78e9f176184d57df91db5c6d32057981c12c48"
+          },
+          "outcome": "inaccurate",
+          "seconds": 60.64629227100522,
+          "maximum_directed_kl": 1.5719952067130962,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 534,
+          "checkpoint_sha256": "75678f29b3744098567afd1be20230dc68aa3c204c700bde7fbb448dee69b68f",
+          "optimizer": {
+            "seconds": 4.2731824169895845,
+            "iterations": 100,
+            "evaluations": 108,
+            "success": false,
+            "message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT",
+            "initial_loss": 42074.92711502252,
+            "final_loss": 887.0261442276333,
+            "transform_reference_change": 0.0,
+            "scope": "Optimized fixed saved design, not a new warm-start BO trajectory.",
+            "previous_checkpoint_sha256": "6c0db55932786e1ce45548bd1987a6ccd861fb9facea9a3f7b695f68196f4d07",
+            "candidate_checkpoint_sha256": "7d682dffe74a3a3dd495221d526a15dd211589d8154024d9b6f7c5119ac76f95"
+          },
+          "outcome": "inaccurate",
+          "seconds": 60.53137550500105,
+          "maximum_directed_kl": 1.497730721991906,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 744,
+          "checkpoint_sha256": "2b9a621f8129fe2b049615acaff96ffc61a5a9fc0f422662a3419a1f7001b58e",
+          "optimizer": {
+            "seconds": 9.382575759998872,
+            "iterations": 100,
+            "evaluations": 105,
+            "success": false,
+            "message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT",
+            "initial_loss": 40265.35078960493,
+            "final_loss": 1092.3489394154,
+            "transform_reference_change": 0.0,
+            "scope": "Optimized fixed saved design, not a new warm-start BO trajectory.",
+            "previous_checkpoint_sha256": "cb3c30cff492878f9769ab64d3cb633c93d25311d15add1ff15dc12e313589b2",
+            "candidate_checkpoint_sha256": "df40d11701b7314e74bcd9225c3eb311172895312de464ad7ba11f43bb30d770"
+          },
+          "outcome": "inaccurate",
+          "seconds": 86.6392404329963,
+          "maximum_directed_kl": 1.1285146365281737,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 774,
+          "checkpoint_sha256": "2d92bab688bacf400e7e78ea908b0b1a0ca79fa7f8bd76e4ce57eaa6afecf746",
+          "optimizer": {
+            "seconds": 11.992798512001173,
+            "iterations": 100,
+            "evaluations": 113,
+            "success": false,
+            "message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT",
+            "initial_loss": 39037.21686571993,
+            "final_loss": 1085.6175318301136,
+            "transform_reference_change": 0.14171155500395116,
+            "scope": "Optimized fixed saved design, not a new warm-start BO trajectory.",
+            "previous_checkpoint_sha256": "2b9a621f8129fe2b049615acaff96ffc61a5a9fc0f422662a3419a1f7001b58e",
+            "candidate_checkpoint_sha256": "4518a0eda20d273662987829c2517141d9bc533a118fbcb583f5c1f0ee0f44b2"
+          },
+          "outcome": "inaccurate",
+          "seconds": 92.05235974899551,
+          "maximum_directed_kl": 1.1540168371818011,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        }
+      ],
+      "first_confirmed_tested": null
+    },
+    {
+      "task": 6,
+      "kind": "saved_design",
+      "name": "count_n500_uncertain_c200_s17_bo",
+      "status": {
+        "state": "complete",
+        "checkpoints": 4,
+        "first_confirmed_tested": null
+      },
+      "rows": [
+        {
+          "labels": 504,
+          "checkpoint_sha256": "6158fdebabbf3c2734ede5902ff7803455122fc296fd9175efb39d8f3353bf36",
+          "optimizer": {
+            "seconds": 4.0132667159923585,
+            "iterations": 94,
+            "evaluations": 107,
+            "success": true,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+            "initial_loss": 415514.883822166,
+            "final_loss": 1346.1962382665488,
+            "transform_reference_change": 0.0,
+            "scope": "Optimized fixed saved design, not a new warm-start BO trajectory.",
+            "previous_checkpoint_sha256": "c41adda0179aeae9192c95de7901e4764660e2295dc1bd74767d88a268c639b1",
+            "candidate_checkpoint_sha256": "9afad76075fa90cc801730b1045ed5195d284a3ac91cc682ef82e6a4f9e443c5"
+          },
+          "outcome": "inaccurate",
+          "seconds": 60.570474883003044,
+          "maximum_directed_kl": 0.12297566727317824,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 534,
+          "checkpoint_sha256": "73f40c50b8595be0bf2d134824fe63199bf80f2a273048935236cfd66969332b",
+          "optimizer": {
+            "seconds": 4.472841605005669,
+            "iterations": 93,
+            "evaluations": 117,
+            "success": false,
+            "message": "ABNORMAL: ",
+            "initial_loss": 467188.1856427039,
+            "final_loss": 1410.896292282795,
+            "transform_reference_change": 0.0,
+            "scope": "Optimized fixed saved design, not a new warm-start BO trajectory.",
+            "previous_checkpoint_sha256": "6158fdebabbf3c2734ede5902ff7803455122fc296fd9175efb39d8f3353bf36",
+            "candidate_checkpoint_sha256": "771487f6cfe991602f8fcad789e6c7a4b46dd46b76f243af0837baf02ff6a8a4"
+          },
+          "outcome": "inaccurate",
+          "seconds": 60.80093606900482,
+          "maximum_directed_kl": 0.08059059385381051,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 744,
+          "checkpoint_sha256": "8b51454e832d6c5eb4041a5d1e60822991a75630b9ce41907023c0016da682e9",
+          "optimizer": {
+            "seconds": 9.906560452989652,
+            "iterations": 100,
+            "evaluations": 111,
+            "success": false,
+            "message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT",
+            "initial_loss": 510421.10260769527,
+            "final_loss": 1641.2172481508308,
+            "transform_reference_change": 0.0,
+            "scope": "Optimized fixed saved design, not a new warm-start BO trajectory.",
+            "previous_checkpoint_sha256": "4859edc90a2a64a1eff7b9e001395d804dca5da7f5223b3d97d098e3923ed5c5",
+            "candidate_checkpoint_sha256": "04b7256e4375d54030f998139659ec7b41df10d6021676bf5f83264536f91d6a"
+          },
+          "outcome": "inaccurate",
+          "seconds": 87.23096256901044,
+          "maximum_directed_kl": 0.040769718312450264,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 774,
+          "checkpoint_sha256": "5ae8048f05427d4c529d9f15313c41c1d197f0cfe62e78ab38d735b204b0ab99",
+          "optimizer": {
+            "seconds": 11.73448278401338,
+            "iterations": 100,
+            "evaluations": 109,
+            "success": false,
+            "message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT",
+            "initial_loss": 512977.8326502254,
+            "final_loss": 1741.3108111426623,
+            "transform_reference_change": 0.0,
+            "scope": "Optimized fixed saved design, not a new warm-start BO trajectory.",
+            "previous_checkpoint_sha256": "8b51454e832d6c5eb4041a5d1e60822991a75630b9ce41907023c0016da682e9",
+            "candidate_checkpoint_sha256": "80cd357145abce2b3ec2aa1e5373f5e131e037ec1e9c04d6af622be3bb73ac1c"
+          },
+          "outcome": "inaccurate",
+          "seconds": 91.93452229899412,
+          "maximum_directed_kl": 0.030776458421841395,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        }
+      ],
+      "first_confirmed_tested": null
+    },
+    {
+      "task": 7,
+      "kind": "saved_design",
+      "name": "count_n500_uncertain_c200_s17_random",
+      "status": {
+        "state": "complete",
+        "checkpoints": 4,
+        "first_confirmed_tested": null
+      },
+      "rows": [
+        {
+          "labels": 504,
+          "checkpoint_sha256": "f4f8f32f6d687744f6ea5484a32f19faef3e41252224f4fb05d86a301e19eab5",
+          "optimizer": {
+            "seconds": 3.2985945410327986,
+            "iterations": 100,
+            "evaluations": 109,
+            "success": false,
+            "message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT",
+            "initial_loss": 34872.920990829494,
+            "final_loss": 929.3714704864398,
+            "transform_reference_change": 0.0,
+            "scope": "Optimized fixed saved design, not a new warm-start BO trajectory.",
+            "previous_checkpoint_sha256": "14674fde34f138591c242329010dee7e5bc1fcdb9363569d2b3171b17b18da6b",
+            "candidate_checkpoint_sha256": "3af66076bae795239c65e6332afd1a24e17e1b6a403ef0739e634106e3532e7b"
+          },
+          "outcome": "inaccurate",
+          "seconds": 60.570450972998515,
+          "maximum_directed_kl": 1.4599624697208327,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 534,
+          "checkpoint_sha256": "9a130c2dbc64c1745bac5cd4634fa730805923a1cccd45a389a3b7ce7325ba3a",
+          "optimizer": {
+            "seconds": 3.5639547229511663,
+            "iterations": 100,
+            "evaluations": 106,
+            "success": false,
+            "message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT",
+            "initial_loss": 36007.808289000735,
+            "final_loss": 936.0959756030645,
+            "transform_reference_change": 0.0,
+            "scope": "Optimized fixed saved design, not a new warm-start BO trajectory.",
+            "previous_checkpoint_sha256": "f4f8f32f6d687744f6ea5484a32f19faef3e41252224f4fb05d86a301e19eab5",
+            "candidate_checkpoint_sha256": "b3e67ab07e4a061db23b9a07b27256f9bcdf04c6c036e444c200fc90807d7f41"
+          },
+          "outcome": "inaccurate",
+          "seconds": 62.108707902021706,
+          "maximum_directed_kl": 1.4142807668369812,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 744,
+          "checkpoint_sha256": "9a3da48d03dc8230d1239fb343e92d03d098f63f8b77a629545faacdf7dd9834",
+          "optimizer": {
+            "seconds": 7.679998800973408,
+            "iterations": 100,
+            "evaluations": 107,
+            "success": false,
+            "message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT",
+            "initial_loss": 36062.279185201274,
+            "final_loss": 1089.5412796704873,
+            "transform_reference_change": 0.0,
+            "scope": "Optimized fixed saved design, not a new warm-start BO trajectory.",
+            "previous_checkpoint_sha256": "e2c8e14f0f6469f347b61e33fb625eaef469baf1ac08bbd4da10d96765a03c1b",
+            "candidate_checkpoint_sha256": "574fc976ae3f2b17ca904a6a4e0d43dc03d219d2d58078627daa52f6d15a907d"
+          },
+          "outcome": "inaccurate",
+          "seconds": 88.00617726502242,
+          "maximum_directed_kl": 1.0325735787004888,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 774,
+          "checkpoint_sha256": "11be739b4ad6eb71516d2dcb3b6dd9796ee1fc404c30cfb3aa76e8c640122bda",
+          "optimizer": {
+            "seconds": 9.11311644304078,
+            "iterations": 100,
+            "evaluations": 112,
+            "success": false,
+            "message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT",
+            "initial_loss": 35686.71772701712,
+            "final_loss": 1093.4829003679606,
+            "transform_reference_change": 0.0,
+            "scope": "Optimized fixed saved design, not a new warm-start BO trajectory.",
+            "previous_checkpoint_sha256": "9a3da48d03dc8230d1239fb343e92d03d098f63f8b77a629545faacdf7dd9834",
+            "candidate_checkpoint_sha256": "ea71f6e0a0886c2f4b7db46d6d5ae0f689ffba76e95d2b1c321984c0261cc901"
+          },
+          "outcome": "inaccurate",
+          "seconds": 92.75121332501294,
+          "maximum_directed_kl": 0.9663717325263776,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        }
+      ],
+      "first_confirmed_tested": null
+    },
+    {
+      "task": 8,
+      "kind": "trajectory",
+      "name": "count_n50_perfect_c200_s17_bo",
+      "status": {
+        "state": "complete",
+        "scored_checkpoints": 6,
+        "first_confirmed_tested": 504,
+        "final_outcome": "accurate"
+      },
+      "rows": [
+        {
+          "labels": 504,
+          "checkpoint_sha256": "d7f2324871e56ca99f7d0e1a91e00b0a21d6429260baf539a40acefc2bb7e8a5",
+          "outcome": "accurate",
+          "seconds": 23.625039047001337,
+          "maximum_directed_kl": 0.0037550790200742644,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "accurate"
+            }
+          ]
+        },
+        {
+          "labels": 534,
+          "checkpoint_sha256": "81a8985e3a605936081c50cb9b7cbd2defdd056c6338be58e4fa789960b4c3db",
+          "outcome": "accurate",
+          "seconds": 25.176510948003852,
+          "maximum_directed_kl": 0.003508620620889155,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "accurate"
+            }
+          ]
+        },
+        {
+          "labels": 744,
+          "checkpoint_sha256": "7da5f09cfa017c789c4d4b4b5cf7251dbcd47e6b1014d8ca7300f9e13f369a26",
+          "outcome": "accurate",
+          "seconds": 34.738660923998395,
+          "maximum_directed_kl": 0.001848803668987173,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "accurate"
+            }
+          ]
+        },
+        {
+          "labels": 774,
+          "checkpoint_sha256": "88e1e7d857c04bad493437129d3feb65f9d7fbaff36f2b2123a58262a30b2685",
+          "outcome": "accurate",
+          "seconds": 37.466460397001356,
+          "maximum_directed_kl": 0.0016899496430243565,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "accurate"
+            }
+          ]
+        },
+        {
+          "labels": 1254,
+          "checkpoint_sha256": "c21ca42983639f344cb2215353fbcc7375712e34a1c5a7c33347c8cc84b59067",
+          "outcome": "accurate",
+          "seconds": 58.78732120499626,
+          "maximum_directed_kl": 0.0008681303608422804,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "accurate"
+            }
+          ]
+        },
+        {
+          "labels": 1284,
+          "checkpoint_sha256": "7556b249e784efa273e67cc76990ea2acdc2047f655f8d1d3a09629e467b7e20",
+          "outcome": "accurate",
+          "seconds": 60.86649800599844,
+          "maximum_directed_kl": 0.0008344720045611075,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "accurate"
+            }
+          ]
+        }
+      ],
+      "first_confirmed_tested": 504,
+      "training": {
+        "labels": 1284,
+        "checkpoint_sha256": "7556b249e784efa273e67cc76990ea2acdc2047f655f8d1d3a09629e467b7e20",
+        "state": "training_complete_not_validated",
+        "reference_accessed": false,
+        "elapsed_training_seconds": 398.61266518800403,
+        "components": {
+          "labels": 5.6838983360503335,
+          "acquisition": 161.17835383394413,
+          "fit": 173.58816651898815,
+          "conditioning": 55.599713880008494
+        }
+      }
+    },
+    {
+      "task": 9,
+      "kind": "trajectory",
+      "name": "count_n50_perfect_c200_s17_random",
+      "status": {
+        "state": "complete",
+        "scored_checkpoints": 6,
+        "first_confirmed_tested": 1254,
+        "final_outcome": "accurate"
+      },
+      "rows": [
+        {
+          "labels": 504,
+          "checkpoint_sha256": "307c67283734f310ba25c2a7bdf4f3f79d416294a176cb24e4215fd4593b6062",
+          "outcome": "inaccurate",
+          "seconds": 25.058964931995433,
+          "maximum_directed_kl": 0.13235470949378964,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 534,
+          "checkpoint_sha256": "1059081826d5f5d24ce3eb785842e6db23d83344d907ac5af6983a340a50e608",
+          "outcome": "inaccurate",
+          "seconds": 25.032357367002987,
+          "maximum_directed_kl": 0.1156046982601808,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 744,
+          "checkpoint_sha256": "2f272a81f3d59cb2b6b1258c88acc29f7f4f71885d8b8190d57b385b8c1f9452",
+          "outcome": "inaccurate",
+          "seconds": 34.40368808099447,
+          "maximum_directed_kl": 0.08529453975056335,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 774,
+          "checkpoint_sha256": "c8d8a71da8bc24502c83f4421fe64726a19cb48de9bf08e4fbfbf29d43366bbe",
+          "outcome": "inaccurate",
+          "seconds": 35.81393727699469,
+          "maximum_directed_kl": 0.04859580699096403,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 1254,
+          "checkpoint_sha256": "b21f90d1d57dfedfca43aa484cd4d6ac115bbc83ebe4b5920e8ed063675f8dc6",
+          "outcome": "accurate",
+          "seconds": 56.032211225996434,
+          "maximum_directed_kl": 0.009248865865492823,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "accurate"
+            }
+          ]
+        },
+        {
+          "labels": 1284,
+          "checkpoint_sha256": "b6eb6842f175c4dbe6dd3bdd4b824c6508c0485412f25114c35c60965861f641",
+          "outcome": "accurate",
+          "seconds": 57.36534487699828,
+          "maximum_directed_kl": 0.00869329782882644,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "accurate"
+            }
+          ]
+        }
+      ],
+      "first_confirmed_tested": 1254,
+      "training": {
+        "labels": 1284,
+        "checkpoint_sha256": "b6eb6842f175c4dbe6dd3bdd4b824c6508c0485412f25114c35c60965861f641",
+        "state": "training_complete_not_validated",
+        "reference_accessed": false,
+        "elapsed_training_seconds": 202.43630304100225,
+        "components": {
+          "labels": 5.9107119210166275,
+          "acquisition": 0.0,
+          "fit": 138.31919060298242,
+          "conditioning": 55.8350298189398
+        }
+      }
+    },
+    {
+      "task": 10,
+      "kind": "trajectory",
+      "name": "count_n50_uncertain_c200_s17_bo",
+      "status": {
+        "state": "complete",
+        "scored_checkpoints": 6,
+        "first_confirmed_tested": 504,
+        "final_outcome": "accurate"
+      },
+      "rows": [
+        {
+          "labels": 504,
+          "checkpoint_sha256": "1639b83de240ba8ee830fabd1eac47934374336462e8e70d492ea67ce9485ecf",
+          "outcome": "accurate",
+          "seconds": 25.3126980609959,
+          "maximum_directed_kl": 0.007897655806232504,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "accurate"
+            }
+          ]
+        },
+        {
+          "labels": 534,
+          "checkpoint_sha256": "f3c451cdfc6dd3cd4947ef13530a2d169275c81e2544b1eee0ffb05eae496267",
+          "outcome": "accurate",
+          "seconds": 25.398948657006258,
+          "maximum_directed_kl": 0.007245713670720801,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "accurate"
+            }
+          ]
+        },
+        {
+          "labels": 744,
+          "checkpoint_sha256": "7dd8b1d44ccb505475a4b20fff7785e509ad855f7f8e8d9ef306cee84542aa69",
+          "outcome": "accurate",
+          "seconds": 35.77903456600325,
+          "maximum_directed_kl": 0.0052039765865784975,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "accurate"
+            }
+          ]
+        },
+        {
+          "labels": 774,
+          "checkpoint_sha256": "9354df5c2832c99f50d25059e54e7f12b3c96a9c7468671ffda54c2c5a42ae2b",
+          "outcome": "accurate",
+          "seconds": 37.815640732995234,
+          "maximum_directed_kl": 0.005121943668206145,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "accurate"
+            }
+          ]
+        },
+        {
+          "labels": 1254,
+          "checkpoint_sha256": "1bb7c97ec28f91afca005ec73cf369e62f8d20d3cf0baa4e24cbecebc4a0ad5b",
+          "outcome": "accurate",
+          "seconds": 57.31486936099827,
+          "maximum_directed_kl": 0.002526969623393972,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "accurate"
+            }
+          ]
+        },
+        {
+          "labels": 1284,
+          "checkpoint_sha256": "f7bafb557ac30fd116e214d21311731062b5137c3c5cf61e82fa7a66df2a1bc3",
+          "outcome": "accurate",
+          "seconds": 59.28827955700399,
+          "maximum_directed_kl": 0.0024602056106574387,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "accurate"
+            }
+          ]
+        }
+      ],
+      "first_confirmed_tested": 504,
+      "training": {
+        "labels": 1284,
+        "checkpoint_sha256": "f7bafb557ac30fd116e214d21311731062b5137c3c5cf61e82fa7a66df2a1bc3",
+        "state": "training_complete_not_validated",
+        "reference_accessed": false,
+        "elapsed_training_seconds": 406.8372134359961,
+        "components": {
+          "labels": 6.044371596042765,
+          "acquisition": 170.16273285388888,
+          "fit": 166.77041685905715,
+          "conditioning": 60.985147384009906
+        }
+      }
+    },
+    {
+      "task": 11,
+      "kind": "trajectory",
+      "name": "count_n50_uncertain_c200_s17_random",
+      "status": {
+        "state": "complete",
+        "scored_checkpoints": 6,
+        "first_confirmed_tested": 1254,
+        "final_outcome": "accurate"
+      },
+      "rows": [
+        {
+          "labels": 504,
+          "checkpoint_sha256": "10a4c6171d63e1931dcef8b7df24914020720e91dc40ee8974e5141e2a52cf1b",
+          "outcome": "inaccurate",
+          "seconds": 25.485731105000013,
+          "maximum_directed_kl": 0.07398567499440101,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 534,
+          "checkpoint_sha256": "536b5ab0b5a19704402789c73e733d8df6a10b5b30d63a1c5651cb5248f40f90",
+          "outcome": "inaccurate",
+          "seconds": 25.32800690199656,
+          "maximum_directed_kl": 0.06180491847389403,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 744,
+          "checkpoint_sha256": "4aefed8e9124af4b9a5df6c344903fb170164e1da134adc8d9fdaa19b7bfe5e1",
+          "outcome": "inaccurate",
+          "seconds": 34.262705365006696,
+          "maximum_directed_kl": 0.04186372813475939,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 774,
+          "checkpoint_sha256": "d033e82ad41b16ef90758951f0940a31f7a606c330eac67f2d4593673adef611",
+          "outcome": "inaccurate",
+          "seconds": 35.52875156899972,
+          "maximum_directed_kl": 0.026995289778777687,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 1254,
+          "checkpoint_sha256": "aa4cd9229c3b5855b1fb3c35ac0961dd97b128f6f9fb2c7492d88098d79bf4ba",
+          "outcome": "accurate",
+          "seconds": 55.65953314201033,
+          "maximum_directed_kl": 0.007934389881146635,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "accurate"
+            }
+          ]
+        },
+        {
+          "labels": 1284,
+          "checkpoint_sha256": "dbe3f2471c4ea85dd83ac589e664bd05d660c75f9829e614fdac29d8319f1e57",
+          "outcome": "accurate",
+          "seconds": 57.69670594800846,
+          "maximum_directed_kl": 0.007688874157539955,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "accurate"
+            }
+          ]
+        }
+      ],
+      "first_confirmed_tested": 1254,
+      "training": {
+        "labels": 1284,
+        "checkpoint_sha256": "dbe3f2471c4ea85dd83ac589e664bd05d660c75f9829e614fdac29d8319f1e57",
+        "state": "training_complete_not_validated",
+        "reference_accessed": false,
+        "elapsed_training_seconds": 225.7300252839923,
+        "components": {
+          "labels": 6.71024991197919,
+          "acquisition": 0.0,
+          "fit": 155.19323848598287,
+          "conditioning": 61.3737586599309
+        }
+      }
+    },
+    {
+      "task": 12,
+      "kind": "trajectory",
+      "name": "count_n500_perfect_c200_s17_bo",
+      "status": {
+        "state": "complete",
+        "scored_checkpoints": 6,
+        "first_confirmed_tested": 1254,
+        "final_outcome": "accurate"
+      },
+      "rows": [
+        {
+          "labels": 504,
+          "checkpoint_sha256": "29a4f4f88900dc6075a368d76ac811c30777c26861e4a39b3c93f42a765d4f5b",
+          "outcome": "inaccurate",
+          "seconds": 61.97443036700133,
+          "maximum_directed_kl": 0.09792123241918091,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 534,
+          "checkpoint_sha256": "a11d010e4bc3f4d2e71afd0767cb63cd08377c5b796f1a805faf9372cb78d0dd",
+          "outcome": "inaccurate",
+          "seconds": 64.61502051097341,
+          "maximum_directed_kl": 0.06283553170654499,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 744,
+          "checkpoint_sha256": "23944bc4c7f843ede25c3347c4666a9fdc33eecea26d92d151fa31db26437fe4",
+          "outcome": "inaccurate",
+          "seconds": 89.64548894099426,
+          "maximum_directed_kl": 0.01650722875252091,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 774,
+          "checkpoint_sha256": "cd8a3db9d3768dfb57f5e2408769591984a6de313b4577272e9404828034c0c0",
+          "outcome": "inaccurate",
+          "seconds": 93.02539956697728,
+          "maximum_directed_kl": 0.015311781461907117,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 1254,
+          "checkpoint_sha256": "b2d705857e48e6dc1518b114ee074703b918022753933dcf914e85fc224b9b52",
+          "outcome": "accurate",
+          "seconds": 148.65581488900352,
+          "maximum_directed_kl": 0.00960998660192082,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "accurate"
+            }
+          ]
+        },
+        {
+          "labels": 1284,
+          "checkpoint_sha256": "739521ef7e59530dc0064c1f642bb2d902f071a0ab5892d1082bc1cd28e1faed",
+          "outcome": "accurate",
+          "seconds": 150.55415947904112,
+          "maximum_directed_kl": 0.009395949560318397,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "accurate"
+            }
+          ]
+        }
+      ],
+      "first_confirmed_tested": 1254,
+      "training": {
+        "labels": 1284,
+        "checkpoint_sha256": "739521ef7e59530dc0064c1f642bb2d902f071a0ab5892d1082bc1cd28e1faed",
+        "state": "training_complete_not_validated",
+        "reference_accessed": false,
+        "elapsed_training_seconds": 423.05791626899736,
+        "components": {
+          "labels": 6.28226547333179,
+          "acquisition": 181.99752918240847,
+          "fit": 169.30097327870317,
+          "conditioning": 63.09279214584967
+        }
+      }
+    },
+    {
+      "task": 13,
+      "kind": "trajectory",
+      "name": "count_n500_perfect_c200_s17_random",
+      "status": {
+        "state": "complete",
+        "scored_checkpoints": 6,
+        "first_confirmed_tested": null,
+        "final_outcome": "inaccurate"
+      },
+      "rows": [
+        {
+          "labels": 504,
+          "checkpoint_sha256": "7f14795e4553b6a8409735fd8cbba83854c0b45293524395a74b3ac258949011",
+          "outcome": "inaccurate",
+          "seconds": 62.97399900300661,
+          "maximum_directed_kl": 1.6154317528940878,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 534,
+          "checkpoint_sha256": "06a96b1afd7db8ecf2ccfb39c809551e72361e57d6e634c228ab9ed65ff03b40",
+          "outcome": "inaccurate",
+          "seconds": 67.1129903490073,
+          "maximum_directed_kl": 1.5268590223426235,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 744,
+          "checkpoint_sha256": "8d19ae74ed64e9639b4f1ad5ddc7a3f32ec53b61f4725c34ef58c3c0fd149ae4",
+          "outcome": "inaccurate",
+          "seconds": 88.71825255302247,
+          "maximum_directed_kl": 1.1678974297176214,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 774,
+          "checkpoint_sha256": "982cae84215ed854f105b855776f40ce0f4ac2cf73470cb8519ab37bb7a6c698",
+          "outcome": "inaccurate",
+          "seconds": 90.78235076996498,
+          "maximum_directed_kl": 1.2007929611644386,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 1254,
+          "checkpoint_sha256": "1353796004ddb5287b417b7a5a7b7c68110fff4d24a24f5fd3bfb6fabff8225b",
+          "outcome": "inaccurate",
+          "seconds": 145.04988571204012,
+          "maximum_directed_kl": 0.3613228423763542,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 1284,
+          "checkpoint_sha256": "806cbfe9e74d3542badd7991e6193174b2921904426de23194d6342039febfe9",
+          "outcome": "inaccurate",
+          "seconds": 150.5997036229819,
+          "maximum_directed_kl": 0.3751487039333383,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        }
+      ],
+      "first_confirmed_tested": null,
+      "training": {
+        "labels": 1284,
+        "checkpoint_sha256": "806cbfe9e74d3542badd7991e6193174b2921904426de23194d6342039febfe9",
+        "state": "training_complete_not_validated",
+        "reference_accessed": false,
+        "elapsed_training_seconds": 221.1129126889864,
+        "components": {
+          "labels": 6.720554653031286,
+          "acquisition": 0.0,
+          "fit": 147.85319953609724,
+          "conditioning": 64.35496832808712
+        }
+      }
+    },
+    {
+      "task": 14,
+      "kind": "trajectory",
+      "name": "count_n500_uncertain_c200_s17_bo",
+      "status": {
+        "state": "complete",
+        "scored_checkpoints": 6,
+        "first_confirmed_tested": null,
+        "final_outcome": "inaccurate"
+      },
+      "rows": [
+        {
+          "labels": 504,
+          "checkpoint_sha256": "51b2af0fcc9a820c4e9cc9dd5d37e2b3e8124cf8b0c16e7ac50839622d8974f0",
+          "outcome": "inaccurate",
+          "seconds": 61.41302724304842,
+          "maximum_directed_kl": 0.10145643139792193,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 534,
+          "checkpoint_sha256": "8d20968115d1e62e5732900d0b429f5ddcdf852eec023daac9287ee70557ad97",
+          "outcome": "inaccurate",
+          "seconds": 65.7578498639632,
+          "maximum_directed_kl": 0.08417862575608567,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 744,
+          "checkpoint_sha256": "0dfa50ad9d4e8cd7cee20bf54be5f872a2f190b0346a94f14e751839a7ace6c4",
+          "outcome": "inaccurate",
+          "seconds": 89.11263569100993,
+          "maximum_directed_kl": 0.031751054554423216,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 774,
+          "checkpoint_sha256": "e99b9ffb379f9f587982ae7b0aefdc16c64b1bc1ca92d4de2fa2ec776c63f841",
+          "outcome": "inaccurate",
+          "seconds": 90.32273719401564,
+          "maximum_directed_kl": 0.027845386014120774,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 1254,
+          "checkpoint_sha256": "3745d1ced0ee04bf9102d98bbfd940c16af49b8b44b6004fa6fb36831c2c3a4d",
+          "outcome": "inaccurate",
+          "seconds": 139.87631255300948,
+          "maximum_directed_kl": 0.012232960974768125,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 1284,
+          "checkpoint_sha256": "18b071248864a1358ca40bdc55e42730721d43371c66001acebcf21dc5326d30",
+          "outcome": "inaccurate",
+          "seconds": 145.79117102600867,
+          "maximum_directed_kl": 0.011882297474703627,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        }
+      ],
+      "first_confirmed_tested": null,
+      "training": {
+        "labels": 1284,
+        "checkpoint_sha256": "18b071248864a1358ca40bdc55e42730721d43371c66001acebcf21dc5326d30",
+        "state": "training_complete_not_validated",
+        "reference_accessed": false,
+        "elapsed_training_seconds": 427.9148443330196,
+        "components": {
+          "labels": 6.485653991170693,
+          "acquisition": 207.92795478156768,
+          "fit": 147.6997248927364,
+          "conditioning": 63.32843837054679
+        }
+      }
+    },
+    {
+      "task": 15,
+      "kind": "trajectory",
+      "name": "count_n500_uncertain_c200_s17_random",
+      "status": {
+        "state": "complete",
+        "scored_checkpoints": 6,
+        "first_confirmed_tested": null,
+        "final_outcome": "inaccurate"
+      },
+      "rows": [
+        {
+          "labels": 504,
+          "checkpoint_sha256": "14d42def67d42c3b055dfee764c12545c40816b847756b7cb593c148731b181c",
+          "outcome": "inaccurate",
+          "seconds": 60.123978064977564,
+          "maximum_directed_kl": 1.503603890174524,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 534,
+          "checkpoint_sha256": "c9a816ad9a311aa201bf1c393eebc531fb19b2b8b794f74df4616a0a0fdd2666",
+          "outcome": "inaccurate",
+          "seconds": 61.48732278798707,
+          "maximum_directed_kl": 1.4493119139480473,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 744,
+          "checkpoint_sha256": "0ff034166396dc89741377c07dc08453146be33dc75907f3e97a33a6c1c81492",
+          "outcome": "inaccurate",
+          "seconds": 88.44877230498241,
+          "maximum_directed_kl": 1.0859243420115883,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 774,
+          "checkpoint_sha256": "fce6753eab03293bb83d45c5237a9ea234c3f90486891aa0bdb14d7743d7cbd1",
+          "outcome": "inaccurate",
+          "seconds": 92.5080667049624,
+          "maximum_directed_kl": 1.0137984346449695,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 1254,
+          "checkpoint_sha256": "294f4921452691afc19b8983ccd8beab89d0cde46955cac0191730d063924788",
+          "outcome": "inaccurate",
+          "seconds": 150.90335996699287,
+          "maximum_directed_kl": 0.32577173127551573,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 1284,
+          "checkpoint_sha256": "ebfb93a4f0a225dec8fcc8b0b0396b0893e6bb45046da2c785f358c101759b11",
+          "outcome": "inaccurate",
+          "seconds": 146.2053328109905,
+          "maximum_directed_kl": 0.33109737455871613,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        }
+      ],
+      "first_confirmed_tested": null,
+      "training": {
+        "labels": 1284,
+        "checkpoint_sha256": "ebfb93a4f0a225dec8fcc8b0b0396b0893e6bb45046da2c785f358c101759b11",
+        "state": "training_complete_not_validated",
+        "reference_accessed": false,
+        "elapsed_training_seconds": 233.32768437999766,
+        "components": {
+          "labels": 7.465527754276991,
+          "acquisition": 0.0,
+          "fit": 159.0238346820115,
+          "conditioning": 64.37334427621681
+        }
+      }
+    },
+    {
+      "task": 16,
+      "kind": "trajectory",
+      "name": "count_n50_perfect_c201_s17_bo",
+      "status": {
+        "state": "complete",
+        "scored_checkpoints": 6,
+        "first_confirmed_tested": 504,
+        "final_outcome": "accurate"
+      },
+      "rows": [
+        {
+          "labels": 504,
+          "checkpoint_sha256": "29ff9356377489faea4295da6c3a61ef77325da81e02ad23bd4be0d18f0ffb13",
+          "outcome": "accurate",
+          "seconds": 27.313071195967495,
+          "maximum_directed_kl": 0.0059605690276540975,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "accurate"
+            }
+          ]
+        },
+        {
+          "labels": 534,
+          "checkpoint_sha256": "2e6054b56e5e610cc7c416b6ac1713beb2452974cfac9695c61b248663570fe1",
+          "outcome": "accurate",
+          "seconds": 28.509938422997948,
+          "maximum_directed_kl": 0.005423406515621246,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "accurate"
+            }
+          ]
+        },
+        {
+          "labels": 744,
+          "checkpoint_sha256": "c988f763016260e264fb80f112eec0154c790e00b2935e05be5367c31440ac65",
+          "outcome": "accurate",
+          "seconds": 39.52264457999263,
+          "maximum_directed_kl": 0.0033012830858157125,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "accurate"
+            }
+          ]
+        },
+        {
+          "labels": 774,
+          "checkpoint_sha256": "9a57ba3424a1f2fde01a9daa64e360e0559ac108be6f7a3d6c28b2955530eb7c",
+          "outcome": "accurate",
+          "seconds": 40.37003601703327,
+          "maximum_directed_kl": 0.0031918592717323988,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "accurate"
+            }
+          ]
+        },
+        {
+          "labels": 1254,
+          "checkpoint_sha256": "257b5b3dd11bef62e3a10527c2be1d28d329dfde80002377a0db27ac18a2de9c",
+          "outcome": "accurate",
+          "seconds": 65.93405803700443,
+          "maximum_directed_kl": 0.0015896917629058828,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "accurate"
+            }
+          ]
+        },
+        {
+          "labels": 1284,
+          "checkpoint_sha256": "064e286bd1f1d8a9c7cd1124c3ecb24c1c9bb3033b3c7b44d1901457d2f387f0",
+          "outcome": "accurate",
+          "seconds": 67.52079581702128,
+          "maximum_directed_kl": 0.0015090347346447615,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "accurate"
+            }
+          ]
+        }
+      ],
+      "first_confirmed_tested": 504,
+      "training": {
+        "labels": 1284,
+        "checkpoint_sha256": "064e286bd1f1d8a9c7cd1124c3ecb24c1c9bb3033b3c7b44d1901457d2f387f0",
+        "state": "training_complete_not_validated",
+        "reference_accessed": false,
+        "elapsed_training_seconds": 394.2218888869975,
+        "components": {
+          "labels": 6.173836940492038,
+          "acquisition": 183.8511011460214,
+          "fit": 139.67588307900587,
+          "conditioning": 62.33487436012365
+        }
+      }
+    },
+    {
+      "task": 17,
+      "kind": "trajectory",
+      "name": "count_n50_perfect_c201_s17_random",
+      "status": {
+        "state": "complete",
+        "scored_checkpoints": 6,
+        "first_confirmed_tested": null,
+        "final_outcome": "inaccurate"
+      },
+      "rows": [
+        {
+          "labels": 504,
+          "checkpoint_sha256": "34185c57dd1220fb35fe942d54ccb7bfddb22177e9afe195f10323f439d77489",
+          "outcome": "inaccurate",
+          "seconds": 25.505262064980343,
+          "maximum_directed_kl": 0.05463686264842134,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 534,
+          "checkpoint_sha256": "3eb03116d4ab9465f2cf24bd82667009924abb2dbfba6ec2d51d2411be637d72",
+          "outcome": "inaccurate",
+          "seconds": 25.70399864198407,
+          "maximum_directed_kl": 0.052083019643526726,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 744,
+          "checkpoint_sha256": "9a1adf6842c4f04775f4b465346e165586ef118d2771e4792294a3cb03b35661",
+          "outcome": "inaccurate",
+          "seconds": 35.001735125959385,
+          "maximum_directed_kl": 0.03188674335065062,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 774,
+          "checkpoint_sha256": "d0be48810860379d9c81b375d08b7e89e8f17058b77615bf7c02438f18aa679a",
+          "outcome": "inaccurate",
+          "seconds": 36.94809590501245,
+          "maximum_directed_kl": 0.027699697753647553,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 1254,
+          "checkpoint_sha256": "2ca2b8694b496c0e0a2028af7adbe197160bd7c28457f2753a97ca426eb70916",
+          "outcome": "inaccurate",
+          "seconds": 57.66336785198655,
+          "maximum_directed_kl": 0.010467815071198712,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 1284,
+          "checkpoint_sha256": "4872df47f4d2bf56a55242ea2070e1243a53baed4a709c938ec15a1f7059e618",
+          "outcome": "inaccurate",
+          "seconds": 58.487828687008005,
+          "maximum_directed_kl": 0.010421604363224765,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        }
+      ],
+      "first_confirmed_tested": null,
+      "training": {
+        "labels": 1284,
+        "checkpoint_sha256": "4872df47f4d2bf56a55242ea2070e1243a53baed4a709c938ec15a1f7059e618",
+        "state": "training_complete_not_validated",
+        "reference_accessed": false,
+        "elapsed_training_seconds": 227.18481434200658,
+        "components": {
+          "labels": 6.2379438854404725,
+          "acquisition": 0.0,
+          "fit": 160.44235613703495,
+          "conditioning": 58.487065770081244
+        }
+      }
+    },
+    {
+      "task": 18,
+      "kind": "trajectory",
+      "name": "count_n50_uncertain_c201_s17_bo",
+      "status": {
+        "state": "complete",
+        "scored_checkpoints": 6,
+        "first_confirmed_tested": 504,
+        "final_outcome": "accurate"
+      },
+      "rows": [
+        {
+          "labels": 504,
+          "checkpoint_sha256": "6471318791590f6107bda2247d8809590fca06652d2767693ab057cd15a59491",
+          "outcome": "accurate",
+          "seconds": 24.834376995975617,
+          "maximum_directed_kl": 0.004374150862305435,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "accurate"
+            }
+          ]
+        },
+        {
+          "labels": 534,
+          "checkpoint_sha256": "f33ed8e49bf911356cda78df2de30eff1224cf71f46ea0c7f699fb9ccad5ab6a",
+          "outcome": "accurate",
+          "seconds": 25.30231465800898,
+          "maximum_directed_kl": 0.004200449867771382,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "accurate"
+            }
+          ]
+        },
+        {
+          "labels": 744,
+          "checkpoint_sha256": "d9dad8e8d123f2e8ae511aef05f4321533d2fe21f0728d428389376d8eddf898",
+          "outcome": "accurate",
+          "seconds": 35.45840331801446,
+          "maximum_directed_kl": 0.0027129944412588366,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "accurate"
+            }
+          ]
+        },
+        {
+          "labels": 774,
+          "checkpoint_sha256": "82340f8f2c0f58d9ceeefe4ea475be3509bc7498cc49228919e3e90eb3cabf62",
+          "outcome": "accurate",
+          "seconds": 35.91219207504764,
+          "maximum_directed_kl": 0.002571298838921469,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "accurate"
+            }
+          ]
+        },
+        {
+          "labels": 1254,
+          "checkpoint_sha256": "5210efb88bf4cc63776588cd3d5b1d24abd7be5dc1b2ffdf054a65fe7ca94937",
+          "outcome": "accurate",
+          "seconds": 57.64011944294907,
+          "maximum_directed_kl": 0.0013985564848183031,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "accurate"
+            }
+          ]
+        },
+        {
+          "labels": 1284,
+          "checkpoint_sha256": "1e8a4ef5722dd784e71eb080e1c04f2b6b7cb112ada994a166089fcb930336ee",
+          "outcome": "accurate",
+          "seconds": 58.97170426603407,
+          "maximum_directed_kl": 0.0013570768016599873,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "accurate"
+            }
+          ]
+        }
+      ],
+      "first_confirmed_tested": 504,
+      "training": {
+        "labels": 1284,
+        "checkpoint_sha256": "1e8a4ef5722dd784e71eb080e1c04f2b6b7cb112ada994a166089fcb930336ee",
+        "state": "training_complete_not_validated",
+        "reference_accessed": false,
+        "elapsed_training_seconds": 375.8469905999955,
+        "components": {
+          "labels": 5.655694991583005,
+          "acquisition": 167.14115845569177,
+          "fit": 144.52955494291382,
+          "conditioning": 56.200320877018385
+        }
+      }
+    },
+    {
+      "task": 19,
+      "kind": "trajectory",
+      "name": "count_n50_uncertain_c201_s17_random",
+      "status": {
+        "state": "complete",
+        "scored_checkpoints": 6,
+        "first_confirmed_tested": 1254,
+        "final_outcome": "accurate"
+      },
+      "rows": [
+        {
+          "labels": 504,
+          "checkpoint_sha256": "ec52f12d992ce0ee1041cb7a0fb3a76055291fe3d4e92a8a664e93e4c84892a2",
+          "outcome": "inaccurate",
+          "seconds": 25.467334575019777,
+          "maximum_directed_kl": 0.0558707727422305,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 534,
+          "checkpoint_sha256": "d291ab01715d2ecf86552b993695b4d085832802b57b90e871ee04d1b2a13d62",
+          "outcome": "inaccurate",
+          "seconds": 26.16777674999321,
+          "maximum_directed_kl": 0.053034874550339964,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 744,
+          "checkpoint_sha256": "42ab1d6b48a218ca96a1a5f11e6969d8df6718097d3de758ef4b6033b48781fd",
+          "outcome": "inaccurate",
+          "seconds": 35.78047135801171,
+          "maximum_directed_kl": 0.030323815054442878,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 774,
+          "checkpoint_sha256": "bffc2218f44c7fb034561409a246808355951468c1370cbac2f0ffd0aeeef1a1",
+          "outcome": "inaccurate",
+          "seconds": 36.466736592003144,
+          "maximum_directed_kl": 0.026423759966135177,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 1254,
+          "checkpoint_sha256": "31857bc99375388ac6afab8fe577239b0f09e71311e872770de9fb8349dd951a",
+          "outcome": "accurate",
+          "seconds": 56.93053837999469,
+          "maximum_directed_kl": 0.008919364816497763,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "accurate"
+            }
+          ]
+        },
+        {
+          "labels": 1284,
+          "checkpoint_sha256": "acfb68e8329dbbbce739f6673eb41df29b57d093fb17e90ab8e14b6e66692f6b",
+          "outcome": "accurate",
+          "seconds": 61.90926762900199,
+          "maximum_directed_kl": 0.008836201025380788,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "accurate"
+            }
+          ]
+        }
+      ],
+      "first_confirmed_tested": 1254,
+      "training": {
+        "labels": 1284,
+        "checkpoint_sha256": "acfb68e8329dbbbce739f6673eb41df29b57d093fb17e90ab8e14b6e66692f6b",
+        "state": "training_complete_not_validated",
+        "reference_accessed": false,
+        "elapsed_training_seconds": 202.2372060729831,
+        "components": {
+          "labels": 5.8188340011110995,
+          "acquisition": 0.0,
+          "fit": 137.67361806397093,
+          "conditioning": 55.9817645267176
+        }
+      }
+    },
+    {
+      "task": 20,
+      "kind": "trajectory",
+      "name": "count_n500_perfect_c201_s17_bo",
+      "status": {
+        "state": "complete",
+        "scored_checkpoints": 6,
+        "first_confirmed_tested": 1254,
+        "final_outcome": "accurate"
+      },
+      "rows": [
+        {
+          "labels": 504,
+          "checkpoint_sha256": "a6e60c823448184073053b88aefec520ab836609cb16b1937d9c1218d2951b80",
+          "outcome": "inaccurate",
+          "seconds": 57.50584096700186,
+          "maximum_directed_kl": 0.05900658302528562,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 534,
+          "checkpoint_sha256": "e1f69c123952fcdc2c269cc38170d32b74ac9e78a43170abecf577f21463a89e",
+          "outcome": "inaccurate",
+          "seconds": 59.53456400800496,
+          "maximum_directed_kl": 0.054054792368679536,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 744,
+          "checkpoint_sha256": "d0aed470ac97614d1b0a9115514f45ed9a74b7b1a85588f7fa762a64acf504d3",
+          "outcome": "inaccurate",
+          "seconds": 83.7925826080027,
+          "maximum_directed_kl": 0.016967500356540578,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 774,
+          "checkpoint_sha256": "e0d66b9d96e6b325cc8b4cec0e8878df157458035b41fe51acdc70ea2c836680",
+          "outcome": "inaccurate",
+          "seconds": 84.27830622201145,
+          "maximum_directed_kl": 0.01499735012498782,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 1254,
+          "checkpoint_sha256": "3f4e43802b232ebdbf9dbc510325024739318ded1f36ff7847a0ffb9ff670a19",
+          "outcome": "accurate",
+          "seconds": 136.87630022800295,
+          "maximum_directed_kl": 0.009364465922484154,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "accurate"
+            }
+          ]
+        },
+        {
+          "labels": 1284,
+          "checkpoint_sha256": "c3ac4b33f88eb0902b00ba9a15e3f0262f55c47e394897a4831d20b00dfc0da4",
+          "outcome": "accurate",
+          "seconds": 139.54387759399833,
+          "maximum_directed_kl": 0.008752021301329984,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "accurate"
+            }
+          ]
+        }
+      ],
+      "first_confirmed_tested": 1254,
+      "training": {
+        "labels": 1284,
+        "checkpoint_sha256": "c3ac4b33f88eb0902b00ba9a15e3f0262f55c47e394897a4831d20b00dfc0da4",
+        "state": "training_complete_not_validated",
+        "reference_accessed": false,
+        "elapsed_training_seconds": 396.50158550399647,
+        "components": {
+          "labels": 5.769049741997151,
+          "acquisition": 169.80235612107208,
+          "fit": 161.5568107610161,
+          "conditioning": 57.286179682952934
+        }
+      }
+    },
+    {
+      "task": 21,
+      "kind": "trajectory",
+      "name": "count_n500_perfect_c201_s17_random",
+      "status": {
+        "state": "complete",
+        "scored_checkpoints": 6,
+        "first_confirmed_tested": null,
+        "final_outcome": "inaccurate"
+      },
+      "rows": [
+        {
+          "labels": 504,
+          "checkpoint_sha256": "0eea9189d1cccdac097683dc0b08ea6ba344c688451dcabfcabb0320a4100126",
+          "outcome": "inaccurate",
+          "seconds": 58.162557839998044,
+          "maximum_directed_kl": 1.283539035276223,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 534,
+          "checkpoint_sha256": "5ecc38e3e8938784ce3deb7c2cea923a8790be3f5a62da7c7635807368a7d207",
+          "outcome": "inaccurate",
+          "seconds": 62.75044338298903,
+          "maximum_directed_kl": 1.263656108039024,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 744,
+          "checkpoint_sha256": "8fdcd50f6085a92f54ee9bfa75594c314e84d6184111b3e490660fd31a9a66a4",
+          "outcome": "inaccurate",
+          "seconds": 85.71068098500837,
+          "maximum_directed_kl": 1.0254284376767095,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 774,
+          "checkpoint_sha256": "0e5d38826fc00dfb9d5c8cbf7890eb36e37444f9206bd2d2b65958122ae5acff",
+          "outcome": "inaccurate",
+          "seconds": 85.6687142419978,
+          "maximum_directed_kl": 0.9422263784697842,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 1254,
+          "checkpoint_sha256": "7a209980bb2064f2e94274b5e80b07c87faf73986dbf3599c6abee5b0e6f3495",
+          "outcome": "inaccurate",
+          "seconds": 133.12323283999285,
+          "maximum_directed_kl": 0.3221443274211541,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 1284,
+          "checkpoint_sha256": "4cc7973ac99162d39e5fda47b3d93d89ee3ce85e7946a6eace0df7efb4c3806d",
+          "outcome": "inaccurate",
+          "seconds": 135.6177923189971,
+          "maximum_directed_kl": 0.3236686868450079,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        }
+      ],
+      "first_confirmed_tested": null,
+      "training": {
+        "labels": 1284,
+        "checkpoint_sha256": "4cc7973ac99162d39e5fda47b3d93d89ee3ce85e7946a6eace0df7efb4c3806d",
+        "state": "training_complete_not_validated",
+        "reference_accessed": false,
+        "elapsed_training_seconds": 200.49413575799554,
+        "components": {
+          "labels": 6.116530888917623,
+          "acquisition": 0.0,
+          "fit": 134.3989021690213,
+          "conditioning": 57.756600358115975
+        }
+      }
+    },
+    {
+      "task": 22,
+      "kind": "trajectory",
+      "name": "count_n500_uncertain_c201_s17_bo",
+      "status": {
+        "state": "complete",
+        "scored_checkpoints": 6,
+        "first_confirmed_tested": null,
+        "final_outcome": "accurate"
+      },
+      "rows": [
+        {
+          "labels": 504,
+          "checkpoint_sha256": "43d19c3b01923c7c0b6ac1a4559a9eb6326f8d9ca9bb20c5a7c41ec62c2fc741",
+          "outcome": "inaccurate",
+          "seconds": 54.8005540780141,
+          "maximum_directed_kl": 0.055179571586489604,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 534,
+          "checkpoint_sha256": "e7acb7d002c22bc4f07f4c43b247e48aae21546cfbbb84eb02bf53081e01946e",
+          "outcome": "inaccurate",
+          "seconds": 58.257470090989955,
+          "maximum_directed_kl": 0.047235518807126675,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 744,
+          "checkpoint_sha256": "1b9e7c15b2d4a93d2c635fd0def98809aa9bab282b3680a87696e99d1af28dbb",
+          "outcome": "inaccurate",
+          "seconds": 86.21640230697813,
+          "maximum_directed_kl": 0.020442400207996203,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 774,
+          "checkpoint_sha256": "127ff5c5fc5605cc8b6eda96ee582acbbed9517fc90ad26b65d9cd6263ad06f3",
+          "outcome": "inaccurate",
+          "seconds": 90.79279967799084,
+          "maximum_directed_kl": 0.019424750881041706,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 1254,
+          "checkpoint_sha256": "31f23c3dc4925e8d4583393cc63855cad98c62b1410dcadcb44a76a2ea347cff",
+          "outcome": "inaccurate",
+          "seconds": 145.7499025569996,
+          "maximum_directed_kl": 0.010144335662596695,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 1284,
+          "checkpoint_sha256": "a9ab89717481b41d88303029830859bf4ee9c4700c6aa34c71ef050253ab1813",
+          "outcome": "accurate",
+          "seconds": 148.9148932500393,
+          "maximum_directed_kl": 0.009578799051985271,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "accurate"
+            }
+          ]
+        }
+      ],
+      "first_confirmed_tested": null,
+      "training": {
+        "labels": 1284,
+        "checkpoint_sha256": "a9ab89717481b41d88303029830859bf4ee9c4700c6aa34c71ef050253ab1813",
+        "state": "training_complete_not_validated",
+        "reference_accessed": false,
+        "elapsed_training_seconds": 407.2270347860176,
+        "components": {
+          "labels": 6.243607135955244,
+          "acquisition": 168.8787790699862,
+          "fit": 169.1454799360945,
+          "conditioning": 60.84944145567715
+        }
+      }
+    },
+    {
+      "task": 23,
+      "kind": "trajectory",
+      "name": "count_n500_uncertain_c201_s17_random",
+      "status": {
+        "state": "complete",
+        "scored_checkpoints": 6,
+        "first_confirmed_tested": null,
+        "final_outcome": "inaccurate"
+      },
+      "rows": [
+        {
+          "labels": 504,
+          "checkpoint_sha256": "e9058e43f7a920f69b2e6112f29f7b13378f2f63497803d11033f4f668d00e84",
+          "outcome": "inaccurate",
+          "seconds": 56.57478413199715,
+          "maximum_directed_kl": 1.2665937483164524,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 534,
+          "checkpoint_sha256": "8d563f46d211046e90c9b6b2099da3d6fe3d34554e4b3216ab85c5bb92f8ca70",
+          "outcome": "inaccurate",
+          "seconds": 59.42963794800744,
+          "maximum_directed_kl": 1.2997624128720773,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 744,
+          "checkpoint_sha256": "75845e9ac0bed9286744eec00611ada0b2e28c145c882105639ea49ccd29249a",
+          "outcome": "inaccurate",
+          "seconds": 83.04985860201123,
+          "maximum_directed_kl": 0.9189572495809583,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 774,
+          "checkpoint_sha256": "7faf786eedf3569155160b5f373724bfdc5b0c830fe5ef5730643c819064187f",
+          "outcome": "inaccurate",
+          "seconds": 86.31329789900337,
+          "maximum_directed_kl": 0.8498234869731283,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 1254,
+          "checkpoint_sha256": "2b22325c6102295a2059ff43ac638ff4779765b843bc93bc8a250e9a66905452",
+          "outcome": "inaccurate",
+          "seconds": 138.88480093200633,
+          "maximum_directed_kl": 0.30673914735834884,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 1284,
+          "checkpoint_sha256": "37a0695a498804ed68a83eccad7f2b6531336462def047b19a931aff1926d7fe",
+          "outcome": "inaccurate",
+          "seconds": 141.70211292798922,
+          "maximum_directed_kl": 0.3073205791212368,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        }
+      ],
+      "first_confirmed_tested": null,
+      "training": {
+        "labels": 1284,
+        "checkpoint_sha256": "37a0695a498804ed68a83eccad7f2b6531336462def047b19a931aff1926d7fe",
+        "state": "training_complete_not_validated",
+        "reference_accessed": false,
+        "elapsed_training_seconds": 199.69867808600247,
+        "components": {
+          "labels": 6.200260551806423,
+          "acquisition": 0.0,
+          "fit": 132.3845705440035,
+          "conditioning": 58.65969106199918
+        }
+      }
+    },
+    {
+      "task": 24,
+      "kind": "trajectory",
+      "name": "count_n50_perfect_c202_s17_bo",
+      "status": {
+        "state": "complete",
+        "scored_checkpoints": 6,
+        "first_confirmed_tested": 504,
+        "final_outcome": "accurate"
+      },
+      "rows": [
+        {
+          "labels": 504,
+          "checkpoint_sha256": "366278c6683dd51a13ca9d0c3133f8f2499ba3e76f6ade07e0027412fed53e77",
+          "outcome": "accurate",
+          "seconds": 22.508929632022046,
+          "maximum_directed_kl": 0.007301955582370181,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "accurate"
+            }
+          ]
+        },
+        {
+          "labels": 534,
+          "checkpoint_sha256": "1b937bbff0d73df8b852bf7559ac099dfe55b5af029b868f1e445de6c669d773",
+          "outcome": "accurate",
+          "seconds": 25.06822972698137,
+          "maximum_directed_kl": 0.0064372639984527046,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "accurate"
+            }
+          ]
+        },
+        {
+          "labels": 744,
+          "checkpoint_sha256": "297b7bf8794d0ae2efb131e42e04f942d5c9af929aba54ddaff81ee38d2af730",
+          "outcome": "accurate",
+          "seconds": 33.268770723982016,
+          "maximum_directed_kl": 0.003709439220353704,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "accurate"
+            }
+          ]
+        },
+        {
+          "labels": 774,
+          "checkpoint_sha256": "1647efe38228b23dd50961b7c19d71b3c44d617e9171915516aa57269725f6b3",
+          "outcome": "accurate",
+          "seconds": 36.14601758000208,
+          "maximum_directed_kl": 0.003615945476767558,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "accurate"
+            }
+          ]
+        },
+        {
+          "labels": 1254,
+          "checkpoint_sha256": "b44978c05d0629f710322d39400005c430b8cd646ed62ad4aabf84735d6ad140",
+          "outcome": "accurate",
+          "seconds": 57.40953176902258,
+          "maximum_directed_kl": 0.0016728177923703183,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "accurate"
+            }
+          ]
+        },
+        {
+          "labels": 1284,
+          "checkpoint_sha256": "e639466e6b03cc4fe089403f7e33c21f93d5e2ab1888ef522dd59f21c6f7743d",
+          "outcome": "accurate",
+          "seconds": 57.41562209199765,
+          "maximum_directed_kl": 0.0015957755358773876,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "accurate"
+            }
+          ]
+        }
+      ],
+      "first_confirmed_tested": 504,
+      "training": {
+        "labels": 1284,
+        "checkpoint_sha256": "e639466e6b03cc4fe089403f7e33c21f93d5e2ab1888ef522dd59f21c6f7743d",
+        "state": "training_complete_not_validated",
+        "reference_accessed": false,
+        "elapsed_training_seconds": 426.4061595410167,
+        "components": {
+          "labels": 6.4579876819916535,
+          "acquisition": 216.43922972556902,
+          "fit": 140.16000886604888,
+          "conditioning": 60.854759679874405
+        }
+      }
+    },
+    {
+      "task": 25,
+      "kind": "trajectory",
+      "name": "count_n50_perfect_c202_s17_random",
+      "status": {
+        "state": "complete",
+        "scored_checkpoints": 6,
+        "first_confirmed_tested": null,
+        "final_outcome": "inaccurate"
+      },
+      "rows": [
+        {
+          "labels": 504,
+          "checkpoint_sha256": "1fd6a75ebcc1e53c9ce584b07d05bc6bac2f00427be44eea7753f949baceb598",
+          "outcome": "inaccurate",
+          "seconds": 24.68131741299294,
+          "maximum_directed_kl": 0.06542224294711911,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 534,
+          "checkpoint_sha256": "537af9eda6bab33a6dfafc5789ebc84c432838c1071defb986b36deafd9b88d2",
+          "outcome": "inaccurate",
+          "seconds": 26.297466485004406,
+          "maximum_directed_kl": 0.06474257125622374,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 744,
+          "checkpoint_sha256": "eade14d3601ac0b3eaae224eb5ed3e359607ca1ada1c67dbec6abce9709fb901",
+          "outcome": "inaccurate",
+          "seconds": 36.81714009604184,
+          "maximum_directed_kl": 0.040495005214304484,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 774,
+          "checkpoint_sha256": "b7c97b26cd5f48cb0556f63be703cbcb9daf440a2a31b2e33fac17ae8c614fcc",
+          "outcome": "inaccurate",
+          "seconds": 37.529828769969754,
+          "maximum_directed_kl": 0.03582504051345529,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 1254,
+          "checkpoint_sha256": "0d9cac172c4f3f4e78f8db14d02f0ba48201450d3f001613cf3acee4d89048bc",
+          "outcome": "inaccurate",
+          "seconds": 55.786539917986374,
+          "maximum_directed_kl": 0.01182841816510437,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 1284,
+          "checkpoint_sha256": "dc6ce571b211f0e697003398fc97bebf760366ee0db9a9efd3574c376b59a83d",
+          "outcome": "inaccurate",
+          "seconds": 61.835659401956946,
+          "maximum_directed_kl": 0.011973316654702242,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        }
+      ],
+      "first_confirmed_tested": null,
+      "training": {
+        "labels": 1284,
+        "checkpoint_sha256": "dc6ce571b211f0e697003398fc97bebf760366ee0db9a9efd3574c376b59a83d",
+        "state": "training_complete_not_validated",
+        "reference_accessed": false,
+        "elapsed_training_seconds": 203.22472093597753,
+        "components": {
+          "labels": 5.908122883061878,
+          "acquisition": 0.0,
+          "fit": 138.11871255200822,
+          "conditioning": 57.089691982546356
+        }
+      }
+    },
+    {
+      "task": 26,
+      "kind": "trajectory",
+      "name": "count_n50_uncertain_c202_s17_bo",
+      "status": {
+        "state": "complete",
+        "scored_checkpoints": 6,
+        "first_confirmed_tested": 504,
+        "final_outcome": "accurate"
+      },
+      "rows": [
+        {
+          "labels": 504,
+          "checkpoint_sha256": "cfe993deb46cc5b2a682206ce8bd25a5beacf06b4ef38d85494b87cc20639aeb",
+          "outcome": "accurate",
+          "seconds": 26.26353000299423,
+          "maximum_directed_kl": 0.00531088945485491,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "accurate"
+            }
+          ]
+        },
+        {
+          "labels": 534,
+          "checkpoint_sha256": "00c5e05dc4b147a1adbc00c7215988cc5ed2fe63678dea5b97cf8fc90b92c272",
+          "outcome": "accurate",
+          "seconds": 28.076424392987974,
+          "maximum_directed_kl": 0.0050188633933365085,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "accurate"
+            }
+          ]
+        },
+        {
+          "labels": 744,
+          "checkpoint_sha256": "fbaf39560d6a74332ac265b544a3cdb7cba7b8e7348c51cc939f0d36dfc15a0d",
+          "outcome": "accurate",
+          "seconds": 37.70880862500053,
+          "maximum_directed_kl": 0.0036600911466970303,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "accurate"
+            }
+          ]
+        },
+        {
+          "labels": 774,
+          "checkpoint_sha256": "eb3045e34e8d09db5ff6b236442b200493fc2c12a6894b5dbe8b08776d61c2ef",
+          "outcome": "accurate",
+          "seconds": 38.578025033988524,
+          "maximum_directed_kl": 0.0035662350509529745,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "accurate"
+            }
+          ]
+        },
+        {
+          "labels": 1254,
+          "checkpoint_sha256": "15bdd2664e926d7783a463d2a7d945e8d6d54f181dd7bae698ae0ab4fd17d11a",
+          "outcome": "accurate",
+          "seconds": 60.26643302899902,
+          "maximum_directed_kl": 0.0021615439647429424,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "accurate"
+            }
+          ]
+        },
+        {
+          "labels": 1284,
+          "checkpoint_sha256": "7fcf95b7e62eeb89bba16103990c23a795bd3bd8fdf67596b8737b32c4635b02",
+          "outcome": "accurate",
+          "seconds": 61.34060773201054,
+          "maximum_directed_kl": 0.0013189471826704781,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "accurate"
+            }
+          ]
+        }
+      ],
+      "first_confirmed_tested": 504,
+      "training": {
+        "labels": 1284,
+        "checkpoint_sha256": "7fcf95b7e62eeb89bba16103990c23a795bd3bd8fdf67596b8737b32c4635b02",
+        "state": "training_complete_not_validated",
+        "reference_accessed": false,
+        "elapsed_training_seconds": 414.2122064490104,
+        "components": {
+          "labels": 6.083844555425458,
+          "acquisition": 173.00297742706607,
+          "fit": 171.18113307093154,
+          "conditioning": 60.14305748778861
+        }
+      }
+    },
+    {
+      "task": 27,
+      "kind": "trajectory",
+      "name": "count_n50_uncertain_c202_s17_random",
+      "status": {
+        "state": "complete",
+        "scored_checkpoints": 6,
+        "first_confirmed_tested": 1254,
+        "final_outcome": "accurate"
+      },
+      "rows": [
+        {
+          "labels": 504,
+          "checkpoint_sha256": "e1a3fd71613b28ea0d24624b870b42271e196704aae32346d75ad446426c0525",
+          "outcome": "inaccurate",
+          "seconds": 23.247148460999597,
+          "maximum_directed_kl": 0.0567414350437676,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 534,
+          "checkpoint_sha256": "72e0a9105cb004aa2d1852e6c4a557c12dac95118a099cdaff5ffed975f6a1ef",
+          "outcome": "inaccurate",
+          "seconds": 24.176602963008918,
+          "maximum_directed_kl": 0.05644876436147196,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 744,
+          "checkpoint_sha256": "6acc91d8b5f0e5be98926728a6d7c6913b6b711949f05a75e24e4131a9153f11",
+          "outcome": "inaccurate",
+          "seconds": 35.474755893985275,
+          "maximum_directed_kl": 0.03533058236159031,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 774,
+          "checkpoint_sha256": "d1f76985e9f159011b00e4eb18213cd1f43be18b9133382522dab59794fd82c3",
+          "outcome": "inaccurate",
+          "seconds": 37.698812157992506,
+          "maximum_directed_kl": 0.03150087125806195,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 1254,
+          "checkpoint_sha256": "d217ab4ae0942446592167cdd5cf8ccf19c4127f6505dde2397935cd01d844c8",
+          "outcome": "accurate",
+          "seconds": 60.35663597099483,
+          "maximum_directed_kl": 0.009787373483104926,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "accurate"
+            }
+          ]
+        },
+        {
+          "labels": 1284,
+          "checkpoint_sha256": "0556f3f64083e7c208cacb044c52b308cff94e57843e9210b743a030a936d121",
+          "outcome": "accurate",
+          "seconds": 61.47199997899588,
+          "maximum_directed_kl": 0.00951250085133796,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "accurate"
+            }
+          ]
+        }
+      ],
+      "first_confirmed_tested": 1254,
+      "training": {
+        "labels": 1284,
+        "checkpoint_sha256": "0556f3f64083e7c208cacb044c52b308cff94e57843e9210b743a030a936d121",
+        "state": "training_complete_not_validated",
+        "reference_accessed": false,
+        "elapsed_training_seconds": 199.52574014902348,
+        "components": {
+          "labels": 5.9572344351618085,
+          "acquisition": 0.0,
+          "fit": 134.59603304002667,
+          "conditioning": 56.81764008491882
+        }
+      }
+    },
+    {
+      "task": 28,
+      "kind": "trajectory",
+      "name": "count_n500_perfect_c202_s17_bo",
+      "status": {
+        "state": "complete",
+        "scored_checkpoints": 6,
+        "first_confirmed_tested": 1254,
+        "final_outcome": "accurate"
+      },
+      "rows": [
+        {
+          "labels": 504,
+          "checkpoint_sha256": "2c12b4f5f568fb4cb2f40c583ccb9c6ebec2098b0e5786470e521564e44510a7",
+          "outcome": "inaccurate",
+          "seconds": 56.46433064498706,
+          "maximum_directed_kl": 0.05329007009229833,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 534,
+          "checkpoint_sha256": "4621279659ba4cabc025e962b46820a2551e518d6625e37649c9201fa18e0cd1",
+          "outcome": "inaccurate",
+          "seconds": 58.39813304101699,
+          "maximum_directed_kl": 0.04502004511045421,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 744,
+          "checkpoint_sha256": "d86cd343fa904cc7282e5912a9617ad93660c129c59f209ffeb4a5d2500ebe9b",
+          "outcome": "inaccurate",
+          "seconds": 81.84265999501804,
+          "maximum_directed_kl": 0.01646165167253087,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 774,
+          "checkpoint_sha256": "e1dffc6c940a0997266cb612b738eb913997a48a9e08be6e421c5fd68db48fe7",
+          "outcome": "inaccurate",
+          "seconds": 79.77401953900699,
+          "maximum_directed_kl": 0.015343099025861087,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 1254,
+          "checkpoint_sha256": "51640a3320ddb01bd45677cb3a0d9a2916d436adf862653e38628008d593f933",
+          "outcome": "accurate",
+          "seconds": 133.17426102000172,
+          "maximum_directed_kl": 0.00910361587995967,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "accurate"
+            }
+          ]
+        },
+        {
+          "labels": 1284,
+          "checkpoint_sha256": "4910977c9358be4d908827846962353d6cf9af94d0c260e6f190c37182619285",
+          "outcome": "accurate",
+          "seconds": 136.42936782201286,
+          "maximum_directed_kl": 0.008711639078770268,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "accurate"
+            }
+          ]
+        }
+      ],
+      "first_confirmed_tested": 1254,
+      "training": {
+        "labels": 1284,
+        "checkpoint_sha256": "4910977c9358be4d908827846962353d6cf9af94d0c260e6f190c37182619285",
+        "state": "training_complete_not_validated",
+        "reference_accessed": false,
+        "elapsed_training_seconds": 377.27736727299634,
+        "components": {
+          "labels": 5.649279359873617,
+          "acquisition": 168.43624694400933,
+          "fit": 144.86201503893244,
+          "conditioning": 55.87794653599849
+        }
+      }
+    },
+    {
+      "task": 29,
+      "kind": "trajectory",
+      "name": "count_n500_perfect_c202_s17_random",
+      "status": {
+        "state": "complete",
+        "scored_checkpoints": 6,
+        "first_confirmed_tested": null,
+        "final_outcome": "inaccurate"
+      },
+      "rows": [
+        {
+          "labels": 504,
+          "checkpoint_sha256": "88389db0bd5858fa391bb330c94fa539ca7acaaa5b16ce4983972bbbbd951e89",
+          "outcome": "inaccurate",
+          "seconds": 57.2757755429775,
+          "maximum_directed_kl": 1.700747772373167,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 534,
+          "checkpoint_sha256": "04fb21b0dacc5b232c573fd779a0832dcb095dc8ea578adb9a9a4d834536fff4",
+          "outcome": "inaccurate",
+          "seconds": 59.37570371699985,
+          "maximum_directed_kl": 1.3804009509744453,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 744,
+          "checkpoint_sha256": "92ebd806d5d82c59a7eedb48f4ca5556d7ad302616a5d95513de58c387279293",
+          "outcome": "inaccurate",
+          "seconds": 81.22973253502278,
+          "maximum_directed_kl": 1.2543377507232536,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 774,
+          "checkpoint_sha256": "432f67211e25d544b7d1623e15181a4af400b4a96881a4a85ea0a0c9175a9707",
+          "outcome": "inaccurate",
+          "seconds": 84.48738013399998,
+          "maximum_directed_kl": 1.1224278030053472,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 1254,
+          "checkpoint_sha256": "aaf783dd240270e30cb17b90a661e3d9223ca117f40fcb51051f4dc963dcc75c",
+          "outcome": "inaccurate",
+          "seconds": 134.43191081398982,
+          "maximum_directed_kl": 0.395788792751979,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 1284,
+          "checkpoint_sha256": "3d269b5bed092ccda4d960117440b22393d5c6bc23766a6564af6674a6755a64",
+          "outcome": "inaccurate",
+          "seconds": 137.22450862001278,
+          "maximum_directed_kl": 0.39124964688750863,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        }
+      ],
+      "first_confirmed_tested": null,
+      "training": {
+        "labels": 1284,
+        "checkpoint_sha256": "3d269b5bed092ccda4d960117440b22393d5c6bc23766a6564af6674a6755a64",
+        "state": "training_complete_not_validated",
+        "reference_accessed": false,
+        "elapsed_training_seconds": 205.1006457839976,
+        "components": {
+          "labels": 5.982969818869606,
+          "acquisition": 0.0,
+          "fit": 140.16104125999846,
+          "conditioning": 56.58002313983161
+        }
+      }
+    },
+    {
+      "task": 30,
+      "kind": "trajectory",
+      "name": "count_n500_uncertain_c202_s17_bo",
+      "status": {
+        "state": "complete",
+        "scored_checkpoints": 6,
+        "first_confirmed_tested": null,
+        "final_outcome": "inaccurate"
+      },
+      "rows": [
+        {
+          "labels": 504,
+          "checkpoint_sha256": "8c0b124456ae0c37071bf9246abd195c893d7dcc87136b3cc867b1d5e62d313f",
+          "outcome": "inaccurate",
+          "seconds": 56.715351260994794,
+          "maximum_directed_kl": 0.05790626410101159,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 534,
+          "checkpoint_sha256": "ca411d662eb4e4b5acaa1919f40cc10f2e0af9f3d40a52befa0b55d6fa1813e6",
+          "outcome": "inaccurate",
+          "seconds": 57.71116742500453,
+          "maximum_directed_kl": 0.03817825775795809,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 744,
+          "checkpoint_sha256": "22ccec246cd9cdffda1b886afa334ca23481f552bef8cfebfc45aac4fa79d39d",
+          "outcome": "inaccurate",
+          "seconds": 82.06867982199765,
+          "maximum_directed_kl": 0.020438586581149717,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 774,
+          "checkpoint_sha256": "c219fe8e0b17649673d520b74ae9f44cf3d1f904788545e07148b7efa9ed89d1",
+          "outcome": "inaccurate",
+          "seconds": 84.29204638500232,
+          "maximum_directed_kl": 0.018672737872865268,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 1254,
+          "checkpoint_sha256": "db9062e9203954083ccc74d5c93544b5ab97572f32e6793e9835d4e806615b1a",
+          "outcome": "inaccurate",
+          "seconds": 136.9812744030205,
+          "maximum_directed_kl": 0.010522157082838466,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 1284,
+          "checkpoint_sha256": "489be1240153a378ccdd5a9ff0676bf4760160277369d05631d2f6574ad0534e",
+          "outcome": "inaccurate",
+          "seconds": 140.21577835499193,
+          "maximum_directed_kl": 0.010377275168295865,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        }
+      ],
+      "first_confirmed_tested": null,
+      "training": {
+        "labels": 1284,
+        "checkpoint_sha256": "489be1240153a378ccdd5a9ff0676bf4760160277369d05631d2f6574ad0534e",
+        "state": "training_complete_not_validated",
+        "reference_accessed": false,
+        "elapsed_training_seconds": 382.13715290802065,
+        "components": {
+          "labels": 5.786701963079395,
+          "acquisition": 172.75000548409298,
+          "fit": 144.9839447188715,
+          "conditioning": 56.19512403407134
+        }
+      }
+    },
+    {
+      "task": 31,
+      "kind": "trajectory",
+      "name": "count_n500_uncertain_c202_s17_random",
+      "status": {
+        "state": "complete",
+        "scored_checkpoints": 6,
+        "first_confirmed_tested": null,
+        "final_outcome": "inaccurate"
+      },
+      "rows": [
+        {
+          "labels": 504,
+          "checkpoint_sha256": "fd5ae2eb13365030075eb862746ff4460a01ca79a23bf841357c157ad004e632",
+          "outcome": "inaccurate",
+          "seconds": 53.46245254899986,
+          "maximum_directed_kl": 1.6627325284698111,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 534,
+          "checkpoint_sha256": "5f3b741a7e3caf534b3e51acdb4916d543635d0b8db703c7b235fe831219dcd8",
+          "outcome": "inaccurate",
+          "seconds": 56.54657769899495,
+          "maximum_directed_kl": 1.4248891487648347,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 744,
+          "checkpoint_sha256": "1fcb48a1220fc711e372b7a1a887841c5e285310e913b98c5e8da9ff2e25d2fa",
+          "outcome": "inaccurate",
+          "seconds": 78.33513024199783,
+          "maximum_directed_kl": 1.199403372621771,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 774,
+          "checkpoint_sha256": "d610cb79218a1e9bbdaeb138c7c0b3c49a601a281910ab04849f8b457738233e",
+          "outcome": "inaccurate",
+          "seconds": 81.37426374899951,
+          "maximum_directed_kl": 1.0645809027617577,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 1254,
+          "checkpoint_sha256": "72ae30d8ef973fcbf89a5bf637493185f4c60881c4cb4901f864bf05de415f7b",
+          "outcome": "inaccurate",
+          "seconds": 132.90474990799703,
+          "maximum_directed_kl": 0.3403678861306323,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 1284,
+          "checkpoint_sha256": "4bc372514d1c8c2f487ac7e4c013fce2ce9338eadcf2ce18ab77f82af92784f5",
+          "outcome": "inaccurate",
+          "seconds": 139.08798911499616,
+          "maximum_directed_kl": 0.34101067903590715,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        }
+      ],
+      "first_confirmed_tested": null,
+      "training": {
+        "labels": 1284,
+        "checkpoint_sha256": "4bc372514d1c8c2f487ac7e4c013fce2ce9338eadcf2ce18ab77f82af92784f5",
+        "state": "training_complete_not_validated",
+        "reference_accessed": false,
+        "elapsed_training_seconds": 200.72976444399683,
+        "components": {
+          "labels": 6.046124993961712,
+          "acquisition": 0.0,
+          "fit": 136.34899022798345,
+          "conditioning": 55.82252355401579
+        }
+      }
+    },
+    {
+      "task": 32,
+      "kind": "trajectory",
+      "name": "count_n50_perfect_c200_s29_bo",
+      "status": {
+        "state": "complete",
+        "scored_checkpoints": 6,
+        "first_confirmed_tested": 504,
+        "final_outcome": "accurate"
+      },
+      "rows": [
+        {
+          "labels": 504,
+          "checkpoint_sha256": "50a2d114b6313c889657ef2399f6856370984c71b0cfec0f38b7cfae40b74d42",
+          "outcome": "accurate",
+          "seconds": 24.38694541499717,
+          "maximum_directed_kl": 0.006560543601890588,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "accurate"
+            }
+          ]
+        },
+        {
+          "labels": 534,
+          "checkpoint_sha256": "0f87bfcba8a74dc22f431b040e74aa53811d14d46eec8162d2d04967fb770314",
+          "outcome": "accurate",
+          "seconds": 26.150307301984867,
+          "maximum_directed_kl": 0.005932762834104194,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "accurate"
+            }
+          ]
+        },
+        {
+          "labels": 744,
+          "checkpoint_sha256": "17a5336a7c81e34284e0c66d16573f784dcc430c9089e9b4a0cb68ade15d1a22",
+          "outcome": "accurate",
+          "seconds": 36.60553664100007,
+          "maximum_directed_kl": 0.004791511510650483,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "accurate"
+            }
+          ]
+        },
+        {
+          "labels": 774,
+          "checkpoint_sha256": "67e3f3b11a2bb847f2cf856f09057350cfc7615dc1f2a467b48f69d3fc2c407c",
+          "outcome": "accurate",
+          "seconds": 35.955982379004126,
+          "maximum_directed_kl": 0.004733995201487005,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "accurate"
+            }
+          ]
+        },
+        {
+          "labels": 1254,
+          "checkpoint_sha256": "a84a593bf0cffcf560b13b1fb24db882cdc0a85a57868ac6902457c9466b63fa",
+          "outcome": "accurate",
+          "seconds": 57.86227211100049,
+          "maximum_directed_kl": 0.003940386848448656,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "accurate"
+            }
+          ]
+        },
+        {
+          "labels": 1284,
+          "checkpoint_sha256": "d1af133e4cfd7db4fc5f463a1553be814db0a4e0f05c2460849a9070acea2adb",
+          "outcome": "accurate",
+          "seconds": 58.74647768601426,
+          "maximum_directed_kl": 0.003926074743248094,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "accurate"
+            }
+          ]
+        }
+      ],
+      "first_confirmed_tested": 504,
+      "training": {
+        "labels": 1284,
+        "checkpoint_sha256": "d1af133e4cfd7db4fc5f463a1553be814db0a4e0f05c2460849a9070acea2adb",
+        "state": "training_complete_not_validated",
+        "reference_accessed": false,
+        "elapsed_training_seconds": 376.3649863140017,
+        "components": {
+          "labels": 5.669279320805799,
+          "acquisition": 156.71025454901974,
+          "fit": 151.6349297920824,
+          "conditioning": 57.392788298166124
+        }
+      }
+    },
+    {
+      "task": 33,
+      "kind": "trajectory",
+      "name": "count_n50_perfect_c200_s29_random",
+      "status": {
+        "state": "complete",
+        "scored_checkpoints": 6,
+        "first_confirmed_tested": null,
+        "final_outcome": "inaccurate"
+      },
+      "rows": [
+        {
+          "labels": 504,
+          "checkpoint_sha256": "fa50e9994631d0aa65539cfcd9ac6f9ef0993058f13a93bd6fdcf64cdda4ed20",
+          "outcome": "inaccurate",
+          "seconds": 24.60664540299331,
+          "maximum_directed_kl": 0.04922000131577946,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 534,
+          "checkpoint_sha256": "e36356288e16fda6f17530300f8a43db849e0ecb841269fccab37b544969823e",
+          "outcome": "inaccurate",
+          "seconds": 26.324586175993318,
+          "maximum_directed_kl": 0.04408522501635988,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 744,
+          "checkpoint_sha256": "3a7c2263c7588be8449faf0699d65c9efd320a2291c97bf5c584e6c17d1e906f",
+          "outcome": "inaccurate",
+          "seconds": 35.230178141995566,
+          "maximum_directed_kl": 0.02634136161001188,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 774,
+          "checkpoint_sha256": "da9a8b683685bde960096680b550aea0dd080e03c9fae8e0c22f483514ea6749",
+          "outcome": "inaccurate",
+          "seconds": 35.91588120901724,
+          "maximum_directed_kl": 0.024633009473769688,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 1254,
+          "checkpoint_sha256": "09b55877c23aff9766dd55e6455b074792db98243e53fad113ba3999c878d9b4",
+          "outcome": "inaccurate",
+          "seconds": 59.89121719301329,
+          "maximum_directed_kl": 0.011011828794465292,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 1284,
+          "checkpoint_sha256": "50ae4c5c96b465b5cf73a70940c2f57bf13e631230e409f30ca64a20efbe247e",
+          "outcome": "inaccurate",
+          "seconds": 58.90523021001718,
+          "maximum_directed_kl": 0.010624333307124846,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        }
+      ],
+      "first_confirmed_tested": null,
+      "training": {
+        "labels": 1284,
+        "checkpoint_sha256": "50ae4c5c96b465b5cf73a70940c2f57bf13e631230e409f30ca64a20efbe247e",
+        "state": "training_complete_not_validated",
+        "reference_accessed": false,
+        "elapsed_training_seconds": 238.63620715899742,
+        "components": {
+          "labels": 5.872914452105761,
+          "acquisition": 0.0,
+          "fit": 172.689128503931,
+          "conditioning": 55.851501040073344
+        }
+      }
+    },
+    {
+      "task": 34,
+      "kind": "trajectory",
+      "name": "count_n50_uncertain_c200_s29_bo",
+      "status": {
+        "state": "complete",
+        "scored_checkpoints": 6,
+        "first_confirmed_tested": 504,
+        "final_outcome": "accurate"
+      },
+      "rows": [
+        {
+          "labels": 504,
+          "checkpoint_sha256": "88a0f1842a4eafb0e6f2e7ff884ea9ddc9fc7cd3d812e5e1b3e4c47d984ea354",
+          "outcome": "accurate",
+          "seconds": 25.825555332005024,
+          "maximum_directed_kl": 0.003451076122072153,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "accurate"
+            }
+          ]
+        },
+        {
+          "labels": 534,
+          "checkpoint_sha256": "76fb0097cc5f8ac8e091851db0f620d33e3a7e517b2bd0f70ed7bd4262befc7e",
+          "outcome": "accurate",
+          "seconds": 28.602404175966512,
+          "maximum_directed_kl": 0.002864347369036138,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "accurate"
+            }
+          ]
+        },
+        {
+          "labels": 744,
+          "checkpoint_sha256": "a1a1d8d7475220368840b94b9463960c54b0750ea5ea7528d224a14c85a21d30",
+          "outcome": "accurate",
+          "seconds": 39.00053174101049,
+          "maximum_directed_kl": 0.0017153026507362673,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "accurate"
+            }
+          ]
+        },
+        {
+          "labels": 774,
+          "checkpoint_sha256": "3824ba9b29598c431f2d9d01fca075062cbce4c6be548e4857d7140bc1976b0c",
+          "outcome": "accurate",
+          "seconds": 40.51804508600617,
+          "maximum_directed_kl": 0.001546871965522308,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "accurate"
+            }
+          ]
+        },
+        {
+          "labels": 1254,
+          "checkpoint_sha256": "5c2ac8a99704a4fd3d3d765b4e28e08ddc1d5e75e46ff9cf02b2447671b08c64",
+          "outcome": "accurate",
+          "seconds": 63.08322985301493,
+          "maximum_directed_kl": 0.0006634788610000359,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "accurate"
+            }
+          ]
+        },
+        {
+          "labels": 1284,
+          "checkpoint_sha256": "630261cfe5c8769e62309c7eab15da5f466b72c9da255748bd8979f104798d7e",
+          "outcome": "accurate",
+          "seconds": 64.47660628298763,
+          "maximum_directed_kl": 0.0006476262637075264,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "accurate"
+            }
+          ]
+        }
+      ],
+      "first_confirmed_tested": 504,
+      "training": {
+        "labels": 1284,
+        "checkpoint_sha256": "630261cfe5c8769e62309c7eab15da5f466b72c9da255748bd8979f104798d7e",
+        "state": "training_complete_not_validated",
+        "reference_accessed": false,
+        "elapsed_training_seconds": 458.47572347003734,
+        "components": {
+          "labels": 6.64893822313752,
+          "acquisition": 189.36036966153188,
+          "fit": 191.8357268947293,
+          "conditioning": 66.47136233659694
+        }
+      }
+    },
+    {
+      "task": 35,
+      "kind": "trajectory",
+      "name": "count_n50_uncertain_c200_s29_random",
+      "status": {
+        "state": "complete",
+        "scored_checkpoints": 6,
+        "first_confirmed_tested": 1254,
+        "final_outcome": "accurate"
+      },
+      "rows": [
+        {
+          "labels": 504,
+          "checkpoint_sha256": "24dde92a024aa4d4855ab304031ef3bd94f96a754717a4f2f786a9ba4a125a2b",
+          "outcome": "inaccurate",
+          "seconds": 25.43640949501423,
+          "maximum_directed_kl": 0.04275433534486131,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 534,
+          "checkpoint_sha256": "6a69f1b0af13e83fa0e29a6be7a58c76c0f16091cc586ad74c5cb24d31c012ae",
+          "outcome": "inaccurate",
+          "seconds": 25.38418625597842,
+          "maximum_directed_kl": 0.03907123388335518,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 744,
+          "checkpoint_sha256": "ace83bd7a61d756a5cb52f6beb39e4b7bbf4e74315d02d5d180f98b863ee3d03",
+          "outcome": "inaccurate",
+          "seconds": 34.044452864996856,
+          "maximum_directed_kl": 0.026856650671800347,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 774,
+          "checkpoint_sha256": "2fe5f523dfd7e9b4de9e2a7bdb1ecfa77956a1703c49f12717eb40216afb2a01",
+          "outcome": "inaccurate",
+          "seconds": 34.591623112006346,
+          "maximum_directed_kl": 0.024658717563388464,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 1254,
+          "checkpoint_sha256": "c4036c033c9aa9d496ec8e26f9ff2fb949d416442f1fa2f45ec2f03aa69255bd",
+          "outcome": "accurate",
+          "seconds": 58.17625600702013,
+          "maximum_directed_kl": 0.009093968416683347,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "accurate"
+            }
+          ]
+        },
+        {
+          "labels": 1284,
+          "checkpoint_sha256": "0ef0dc5a29fb12f312aa3ef9bef2041ebc666a71dff8ab47036b03117bef31e3",
+          "outcome": "accurate",
+          "seconds": 59.611467832000926,
+          "maximum_directed_kl": 0.008567858286331552,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "accurate"
+            }
+          ]
+        }
+      ],
+      "first_confirmed_tested": 1254,
+      "training": {
+        "labels": 1284,
+        "checkpoint_sha256": "0ef0dc5a29fb12f312aa3ef9bef2041ebc666a71dff8ab47036b03117bef31e3",
+        "state": "training_complete_not_validated",
+        "reference_accessed": false,
+        "elapsed_training_seconds": 218.6844209629926,
+        "components": {
+          "labels": 5.941137584479293,
+          "acquisition": 0.0,
+          "fit": 151.88056280609453,
+          "conditioning": 56.829006101965206
+        }
+      }
+    },
+    {
+      "task": 36,
+      "kind": "trajectory",
+      "name": "count_n500_perfect_c200_s29_bo",
+      "status": {
+        "state": "complete",
+        "scored_checkpoints": 6,
+        "first_confirmed_tested": null,
+        "final_outcome": "inaccurate"
+      },
+      "rows": [
+        {
+          "labels": 504,
+          "checkpoint_sha256": "3e4ad93ee8dbe18c10b135cd7d6ffd636d14d3e66ed43797d121857b5d6f87b5",
+          "outcome": "inaccurate",
+          "seconds": 58.52721634300542,
+          "maximum_directed_kl": 0.07281572829048011,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 534,
+          "checkpoint_sha256": "a12a74c917cd41e6d40e5ed9b33103584fb5415c49300d53c4990ae3610cbe3f",
+          "outcome": "inaccurate",
+          "seconds": 62.59916462798719,
+          "maximum_directed_kl": 0.05342435595963715,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 744,
+          "checkpoint_sha256": "410528a4757b694503d13c6d5e836add16cbb0591643a2716a7b7091dd0b738b",
+          "outcome": "inaccurate",
+          "seconds": 85.07724426800269,
+          "maximum_directed_kl": 0.019880886108731163,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 774,
+          "checkpoint_sha256": "a467ef8c8cf07913e12b29e147a777c76a3ca7dbbb3187ec5e85d42794ca9f7d",
+          "outcome": "inaccurate",
+          "seconds": 88.12247113301419,
+          "maximum_directed_kl": 0.019002088295906976,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 1254,
+          "checkpoint_sha256": "5651ed51b596fe3c98061fbceb85f9e984f627845e11f4159f57bb96f2a186d6",
+          "outcome": "inaccurate",
+          "seconds": 139.9275597530068,
+          "maximum_directed_kl": 0.013875133048903556,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 1284,
+          "checkpoint_sha256": "4727420d88273e69711701fa7b7d2592ed66cc1fe98a7d1149b23fab4ccbf3ab",
+          "outcome": "inaccurate",
+          "seconds": 143.32427766601904,
+          "maximum_directed_kl": 0.0137734365947506,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        }
+      ],
+      "first_confirmed_tested": null,
+      "training": {
+        "labels": 1284,
+        "checkpoint_sha256": "4727420d88273e69711701fa7b7d2592ed66cc1fe98a7d1149b23fab4ccbf3ab",
+        "state": "training_complete_not_validated",
+        "reference_accessed": false,
+        "elapsed_training_seconds": 384.61574455798836,
+        "components": {
+          "labels": 5.859033822402125,
+          "acquisition": 165.49144091291237,
+          "fit": 151.47244724497432,
+          "conditioning": 57.685158304084325
+        }
+      }
+    },
+    {
+      "task": 37,
+      "kind": "trajectory",
+      "name": "count_n500_perfect_c200_s29_random",
+      "status": {
+        "state": "complete",
+        "scored_checkpoints": 6,
+        "first_confirmed_tested": null,
+        "final_outcome": "inaccurate"
+      },
+      "rows": [
+        {
+          "labels": 504,
+          "checkpoint_sha256": "1a6825409103216f72ca9f192ab895f0ef9b9e7f6991aa07ccf5a46f5026ba93",
+          "outcome": "inaccurate",
+          "seconds": 58.094685353004024,
+          "maximum_directed_kl": 1.5426369699670923,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 534,
+          "checkpoint_sha256": "ea0ec7c19c2686b9d7ea374121a9d65a5b7344a67e065f53a7feab3b00775f02",
+          "outcome": "inaccurate",
+          "seconds": 59.959759460994974,
+          "maximum_directed_kl": 1.2708490094762133,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 744,
+          "checkpoint_sha256": "4d270c29d44ee51f8d0296612a28f1c34b390193a0ed41c73339148fe68e28d8",
+          "outcome": "inaccurate",
+          "seconds": 82.77198869099084,
+          "maximum_directed_kl": 1.2580036462342306,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 774,
+          "checkpoint_sha256": "b4717d18009dfa1cc6733225249913357b8752049e7c3010ca0769c1cb56003c",
+          "outcome": "inaccurate",
+          "seconds": 86.07972002499446,
+          "maximum_directed_kl": 1.2128577457554601,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 1254,
+          "checkpoint_sha256": "2b2b47973a069bcaeef010832aa104608d67d8c37b1ae7928a3b126592a3f045",
+          "outcome": "inaccurate",
+          "seconds": 138.58658225399267,
+          "maximum_directed_kl": 0.6500346340011177,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 1284,
+          "checkpoint_sha256": "81b3a4c697d8fe1bf5b3cf0ec4e3f2a0d562455cc12abdc1963b8f6959ce48f5",
+          "outcome": "inaccurate",
+          "seconds": 142.3435739109991,
+          "maximum_directed_kl": 0.6365229781017099,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        }
+      ],
+      "first_confirmed_tested": null,
+      "training": {
+        "labels": 1284,
+        "checkpoint_sha256": "81b3a4c697d8fe1bf5b3cf0ec4e3f2a0d562455cc12abdc1963b8f6959ce48f5",
+        "state": "training_complete_not_validated",
+        "reference_accessed": false,
+        "elapsed_training_seconds": 259.9016565169877,
+        "components": {
+          "labels": 6.155921899917303,
+          "acquisition": 0.0,
+          "fit": 146.31374489302107,
+          "conditioning": 58.85141948101227
+        }
+      }
+    },
+    {
+      "task": 38,
+      "kind": "trajectory",
+      "name": "count_n500_uncertain_c200_s29_bo",
+      "status": {
+        "state": "complete",
+        "scored_checkpoints": 6,
+        "first_confirmed_tested": null,
+        "final_outcome": "inaccurate"
+      },
+      "rows": [
+        {
+          "labels": 504,
+          "checkpoint_sha256": "86310af1224bc243626596b976569ac2acddc34272c1db295ba0616df7216c47",
+          "outcome": "inaccurate",
+          "seconds": 58.29617319398676,
+          "maximum_directed_kl": 0.07180059094765728,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 534,
+          "checkpoint_sha256": "1aed4ec7503d26529459575496e1ee36410dd559bf3eb0ab2e0341ef7152512c",
+          "outcome": "inaccurate",
+          "seconds": 59.73655887300265,
+          "maximum_directed_kl": 0.06255966461068256,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 744,
+          "checkpoint_sha256": "4ada94799a8516876da5cbbe68385ae79ebeb6c226d384904c1aaf25d705bf4a",
+          "outcome": "inaccurate",
+          "seconds": 80.4315888370038,
+          "maximum_directed_kl": 0.022954362712751804,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 774,
+          "checkpoint_sha256": "e53266920b44f84c34020cabee5a708b261e205d90dcca85a328db869766816a",
+          "outcome": "inaccurate",
+          "seconds": 84.60679129100754,
+          "maximum_directed_kl": 0.021108595296481597,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 1254,
+          "checkpoint_sha256": "6b0687dae545662d495152e3e0901da04fbcd1b2c9cbdf3527a136af480ed483",
+          "outcome": "inaccurate",
+          "seconds": 134.474280859984,
+          "maximum_directed_kl": 0.01339559900649482,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 1284,
+          "checkpoint_sha256": "17db7b9ab24ba5fd2107af402a2dc76d40a8d04c607a4182b279d6a7cb780777",
+          "outcome": "inaccurate",
+          "seconds": 138.14633706997847,
+          "maximum_directed_kl": 0.013241309316908735,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        }
+      ],
+      "first_confirmed_tested": null,
+      "training": {
+        "labels": 1284,
+        "checkpoint_sha256": "17db7b9ab24ba5fd2107af402a2dc76d40a8d04c607a4182b279d6a7cb780777",
+        "state": "training_complete_not_validated",
+        "reference_accessed": false,
+        "elapsed_training_seconds": 386.6570927510038,
+        "components": {
+          "labels": 5.897837251541205,
+          "acquisition": 177.5491705018212,
+          "fit": 141.55945444703684,
+          "conditioning": 57.363433258171426
+        }
+      }
+    },
+    {
+      "task": 39,
+      "kind": "trajectory",
+      "name": "count_n500_uncertain_c200_s29_random",
+      "status": {
+        "state": "complete",
+        "scored_checkpoints": 6,
+        "first_confirmed_tested": null,
+        "final_outcome": "inaccurate"
+      },
+      "rows": [
+        {
+          "labels": 504,
+          "checkpoint_sha256": "71780eec95c0e46d30b51428053f8f9260174715363f43de631aebc946a17c1d",
+          "outcome": "inaccurate",
+          "seconds": 63.34036832599668,
+          "maximum_directed_kl": 1.3451626108336758,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 534,
+          "checkpoint_sha256": "322c31117965198871eb5835cdc310a8bb80c1138c5162748645163350b9a8b2",
+          "outcome": "inaccurate",
+          "seconds": 66.08485667000059,
+          "maximum_directed_kl": 1.1418499068784356,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 744,
+          "checkpoint_sha256": "2af91203fb26b3ec1031a55e52d2412f159d68d97e7f0a0f1404a54a6b4e35f6",
+          "outcome": "inaccurate",
+          "seconds": 89.6494315059972,
+          "maximum_directed_kl": 1.2319869781194213,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 774,
+          "checkpoint_sha256": "66164ac92302316ca78917c31308a9523712fab4497a02928efa88f2544436a0",
+          "outcome": "inaccurate",
+          "seconds": 91.6847109249793,
+          "maximum_directed_kl": 1.2081238072513178,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 1254,
+          "checkpoint_sha256": "4fb1960fb0d70f4a3bdc1717464dbf4ff88ed9cd2d55b5a5b0f361dddecc9cee",
+          "outcome": "inaccurate",
+          "seconds": 148.30240006698295,
+          "maximum_directed_kl": 0.6789117499904986,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        },
+        {
+          "labels": 1284,
+          "checkpoint_sha256": "953f231128d0c4d41b5e93b96a7f2e0833ff121c3a831dd89e61981b21fbeb6b",
+          "outcome": "inaccurate",
+          "seconds": 152.89813844999298,
+          "maximum_directed_kl": 0.6612146303173083,
+          "checkpoint_verified": true,
+          "attempts": [
+            {
+              "replicas": 16,
+              "outcome": "inaccurate"
+            }
+          ]
+        }
+      ],
+      "first_confirmed_tested": null,
+      "training": {
+        "labels": 1284,
+        "checkpoint_sha256": "953f231128d0c4d41b5e93b96a7f2e0833ff121c3a831dd89e61981b21fbeb6b",
+        "state": "training_complete_not_validated",
+        "reference_accessed": false,
+        "elapsed_training_seconds": 258.98356893099844,
+        "components": {
+          "labels": 6.880263338331133,
+          "acquisition": 0.0,
+          "fit": 183.60838607396,
+          "conditioning": 64.41339348687325
+        }
+      }
+    }
+  ]
+}

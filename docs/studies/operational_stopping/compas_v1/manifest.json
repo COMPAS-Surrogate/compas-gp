@@ -1,0 +1,48 @@
+{
+  "configuration": {
+    "initial_sobol": 128,
+    "boundary_points": 98,
+    "batch": 128,
+    "candidate_points": 4096,
+    "gp_quadrature_power": 14,
+    "audit_posterior": 64,
+    "audit_prior": 16,
+    "maximum_calls": 2200,
+    "fit_steps": 250,
+    "consecutive": 2
+  },
+  "tolerances": {
+    "prediction_abs": 0.1,
+    "prediction_rel": 0.01,
+    "prediction_q90": 1.0,
+    "prediction_max": 3.0,
+    "stability_kl": 0.001,
+    "mean_sd": 0.05,
+    "endpoint_sd": 0.05,
+    "width_fraction": 0.03,
+    "minimum_ess": 100.0,
+    "consecutive": 2,
+    "audit_rms": 0.1,
+    "audit_q95": 0.2,
+    "audit_weight_ess_fraction": 0.95
+  },
+  "groups": [
+    [
+      100,
+      "perfect"
+    ],
+    [
+      500,
+      "uncertain"
+    ]
+  ],
+  "acquisition_seed": 10117,
+  "scope": "two preselected original catalogue pilots; not independent calibration",
+  "posterior": "three shape coordinates plus exact conditional amplitude recovery in offline validation",
+  "source_sha256": {
+    "docs/studies/operational_stopping/compas_pilot.py": "a1a26e4acfa5e886902355dd7117f4c006cf5bc2156bd1886a7e918981d5392e",
+    "docs/studies/operational_stopping/run_study.py": "7cd3530fd7b8e45091acec709e06fce4f2897607569e47f661ddcbad0d39f61f",
+    "docs/studies/operational_stopping/PROTOCOL.md": "1ab7e128f6344055841c0896ab034103c61cf2266f0503f070a7aab69a4fbe65",
+    "src/cosmic_integration/lnl_surrogate/stopping.py": "c80c85f5d2143118781ec70b33c2850b3d5318a6c7f252adb24aa91214e5922f"
+  }
+}

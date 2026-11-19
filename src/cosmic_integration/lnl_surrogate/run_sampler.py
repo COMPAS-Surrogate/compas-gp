@@ -86,9 +86,10 @@ def sample_lnl_surrogate(
     are translated so existing callers keep working.
 
     ``uncertainty_beta`` is accepted for backwards compatibility. A non-zero
-    value selects the ``"marginal"`` target, which folds in the GP uncertainty
-    exactly (``mu + sigma^2/2``) rather than by the old ``mu - beta*sigma``
-    heuristic; see :mod:`.nuts_sampler`.
+    value selects the legacy ``"marginal"`` target (``mu + sigma^2/2``).
+    This capped approximation is supported only for uncompressed scalers
+    without soft clipping; nonlinear transforms raise an error. It is not
+    a calibrated uncertainty safeguard; see :mod:`.nuts_sampler`.
     """
     outdir_path = Path(outdir)
     outdir_path.mkdir(parents=True, exist_ok=True)

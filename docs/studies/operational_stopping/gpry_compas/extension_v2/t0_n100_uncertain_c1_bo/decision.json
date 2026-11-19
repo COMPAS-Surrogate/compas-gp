@@ -1,0 +1,39 @@
+{
+  "name": "t0_n100_uncertain_c1_bo",
+  "truth_index": 0,
+  "expected_events": 100,
+  "mode": "uncertain",
+  "case": 1,
+  "strategy": "bo",
+  "seed": 6012,
+  "actual_events": 94,
+  "rules": {
+    "original": {
+      "training": 208,
+      "audit": 0,
+      "total": 208
+    },
+    "precision_refined": {
+      "training": 208,
+      "audit": 0,
+      "total": 208
+    },
+    "guarded": {
+      "training": 448,
+      "audit": 192,
+      "total": 640
+    }
+  },
+  "training_labels": 658,
+  "audit_labels": 192,
+  "reference_accessed": false,
+  "complete": true,
+  "timing": {
+    "labels": 3.7215983851638157,
+    "fit": 41.54900687097688,
+    "acquisition": 27.784220117260702,
+    "stability": 5.566136121953605,
+    "audit": 1.1157909579924308
+  },
+  "wall_seconds": 81.41432054102188
+}

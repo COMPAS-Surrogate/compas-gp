@@ -1,0 +1,47 @@
+{
+  "profiling_job": 16578223,
+  "remote": "/fred/oz303/avajpeyi/studies/compas_gp4_runtime_20260916",
+  "paper_array": 16547555,
+  "pending_cancelled": 612,
+  "pending_indices": [
+    20,
+    631
+  ],
+  "running_preserved": [
+    16,
+    17,
+    18,
+    19
+  ],
+  "hold_attempts": "Rejected by Slurm: Requested operation not supported on this system",
+  "profiler_sha256": "f4a554c6c1aef5f5e03f9d152dbd19fd0d871433094a24a07ba1aef25113cbbf",
+  "scope": "One CPU, 16 GB, 45 minutes. Saved checkpoint profiling; no campaign source or likelihood changes.",
+  "warm_refit_job": 16578315,
+  "one_step_job": 16578318,
+  "failed_warm_refit_job": {
+    "job": 16578285,
+    "reason": "Profiling harness referenced FittedJaxGP through a module which did not export it; import corrected; science code unaffected."
+  },
+  "cancelled_control_job": {
+    "job": 16578307,
+    "reason": "Dependency on failed harness; dependency update rejected by Slurm; resubmitted."
+  },
+  "completed_benchmarks": [
+    {
+      "job": 16578223,
+      "exit_code": "0:0",
+      "seconds": 231
+    },
+    {
+      "job": 16578315,
+      "exit_code": "0:0",
+      "seconds": 156
+    },
+    {
+      "job": 16578318,
+      "exit_code": "0:0",
+      "seconds": 31
+    }
+  ],
+  "validation": "Fast suite 192 passed, 3 deselected; corrected profiler targeted test passed; live benchmarks completed; saved query errors independently recomputed."
+}

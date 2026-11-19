@@ -1,0 +1,170 @@
+{
+  "rules": {
+    "fixed96": {
+      "training": 358,
+      "audit": 288,
+      "total": 646
+    },
+    "adaptive384": {
+      "training": 358,
+      "audit": 288,
+      "total": 646
+    }
+  },
+  "audit_labels": {
+    "fixed96": 288,
+    "adaptive384": 288
+  },
+  "history": [
+    {
+      "training": 238,
+      "checkpoint_sha256": "2ca3b5a95ae1ad256572b7ba50e8174a6332422e57dc9a9deb857f2eb375702a",
+      "numerical_checks": [
+        {
+          "power": 14,
+          "numerical": true,
+          "posterior_precision": {
+            "mean_sd": 0.006254307763841763,
+            "endpoint_sd": 0.03867666414451853,
+            "width_fraction": 0.009210671237614099
+          },
+          "maximum_log_normalizer_difference": 0.006678056509088037,
+          "ess": [
+            2866.92644839415,
+            2881.7571097383984
+          ]
+        }
+      ],
+      "diagnostics": {
+        "counter": 1,
+        "streaks": {
+          "original": 4,
+          "gaussian": 4,
+          "joint": 1
+        }
+      },
+      "stages": [
+        {
+          "size": 96,
+          "increment": 96,
+          "result": {
+            "action": "continue_training",
+            "reason": "posterior_change_detected",
+            "passed": false,
+            "samples": 96,
+            "kl_gp_to_direct": 0.005566228465032392,
+            "kl_direct_to_gp": 0.007790498764414268,
+            "maximum_directed_kl": 0.007790498764414268,
+            "bootstrap_05_kl": 0.003836540744908983,
+            "bootstrap_95_kl": 0.013318535447111188,
+            "gp_ess": 77.32479338649074,
+            "direct_ess": 77.75636831756643,
+            "posterior_rms": 0.09073587396242042,
+            "posterior_q95": 0.1656566065591957
+          },
+          "path": "t0_n700_perfect_c200_bo/audit_238_96.npz"
+        }
+      ]
+    },
+    {
+      "training": 298,
+      "checkpoint_sha256": "83398c4d7abd50945f4e1c0e5f14663d4c163af5b78adacc028fcb1b7b4aa575",
+      "numerical_checks": [
+        {
+          "power": 14,
+          "numerical": true,
+          "posterior_precision": {
+            "mean_sd": 0.008620013848257191,
+            "endpoint_sd": 0.03382543156643772,
+            "width_fraction": 0.0056887714000650735
+          },
+          "maximum_log_normalizer_difference": 0.005584449992682039,
+          "ess": [
+            2844.3288215851917,
+            2858.2783811705813
+          ]
+        }
+      ],
+      "diagnostics": {
+        "counter": 5,
+        "streaks": {
+          "original": 6,
+          "gaussian": 6,
+          "joint": 3
+        }
+      },
+      "stages": [
+        {
+          "size": 96,
+          "increment": 96,
+          "result": {
+            "action": "continue_training",
+            "reason": "audit_budget_inconclusive",
+            "passed": false,
+            "samples": 96,
+            "kl_gp_to_direct": 0.002933532749311014,
+            "kl_direct_to_gp": 0.00314334212806953,
+            "maximum_directed_kl": 0.00314334212806953,
+            "bootstrap_05_kl": 0.0020800838573301643,
+            "bootstrap_95_kl": 0.004234622860613148,
+            "gp_ess": 78.83281188857319,
+            "direct_ess": 79.07155056045694,
+            "posterior_rms": 0.0853886440023969,
+            "posterior_q95": 0.17708325973428013
+          },
+          "path": "t0_n700_perfect_c200_bo/audit_298_96.npz"
+        }
+      ]
+    },
+    {
+      "training": 358,
+      "checkpoint_sha256": "44898746b86f993af64c4c5be1a9abcc3c36ab982d7f02db931260920a0462d2",
+      "numerical_checks": [
+        {
+          "power": 14,
+          "numerical": true,
+          "posterior_precision": {
+            "mean_sd": 0.006458429635867761,
+            "endpoint_sd": 0.031995643534915776,
+            "width_fraction": 0.007472879740540561
+          },
+          "maximum_log_normalizer_difference": 0.004769116381623917,
+          "ess": [
+            2838.4600660745873,
+            2857.1731195650236
+          ]
+        }
+      ],
+      "diagnostics": {
+        "counter": 1,
+        "streaks": {
+          "original": 8,
+          "gaussian": 8,
+          "joint": 5
+        }
+      },
+      "stages": [
+        {
+          "size": 96,
+          "increment": 96,
+          "result": {
+            "action": "stop",
+            "reason": "posterior_change_small",
+            "passed": true,
+            "samples": 96,
+            "kl_gp_to_direct": 0.0010806154778634086,
+            "kl_direct_to_gp": 0.001114946319206481,
+            "maximum_directed_kl": 0.001114946319206481,
+            "bootstrap_05_kl": 0.0006067627562197358,
+            "bootstrap_95_kl": 0.001517345423398117,
+            "gp_ess": 80.69528921110471,
+            "direct_ess": 80.3916027070119,
+            "posterior_rms": 0.05200641062675697,
+            "posterior_q95": 0.13135761970935386
+          },
+          "path": "t0_n700_perfect_c200_bo/audit_358_96.npz"
+        }
+      ]
+    }
+  ]
+}

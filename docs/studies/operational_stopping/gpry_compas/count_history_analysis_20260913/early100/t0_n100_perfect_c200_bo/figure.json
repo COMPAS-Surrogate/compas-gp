@@ -1,0 +1,51 @@
+{
+  "name": "t0_n100_perfect_c200_bo",
+  "early_points": 100,
+  "expected": 100,
+  "mode": "perfect",
+  "events": 108,
+  "selected": {
+    "training": 298,
+    "audit": 192,
+    "total": 490
+  },
+  "truth": [
+    -0.3,
+    0.35,
+    0.01,
+    4.7
+  ],
+  "reference_label": "Direct reference",
+  "reference_overlay_displayed": false,
+  "curve_reference": "Validated 1258-point GP; self excluded",
+  "selected_label": "Audit stop: 298",
+  "draw_checks": {
+    "reference": {
+      "mean_error_sd": 0.0015811985085829416,
+      "endpoint_error_sd": 0.007578617690078675
+    },
+    "100": {
+      "mean_error_sd": 0.0021433703474922454,
+      "endpoint_error_sd": 0.008887793796095632
+    },
+    "298": {
+      "mean_error_sd": 0.001958436039316898,
+      "endpoint_error_sd": 0.003555186312040761
+    }
+  },
+  "source_sha256": {
+    "docs/studies/event_uncertainty/convergence_20260910/ensemble/reference_n100_p16_0.npz": "8d490ef0d238277cacbd522f084998f8396782fbf76f952b3c4b65e4ac30b510",
+    "docs/studies/event_uncertainty/convergence_20260910/ensemble/proposal_n100_p16_0.npz": "633f496389d77d1ccb8de3934b9c94af14877ecbc6acaeea2e814b1e8a8da219",
+    "docs/studies/event_uncertainty/convergence_20260910/ensemble/reference_n100_p16_1.npz": "0ed0bfe227ab9931d40aa251f842a8a359886f71e59777f9375d54ef33e59ec4",
+    "docs/studies/event_uncertainty/convergence_20260910/ensemble/proposal_n100_p16_1.npz": "342431cfe7fc315d931a1e4be1f1e729f8440b69c876cc5c0ca26d5d2cc30f79",
+    "docs/studies/operational_stopping/gpry_compas/count_history_20260912/training/t0_n100_perfect_c200_bo/catalogue.npz": "7f7e6b49a5afe158816e27e449547e8efa948dbd0b744543b3fdb0a830afa57e",
+    "docs/studies/operational_stopping/gpry_compas/count_history_20260912/offline/t0_n100_perfect_c200_bo/history.json": "2c2c3b013c1b358713a01722ebbc19905aede15872e2d08610585ff939af89fe",
+    "docs/studies/operational_stopping/gpry_compas/count_history_20260912/offline/t0_n100_perfect_c200_bo/outcome.json": "c393f0f76ad1fb182e71a6c6ddad2735b7374fc71954b7bf7c3fd3c6b34f187a",
+    "docs/studies/operational_stopping/gpry_compas/count_history_20260912/offline/t0_n100_perfect_c200_bo/reference_weights.npz": "4de27a8df87cdcee501dca08cd51fea866267c39b3352b397595d653f37b6601",
+    "docs/studies/operational_stopping/gpry_compas/count_history_analysis_20260913/early100/t0_n100_perfect_c200_bo/posterior_100.npz": "73b17e2415243cbd37c102a7c7bb135706b56edb4d12569536cf90883d4603ac",
+    "docs/studies/operational_stopping/gpry_compas/count_history_analysis_20260913/early100/t0_n100_perfect_c200_bo/checkpoint_100.npz": "c2d3e106f548319ef5f90b9b76caeba7679abbb9a0971413c653010788991ac4",
+    "docs/studies/operational_stopping/gpry_compas/count_history_analysis_20260913/early100/t0_n100_perfect_c200_bo/score.json": "46faacd2f2152a21d8ba8c9dbb895065fce2fda885893f214cfd01ba8d83ba03",
+    "docs/studies/operational_stopping/gpry_compas/count_history_20260912/offline/t0_n100_perfect_c200_bo/posterior_298.npz": "9f95a7e464581877452cd3d3c8eee3349a3466724270f169057d93930ff1d436"
+  },
+  "selection": "Catalogue 200; frozen fixed96 audit stop"
+}

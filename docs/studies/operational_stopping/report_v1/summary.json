@@ -1,0 +1,72 @@
+{
+  "confirmation_cases": 25,
+  "outcomes": {
+    "validated_stop": 11,
+    "no_stop": 9,
+    "premature": 5
+  },
+  "groups": {
+    "correlated": {
+      "cases": 5,
+      "outcomes": {
+        "validated_stop": 4,
+        "no_stop": 1
+      },
+      "median_stop_calls": 336.0,
+      "median_extra_calls_after_first_accurate_checkpoint": 256.0,
+      "accurate_but_no_stop_seeds": [
+        2004
+      ]
+    },
+    "curved": {
+      "cases": 5,
+      "outcomes": {
+        "no_stop": 2,
+        "validated_stop": 3
+      },
+      "median_stop_calls": 672.0,
+      "median_extra_calls_after_first_accurate_checkpoint": 528.0,
+      "accurate_but_no_stop_seeds": [
+        2000,
+        2001
+      ]
+    },
+    "two_modes": {
+      "cases": 5,
+      "outcomes": {
+        "no_stop": 4,
+        "validated_stop": 1
+      },
+      "median_stop_calls": 320.0,
+      "median_extra_calls_after_first_accurate_checkpoint": 240.0,
+      "accurate_but_no_stop_seeds": [
+        2000,
+        2001,
+        2002,
+        2004
+      ]
+    },
+    "narrow": {
+      "cases": 5,
+      "outcomes": {
+        "validated_stop": 3,
+        "no_stop": 2
+      },
+      "median_stop_calls": 576.0,
+      "median_extra_calls_after_first_accurate_checkpoint": 464.0,
+      "accurate_but_no_stop_seeds": [
+        2001,
+        2003
+      ]
+    },
+    "hidden_mode": {
+      "cases": 5,
+      "outcomes": {
+        "premature": 5
+      },
+      "median_stop_calls": 432.0,
+      "median_extra_calls_after_first_accurate_checkpoint": null,
+      "accurate_but_no_stop_seeds": []
+    }
+  }
+}

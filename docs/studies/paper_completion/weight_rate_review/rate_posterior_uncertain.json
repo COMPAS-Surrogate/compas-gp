@@ -1,0 +1,27 @@
+{
+  "expected": 30,
+  "mode": "uncertain",
+  "events": 30,
+  "duration": 0.05334592486614823,
+  "training_points": 738,
+  "draws": 20000,
+  "posterior_kl": {
+    "kl_direct_to_gp": 0.0001596608753099872,
+    "kl_gp_to_direct": 0.00015422227469686592
+  },
+  "max_split_quantile_difference_over_median": 0.019817606927572305,
+  "total_expected_count_quantiles": [
+    22.471361395446216,
+    30.052022820260405,
+    39.47268987930583
+  ],
+  "sources": {
+    "docs/studies/event_uncertainty/paired_20260912/pilot/n30_uncertain_case0_bo/checkpoint_738.npz": "26814c43c2cf710db21cd881804fb87e8ef6b68f8eaeb0f987029f7b6d9bf9d6",
+    "docs/studies/event_uncertainty/paired_20260912/pilot/reference_n30_p16_0.npz": "7f2789b3cc0c1e6d969ce1e1f2255c261717d6547c38f928cddb891a852422d5",
+    "docs/studies/event_uncertainty/paired_20260912/pilot/proposal_n30_p16_0.npz": "f36fbeefc9f4d55f6864e81efc9c911e4fcfe80cd68425a7a5e2f52125d24489",
+    "docs/studies/event_uncertainty/paired_20260912/pilot/catalogue_30_uncertain_0.npz": "d0488dbb9b5dc79bc55799a0baf39a0ffff7edc1f48934b873b1556117aa2fbd",
+    "docs/studies/event_uncertainty/paired_20260912/pilot/grid.npz": "75d3a52a58daa97bd56dff735dbc08dd86e2c220baa8d35e2ae77ba497818145"
+  },
+  "script_sha256": "e77ac8df63f1235cbb50eea0841e5b40e3770786f9cc790e8640b50fec698491",
+  "definition": "Binwise posterior quantiles of T*r, including amplitude; no Poisson or measurement noise"
+}

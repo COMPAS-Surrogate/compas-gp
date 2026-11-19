@@ -1,0 +1,232 @@
+{
+  "stopping": {
+    "bo": {
+      "original": {
+        "outcomes": {
+          "accurate": 21,
+          "premature": 1,
+          "no_stop": 2
+        },
+        "stopped": 22,
+        "total": 24,
+        "median_training": 328.0,
+        "median_total": 328.0
+      },
+      "precision_refined": {
+        "outcomes": {
+          "accurate": 22,
+          "premature": 2
+        },
+        "stopped": 24,
+        "total": 24,
+        "median_training": 328.0,
+        "median_total": 328.0
+      },
+      "guarded": {
+        "outcomes": {
+          "accurate": 15,
+          "no_stop": 9
+        },
+        "stopped": 15,
+        "total": 24,
+        "median_training": 418.0,
+        "median_total": 640.0
+      },
+      "mass_guarded": {
+        "outcomes": {
+          "accurate": 21,
+          "no_stop": 3
+        },
+        "stopped": 21,
+        "total": 24,
+        "median_training": 388.0,
+        "median_total": 484.0
+      }
+    },
+    "random": {
+      "original": {
+        "outcomes": {
+          "no_stop": 21,
+          "premature": 3
+        },
+        "stopped": 3,
+        "total": 24,
+        "median_training": 448.0,
+        "median_total": 448.0
+      },
+      "precision_refined": {
+        "outcomes": {
+          "no_stop": 20,
+          "premature": 4
+        },
+        "stopped": 4,
+        "total": 24,
+        "median_training": 448.0,
+        "median_total": 448.0
+      },
+      "guarded": {
+        "outcomes": {
+          "no_stop": 24
+        },
+        "stopped": 0,
+        "total": 24,
+        "median_training": null,
+        "median_total": null
+      },
+      "mass_guarded": {
+        "outcomes": {
+          "no_stop": 24
+        },
+        "stopped": 0,
+        "total": 24,
+        "median_training": null,
+        "median_total": null
+      }
+    }
+  },
+  "final": {
+    "bo": {
+      "accurate": 24,
+      "total": 24,
+      "median_kl": 0.0004269359672101343,
+      "unresolved": 0
+    },
+    "random": {
+      "accurate": 5,
+      "total": 24,
+      "median_kl": 0.048844891472997747,
+      "unresolved": 0
+    }
+  },
+  "paired": {
+    "bo_lower_kl": 24,
+    "pairs": 24,
+    "total_pairs": 24,
+    "median_random_to_bo_kl": 107.89896935200693
+  },
+  "verification": {
+    "state": "passed",
+    "decision_sha256": "4b9c217c7a526d1f8b42ec60da5cf8fbd32da370c139d234e395995e6f178630",
+    "mass_decision_sha256": "73ab38e0dabf1480ba1b4a73e2fac259b10e76bf49753e893c49e8629795c748",
+    "source_files": 6,
+    "max_prediction_difference": 3.637978807091713e-10,
+    "batches": 9600,
+    "predictions_checked": 2880,
+    "checkpoints": 1008,
+    "training_labels": 31584,
+    "audit_labels": 5472,
+    "mass_audit_labels": 2976,
+    "matched_pairs": 24
+  },
+  "confirmation": {
+    "bo": {
+      "original": {
+        "outcomes": {
+          "accurate": 14,
+          "no_stop": 2
+        },
+        "stopped": 14,
+        "total": 16,
+        "median_training": 328.0,
+        "median_total": 328.0
+      },
+      "precision_refined": {
+        "outcomes": {
+          "accurate": 15,
+          "premature": 1
+        },
+        "stopped": 16,
+        "total": 16,
+        "median_training": 328.0,
+        "median_total": 328.0
+      },
+      "guarded": {
+        "outcomes": {
+          "no_stop": 6,
+          "accurate": 10
+        },
+        "stopped": 10,
+        "total": 16,
+        "median_training": 418.0,
+        "median_total": 691.0
+      },
+      "mass_guarded": {
+        "outcomes": {
+          "accurate": 13,
+          "no_stop": 3
+        },
+        "stopped": 13,
+        "total": 16,
+        "median_training": 388.0,
+        "median_total": 484.0
+      }
+    },
+    "random": {
+      "original": {
+        "outcomes": {
+          "no_stop": 14,
+          "premature": 2
+        },
+        "stopped": 2,
+        "total": 16,
+        "median_training": 463.0,
+        "median_total": 463.0
+      },
+      "precision_refined": {
+        "outcomes": {
+          "no_stop": 13,
+          "premature": 3
+        },
+        "stopped": 3,
+        "total": 16,
+        "median_training": 448.0,
+        "median_total": 448.0
+      },
+      "guarded": {
+        "outcomes": {
+          "no_stop": 16
+        },
+        "stopped": 0,
+        "total": 16,
+        "median_training": null,
+        "median_total": null
+      },
+      "mass_guarded": {
+        "outcomes": {
+          "no_stop": 16
+        },
+        "stopped": 0,
+        "total": 16,
+        "median_training": null,
+        "median_total": null
+      }
+    }
+  },
+  "mass_confirmation": {
+    "bo": {
+      "outcomes": {
+        "accurate": 13,
+        "no_stop": 3
+      },
+      "stopped": 13,
+      "total": 16,
+      "median_training": 388.0,
+      "median_total": 484.0
+    },
+    "random": {
+      "outcomes": {
+        "no_stop": 16
+      },
+      "stopped": 0,
+      "total": 16,
+      "median_training": null,
+      "median_total": null
+    }
+  },
+  "mass_audit_attempted_cases": {
+    "bo": 24,
+    "random": 0
+  },
+  "audit_attempts": 57,
+  "broad_only_rejections": 33
+}

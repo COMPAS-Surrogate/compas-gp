@@ -1,0 +1,25 @@
+{
+  "strategy": "posterior_variance",
+  "catalogues": 3,
+  "cases": [
+    0,
+    1,
+    2
+  ],
+  "training_seeds": [
+    17,
+    29,
+    43
+  ],
+  "checkpoints": [
+    226,
+    354,
+    482,
+    610,
+    738
+  ],
+  "seconds": 115.95591245801188,
+  "cache_seconds": 69.93528858300124,
+  "source_sha256": "dad3ca2bde9be4f0f9c245b45f22eb6300137c8785768c430338937f78198f79",
+  "scope": "Paired targets at identical training data. Initial 128 Sobol plus 98 anchors; four 128-point acquisition batches; strategy field distinguishes EI/variance BO, fixed Sobol prefixes, and likelihood-variance acquisition. Latent GP uncertainty through exact sqrt inverse. Three shape parameters; full-joint KL equal only when both use same exact conditional amplitude. Quadrature KL, not an exact integral. Cached candidate labels never enter acquisition; cache cost is not per-trajectory direct-call cost."
+}

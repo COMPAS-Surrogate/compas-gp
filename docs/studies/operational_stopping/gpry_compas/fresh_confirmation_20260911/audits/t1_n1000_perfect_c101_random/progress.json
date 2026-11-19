@@ -1,0 +1,426 @@
+{
+  "rules": {
+    "fixed96": null,
+    "adaptive384": null
+  },
+  "audit_labels": {
+    "fixed96": 768,
+    "adaptive384": 768
+  },
+  "history": [
+    {
+      "training": 238,
+      "checkpoint_sha256": "4ea81345f6462a1509717872d2c58d82ec6db07fd6a8bb09f659f48f98ec0206",
+      "numerical_checks": [
+        {
+          "power": 14,
+          "numerical": false,
+          "posterior_precision": {
+            "mean_sd": 0.019412892202784592,
+            "endpoint_sd": 0.05289577910808244,
+            "width_fraction": 0.031464782264646995
+          },
+          "maximum_log_normalizer_difference": 0.005236291663322845,
+          "ess": [
+            2336.94520699018,
+            2334.3535380527774
+          ]
+        },
+        {
+          "power": 15,
+          "numerical": true,
+          "posterior_precision": {
+            "mean_sd": 0.0039046847500269193,
+            "endpoint_sd": 0.03325802481587479,
+            "width_fraction": 0.015160624629443564
+          },
+          "maximum_log_normalizer_difference": 0.002712911378694116,
+          "ess": [
+            4680.275480884071,
+            4685.855756779278
+          ]
+        }
+      ],
+      "diagnostics": {
+        "counter": 0,
+        "streaks": {
+          "original": 0,
+          "gaussian": 2,
+          "joint": 0
+        }
+      },
+      "stages": [
+        {
+          "size": 96,
+          "increment": 96,
+          "result": {
+            "action": "continue_training",
+            "reason": "posterior_change_detected",
+            "passed": false,
+            "samples": 96,
+            "kl_gp_to_direct": 0.16909472430517278,
+            "kl_direct_to_gp": 0.18690723545119264,
+            "maximum_directed_kl": 0.18690723545119264,
+            "bootstrap_05_kl": 0.12732489815739512,
+            "bootstrap_95_kl": 0.24281665094794347,
+            "gp_ess": 81.2390589783601,
+            "direct_ess": 64.14368750912351,
+            "posterior_rms": 0.6322311874192648,
+            "posterior_q95": 1.2843546031216306
+          },
+          "path": "t1_n1000_perfect_c101_random/audit_238_96.npz"
+        }
+      ]
+    },
+    {
+      "training": 298,
+      "checkpoint_sha256": "75fd1ed34b6dca74bbf8f989f837a0b55ccc31db253cb2015363149793a57802",
+      "numerical_checks": [
+        {
+          "power": 14,
+          "numerical": true,
+          "posterior_precision": {
+            "mean_sd": 0.011216243158440596,
+            "endpoint_sd": 0.04542777246428803,
+            "width_fraction": 0.019245266573504782
+          },
+          "maximum_log_normalizer_difference": 0.01614571760455874,
+          "ess": [
+            2606.9377603394414,
+            2576.489551648194
+          ]
+        }
+      ],
+      "diagnostics": {
+        "counter": 0,
+        "streaks": {
+          "original": 1,
+          "gaussian": 4,
+          "joint": 0
+        }
+      },
+      "stages": [
+        {
+          "size": 96,
+          "increment": 96,
+          "result": {
+            "action": "continue_training",
+            "reason": "posterior_change_detected",
+            "passed": false,
+            "samples": 96,
+            "kl_gp_to_direct": 0.22510629336435434,
+            "kl_direct_to_gp": 0.23405362860429269,
+            "maximum_directed_kl": 0.23405362860429269,
+            "bootstrap_05_kl": 0.18141145368814784,
+            "bootstrap_95_kl": 0.2842747997055364,
+            "gp_ess": 85.02640321933258,
+            "direct_ess": 62.73504651045027,
+            "posterior_rms": 0.7001683620227894,
+            "posterior_q95": 1.3260323219668064
+          },
+          "path": "t1_n1000_perfect_c101_random/audit_298_96.npz"
+        }
+      ]
+    },
+    {
+      "training": 358,
+      "checkpoint_sha256": "b5ab1244f1e23fcacc6bd3356e25398a306cfae3c193f47b756922d2b1d342f0",
+      "numerical_checks": [
+        {
+          "power": 14,
+          "numerical": true,
+          "posterior_precision": {
+            "mean_sd": 0.015906998557764153,
+            "endpoint_sd": 0.04435490890352937,
+            "width_fraction": 0.01385326247683727
+          },
+          "maximum_log_normalizer_difference": 0.0012254269479399227,
+          "ess": [
+            2750.9326515217736,
+            2747.394481547766
+          ]
+        }
+      ],
+      "diagnostics": {
+        "counter": 0,
+        "streaks": {
+          "original": 1,
+          "gaussian": 6,
+          "joint": 0
+        }
+      },
+      "stages": [
+        {
+          "size": 96,
+          "increment": 96,
+          "result": {
+            "action": "continue_training",
+            "reason": "audit_budget_inconclusive",
+            "passed": false,
+            "samples": 96,
+            "kl_gp_to_direct": 0.33209826254609337,
+            "kl_direct_to_gp": 0.5865166962834386,
+            "maximum_directed_kl": 0.5865166962834386,
+            "bootstrap_05_kl": 0.15366664603951521,
+            "bootstrap_95_kl": 1.0593770872373334,
+            "gp_ess": 82.50657353857049,
+            "direct_ess": 25.585955794535117,
+            "posterior_rms": 0.7526136130331877,
+            "posterior_q95": 1.3193306773301166
+          },
+          "path": "t1_n1000_perfect_c101_random/audit_358_96.npz"
+        }
+      ]
+    },
+    {
+      "training": 418,
+      "checkpoint_sha256": "8821385de4457151ac43ff6e8027a18158cc33c5357e64380af04ad5d8b645d1",
+      "numerical_checks": [
+        {
+          "power": 14,
+          "numerical": true,
+          "posterior_precision": {
+            "mean_sd": 0.007757857875604063,
+            "endpoint_sd": 0.045159162054410104,
+            "width_fraction": 0.015961826056839046
+          },
+          "maximum_log_normalizer_difference": 0.0020380837072480062,
+          "ess": [
+            2912.8319234046894,
+            2921.91264170297
+          ]
+        }
+      ],
+      "diagnostics": {
+        "counter": 0,
+        "streaks": {
+          "original": 3,
+          "gaussian": 8,
+          "joint": 0
+        }
+      },
+      "stages": [
+        {
+          "size": 96,
+          "increment": 96,
+          "result": {
+            "action": "continue_training",
+            "reason": "posterior_change_detected",
+            "passed": false,
+            "samples": 96,
+            "kl_gp_to_direct": 0.07975207423903946,
+            "kl_direct_to_gp": 0.07254509537405843,
+            "maximum_directed_kl": 0.07975207423903946,
+            "bootstrap_05_kl": 0.05765430668770238,
+            "bootstrap_95_kl": 0.10635016310366688,
+            "gp_ess": 81.44597705184898,
+            "direct_ess": 72.3247661941835,
+            "posterior_rms": 0.441561454732849,
+            "posterior_q95": 0.9239506394907824
+          },
+          "path": "t1_n1000_perfect_c101_random/audit_418_96.npz"
+        }
+      ]
+    },
+    {
+      "training": 478,
+      "checkpoint_sha256": "b0b18a5ad79aa846367abc368a6cb6fa8e0267d8d2a6f47a82bb8d43c388cd03",
+      "numerical_checks": [
+        {
+          "power": 14,
+          "numerical": true,
+          "posterior_precision": {
+            "mean_sd": 0.008245514432901307,
+            "endpoint_sd": 0.034119484331115064,
+            "width_fraction": 0.010443578815534149
+          },
+          "maximum_log_normalizer_difference": 0.0005934562964284851,
+          "ess": [
+            2991.2907179571584,
+            3009.6707905176377
+          ]
+        }
+      ],
+      "diagnostics": {
+        "counter": 0,
+        "streaks": {
+          "original": 5,
+          "gaussian": 10,
+          "joint": 0
+        }
+      },
+      "stages": [
+        {
+          "size": 96,
+          "increment": 96,
+          "result": {
+            "action": "continue_training",
+            "reason": "posterior_change_detected",
+            "passed": false,
+            "samples": 96,
+            "kl_gp_to_direct": 0.06962272692267135,
+            "kl_direct_to_gp": 0.0658720372609459,
+            "maximum_directed_kl": 0.06962272692267135,
+            "bootstrap_05_kl": 0.05435651011666787,
+            "bootstrap_95_kl": 0.09163589146025,
+            "gp_ess": 84.23483902314081,
+            "direct_ess": 75.83500388086091,
+            "posterior_rms": 0.34795533787446387,
+            "posterior_q95": 0.737016600655363
+          },
+          "path": "t1_n1000_perfect_c101_random/audit_478_96.npz"
+        }
+      ]
+    },
+    {
+      "training": 538,
+      "checkpoint_sha256": "85424554f012c2de663adfc424db3bd4a964b2d8a73ea629055c186b0796d84a",
+      "numerical_checks": [
+        {
+          "power": 14,
+          "numerical": true,
+          "posterior_precision": {
+            "mean_sd": 0.014507827547316719,
+            "endpoint_sd": 0.03844512538960318,
+            "width_fraction": 0.011956439154213516
+          },
+          "maximum_log_normalizer_difference": 0.005288441812581368,
+          "ess": [
+            3100.258334605782,
+            3070.8853599051613
+          ]
+        }
+      ],
+      "diagnostics": {
+        "counter": 2,
+        "streaks": {
+          "original": 7,
+          "gaussian": 12,
+          "joint": 0
+        }
+      },
+      "stages": [
+        {
+          "size": 96,
+          "increment": 96,
+          "result": {
+            "action": "continue_training",
+            "reason": "posterior_change_detected",
+            "passed": false,
+            "samples": 96,
+            "kl_gp_to_direct": 0.08841923645234487,
+            "kl_direct_to_gp": 0.09587139205319223,
+            "maximum_directed_kl": 0.09587139205319223,
+            "bootstrap_05_kl": 0.05675169586581453,
+            "bootstrap_95_kl": 0.14225940683232746,
+            "gp_ess": 83.03024839702296,
+            "direct_ess": 72.39111260199033,
+            "posterior_rms": 0.39372833127286466,
+            "posterior_q95": 0.8638368728560288
+          },
+          "path": "t1_n1000_perfect_c101_random/audit_538_96.npz"
+        }
+      ]
+    },
+    {
+      "training": 598,
+      "checkpoint_sha256": "0410ade5d74a883f77dd7f82fa80c75bb6a889355973e7c8740b6457e5c682ef",
+      "numerical_checks": [
+        {
+          "power": 14,
+          "numerical": true,
+          "posterior_precision": {
+            "mean_sd": 0.011129331021436059,
+            "endpoint_sd": 0.03235059221220998,
+            "width_fraction": 0.007195676507460336
+          },
+          "maximum_log_normalizer_difference": 0.007676757899162112,
+          "ess": [
+            3186.2536874387783,
+            3206.784844713008
+          ]
+        }
+      ],
+      "diagnostics": {
+        "counter": 1,
+        "streaks": {
+          "original": 9,
+          "gaussian": 14,
+          "joint": 0
+        }
+      },
+      "stages": [
+        {
+          "size": 96,
+          "increment": 96,
+          "result": {
+            "action": "continue_training",
+            "reason": "posterior_change_detected",
+            "passed": false,
+            "samples": 96,
+            "kl_gp_to_direct": 0.07374608700270038,
+            "kl_direct_to_gp": 0.08244147025770705,
+            "maximum_directed_kl": 0.08244147025770705,
+            "bootstrap_05_kl": 0.04752556185354765,
+            "bootstrap_95_kl": 0.12578751188691334,
+            "gp_ess": 83.11098767324748,
+            "direct_ess": 73.25385238180485,
+            "posterior_rms": 0.3904171779014892,
+            "posterior_q95": 0.7094926130803398
+          },
+          "path": "t1_n1000_perfect_c101_random/audit_598_96.npz"
+        }
+      ]
+    },
+    {
+      "training": 658,
+      "checkpoint_sha256": "e0009283617ca9387432a212310eccde48866bc853c82894bf5b789b75e7a8a0",
+      "numerical_checks": [
+        {
+          "power": 14,
+          "numerical": true,
+          "posterior_precision": {
+            "mean_sd": 0.01489548324441873,
+            "endpoint_sd": 0.02987682460475153,
+            "width_fraction": 0.008302931043713935
+          },
+          "maximum_log_normalizer_difference": 0.008579346389979037,
+          "ess": [
+            3227.0770075980736,
+            3235.0360287912836
+          ]
+        }
+      ],
+      "diagnostics": {
+        "counter": 0,
+        "streaks": {
+          "original": 11,
+          "gaussian": 16,
+          "joint": 0
+        }
+      },
+      "stages": [
+        {
+          "size": 96,
+          "increment": 96,
+          "result": {
+            "action": "continue_training",
+            "reason": "posterior_change_detected",
+            "passed": false,
+            "samples": 96,
+            "kl_gp_to_direct": 0.06613137557928492,
+            "kl_direct_to_gp": 0.07799638734327954,
+            "maximum_directed_kl": 0.07799638734327954,
+            "bootstrap_05_kl": 0.04126543267345976,
+            "bootstrap_95_kl": 0.1239421364222909,
+            "gp_ess": 85.84823986477953,
+            "direct_ess": 79.0209449437908,
+            "posterior_rms": 0.33988622852200334,
+            "posterior_q95": 0.7841046589190225
+          },
+          "path": "t1_n1000_perfect_c101_random/audit_658_96.npz"
+        }
+      ]
+    }
+  ]
+}

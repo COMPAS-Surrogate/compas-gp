@@ -1,0 +1,37 @@
+{
+  "source_sha256": "e3fe8f274b4b55278f8d5ef49f692c9748814bfc629c1cb5fa34ae8a9f58abf3",
+  "job_id": "16578315",
+  "host": "dave1",
+  "labels": 2994,
+  "previous_labels": 2964,
+  "baseline_loss": 362548.86217246734,
+  "warm_initial_loss": 361597.29094414046,
+  "transform_reference_change": 0.0,
+  "scope": "One saved catalogue. Optimizer comparisons, not posterior validation or a production speedup.",
+  "runs": [
+    {
+      "name": "warm_adam",
+      "seconds": 64.26467819901882,
+      "loss": 303717.96423039795,
+      "maximum_prediction_change": 281.6939683005412,
+      "query_peak_points": 382,
+      "centered_query_peak_rmse": 0.34467181331264973,
+      "baseline_centered_query_peak_rmse": 0.38248627262356216,
+      "iterations": 20
+    },
+    {
+      "name": "warm_lbfgsb",
+      "seconds": 72.4820324180182,
+      "loss": 5293.810999881998,
+      "maximum_prediction_change": 2879.133340942324,
+      "query_peak_points": 382,
+      "centered_query_peak_rmse": 0.15323801689657174,
+      "baseline_centered_query_peak_rmse": 0.38248627262356216,
+      "iterations": 20,
+      "evaluations": 23,
+      "optimizer_success": false,
+      "message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT"
+    }
+  ],
+  "complete": true
+}

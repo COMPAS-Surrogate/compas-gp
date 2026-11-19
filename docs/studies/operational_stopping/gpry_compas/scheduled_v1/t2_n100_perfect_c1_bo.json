@@ -1,0 +1,94 @@
+{
+  "truth_index": 2,
+  "expected_events": 100,
+  "case": 1,
+  "mode": "perfect",
+  "strategy": "bo",
+  "name": "t2_n100_perfect_c1_bo",
+  "rules": {
+    "fixed96": {
+      "training": 238,
+      "audit": 96,
+      "total": 334
+    },
+    "adaptive384": {
+      "training": 238,
+      "audit": 96,
+      "total": 334
+    }
+  },
+  "audit_labels": {
+    "fixed96": 96,
+    "adaptive384": 96
+  },
+  "training_labels": 658,
+  "history": [
+    {
+      "training": 238,
+      "checkpoint_sha256": "48139737481d2d7e259b4567dc491b8221579f74a3f7b4272c2c0b2badb4d88a",
+      "numerical_checks": [
+        {
+          "power": 14,
+          "numerical": false,
+          "posterior_precision": {
+            "mean_sd": 0.02186662913528294,
+            "endpoint_sd": 0.054085441315544804,
+            "width_fraction": 0.025462069597285364
+          },
+          "maximum_log_normalizer_difference": 0.016754455782177047,
+          "ess": [
+            2324.0329029567047,
+            2315.720076862729
+          ]
+        },
+        {
+          "power": 15,
+          "numerical": true,
+          "posterior_precision": {
+            "mean_sd": 0.015552168156135606,
+            "endpoint_sd": 0.03995959220684651,
+            "width_fraction": 0.019983080389118113
+          },
+          "maximum_log_normalizer_difference": 0.015102570215304922,
+          "ess": [
+            4639.261883719413,
+            4602.984333831879
+          ]
+        }
+      ],
+      "diagnostics": {
+        "counter": 0,
+        "streaks": {
+          "original": 0,
+          "gaussian": 4,
+          "joint": 1
+        }
+      },
+      "stages": [
+        {
+          "size": 96,
+          "increment": 96,
+          "result": {
+            "action": "stop",
+            "reason": "posterior_change_small",
+            "passed": true,
+            "samples": 96,
+            "kl_gp_to_direct": 0.0019178537276921355,
+            "kl_direct_to_gp": 0.0017853299857696584,
+            "maximum_directed_kl": 0.0019178537276921355,
+            "bootstrap_05_kl": 0.0008979762729323197,
+            "bootstrap_95_kl": 0.003239542762403486,
+            "gp_ess": 78.92764781057122,
+            "direct_ess": 78.19260135990031,
+            "posterior_rms": 0.05470079907616498,
+            "posterior_q95": 0.09962948079182161
+          },
+          "path": "t2_n100_perfect_c1_bo/audit_238_96.npz"
+        }
+      ]
+    }
+  ],
+  "reference_accessed": false,
+  "cohort": "development_replay",
+  "wall_seconds": 0.6057013329991605
+}

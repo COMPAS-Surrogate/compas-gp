@@ -1,0 +1,20 @@
+{
+  "expected_events": 300,
+  "observed_events": 307,
+  "case": 0,
+  "budgets": [
+    32,
+    128,
+    994
+  ],
+  "ess": {
+    "reference": 5960.893267622065,
+    "32": 5417.010936169793,
+    "128": 5997.993488231063,
+    "994": 5946.59219407761
+  },
+  "draws": 65536,
+  "seed": 20260909,
+  "smoothing": "45 bins per prior dimension, Gaussian sigma=1 bin, reflecting boundaries",
+  "scope": "32 and 128 are initialization-prefix diagnostics without boundary anchors or BO acquisitions; the final panel is a saved BO stage. Not part of the matched-budget comparison."
+}

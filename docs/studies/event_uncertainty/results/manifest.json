@@ -1,0 +1,32 @@
+{
+  "expected_events": [
+    50,
+    500
+  ],
+  "catalogues_per_exposure": 10,
+  "seed": 20260921,
+  "training_seed": 17,
+  "random_seed": 20260922,
+  "budgets": [
+    226,
+    354,
+    482,
+    610,
+    738
+  ],
+  "truth": [
+    -0.3,
+    0.35,
+    0.01,
+    4.7
+  ],
+  "population": "blocks0-7; same latent population for generation and inference",
+  "measurement": "log-coordinate Normal, sigma=(.03,.3)*12/rho, rho=12*U^(-1/3); conditional on detection; independent of lambda",
+  "latent_distribution": "piecewise uniform in linear mass/redshift within the fixed populated bins",
+  "reference_power": 15,
+  "scope": "20 paired catalogues, 80 acquisition trajectories; pilot at one truth/design seed, not SBC or LVK PE",
+  "source_sha256": {
+    "docs/studies/event_uncertainty/run_study.py": "20fb4ac1fd295e9b1017db0e11f15fe40520ee2330ab857964ba2292c6ee0abe",
+    "src/cosmic_integration/observation/log_measurement.py": "1a3f03c88559f98d50ecc78400a1baed94557a038de69cd5842d05ecbbb5d627"
+  }
+}

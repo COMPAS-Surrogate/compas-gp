@@ -1,0 +1,3377 @@
+[
+  {
+    "points": 58,
+    "sha256": "5e9eb4f30784ec5f15f99851ed7d39a332a524c7c9beefc9e634536e8403c4db",
+    "counter": 0,
+    "stability": {
+      "attempts": [
+        {
+          "power": 14,
+          "numerical": true,
+          "numerical_current": {
+            "mean_sd": 0.010968733368173231,
+            "endpoint_sd": 0.027364446497884845,
+            "width_fraction": 0.005038048494704572
+          },
+          "ess": [
+            2375.1032344650152,
+            2359.2932572137743
+          ],
+          "gaussian_pass": false,
+          "joint_pass": false
+        }
+      ],
+      "numerical": true,
+      "numerical_current": {
+        "mean_sd": 0.010968733368173231,
+        "endpoint_sd": 0.027364446497884845,
+        "width_fraction": 0.005038048494704572
+      },
+      "ess": [
+        2375.1032344650152,
+        2359.2932572137743
+      ],
+      "gaussian_pass": false,
+      "joint_pass": false
+    },
+    "streaks": {
+      "original": 0,
+      "gaussian": 0,
+      "joint": 0
+    },
+    "rules": {
+      "original": null,
+      "precision_refined": null,
+      "guarded": null
+    },
+    "audit_calls": 0,
+    "posterior_evaluation": 1,
+    "posterior_comparisons": 0,
+    "bo_batches": 0,
+    "elapsed_seconds": 1.1626933329971507,
+    "recorded_unix": 1789171862.51016,
+    "timing": {
+      "labels": 0.14553699997486547,
+      "fit": 0.8636404579738155,
+      "acquisition": 0.0,
+      "stability": 0.15256616700207815,
+      "audit": 0.0
+    }
+  },
+  {
+    "points": 88,
+    "sha256": "2481f581f18ea07b49523e57e047dec4ad6ae9b73faeb6edcb3994c11c73cabb",
+    "counter": 0,
+    "stability": {
+      "attempts": [
+        {
+          "power": 14,
+          "numerical": true,
+          "numerical_current": {
+            "mean_sd": 0.016692471720273157,
+            "endpoint_sd": 0.025673165380550207,
+            "width_fraction": 0.015980459879950448
+          },
+          "ess": [
+            3193.9015382058,
+            3196.7362914913692
+          ],
+          "gaussian_pass": false,
+          "joint_pass": false,
+          "numerical_previous": {
+            "mean_sd": 0.016892478954922328,
+            "endpoint_sd": 0.03152565075960596,
+            "width_fraction": 0.014322177455244778
+          },
+          "joint_kl": 0.3052173814071519,
+          "gaussian_kl": 0.0920238592177185
+        }
+      ],
+      "numerical": true,
+      "numerical_current": {
+        "mean_sd": 0.016692471720273157,
+        "endpoint_sd": 0.025673165380550207,
+        "width_fraction": 0.015980459879950448
+      },
+      "ess": [
+        3193.9015382058,
+        3196.7362914913692
+      ],
+      "gaussian_pass": false,
+      "joint_pass": false,
+      "numerical_previous": {
+        "mean_sd": 0.016892478954922328,
+        "endpoint_sd": 0.03152565075960596,
+        "width_fraction": 0.014322177455244778
+      },
+      "joint_kl": 0.3052173814071519,
+      "gaussian_kl": 0.0920238592177185
+    },
+    "streaks": {
+      "original": 0,
+      "gaussian": 0,
+      "joint": 0
+    },
+    "rules": {
+      "original": null,
+      "precision_refined": null,
+      "guarded": null
+    },
+    "audit_calls": 0,
+    "posterior_evaluation": 2,
+    "posterior_comparisons": 1,
+    "bo_batches": 10,
+    "elapsed_seconds": 3.2471684999763966,
+    "recorded_unix": 1789171864.59457,
+    "timing": {
+      "labels": 0.22523446107516065,
+      "fit": 1.3878166648210026,
+      "acquisition": 1.323703249101527,
+      "stability": 0.3010002499795519,
+      "audit": 0.0
+    }
+  },
+  {
+    "points": 118,
+    "sha256": "bf609abd2d2a299bd2683f479f0de1a8c6230e24b42850dce9fa8ad01ef48537",
+    "counter": 0,
+    "stability": {
+      "attempts": [
+        {
+          "power": 14,
+          "numerical": true,
+          "numerical_current": {
+            "mean_sd": 0.015533723368161431,
+            "endpoint_sd": 0.025124876373799083,
+            "width_fraction": 0.01207154574255287
+          },
+          "ess": [
+            3292.129984498177,
+            3301.5724476138207
+          ],
+          "gaussian_pass": true,
+          "joint_pass": false,
+          "numerical_previous": {
+            "mean_sd": 0.017710523506833654,
+            "endpoint_sd": 0.027082185402710818,
+            "width_fraction": 0.014767487968931237
+          },
+          "joint_kl": 0.044731459255864706,
+          "gaussian_kl": 0.002634140608197555
+        }
+      ],
+      "numerical": true,
+      "numerical_current": {
+        "mean_sd": 0.015533723368161431,
+        "endpoint_sd": 0.025124876373799083,
+        "width_fraction": 0.01207154574255287
+      },
+      "ess": [
+        3292.129984498177,
+        3301.5724476138207
+      ],
+      "gaussian_pass": true,
+      "joint_pass": false,
+      "numerical_previous": {
+        "mean_sd": 0.017710523506833654,
+        "endpoint_sd": 0.027082185402710818,
+        "width_fraction": 0.014767487968931237
+      },
+      "joint_kl": 0.044731459255864706,
+      "gaussian_kl": 0.002634140608197555
+    },
+    "streaks": {
+      "original": 1,
+      "gaussian": 1,
+      "joint": 0
+    },
+    "rules": {
+      "original": null,
+      "precision_refined": null,
+      "guarded": null
+    },
+    "audit_calls": 0,
+    "posterior_evaluation": 3,
+    "posterior_comparisons": 2,
+    "bo_batches": 20,
+    "elapsed_seconds": 4.683688165969215,
+    "recorded_unix": 1789171866.031044,
+    "timing": {
+      "labels": 0.3004923790576868,
+      "fit": 1.7856897077872418,
+      "acquisition": 2.1005539131583646,
+      "stability": 0.47651095798937604,
+      "audit": 0.0
+    }
+  },
+  {
+    "points": 148,
+    "sha256": "43faec8a5cc7dbe2bdb8d5820a18988132b22a14c6364f0ac3ef5271ed8d35c4",
+    "counter": 0,
+    "stability": {
+      "attempts": [
+        {
+          "power": 14,
+          "numerical": true,
+          "numerical_current": {
+            "mean_sd": 0.009679182748741818,
+            "endpoint_sd": 0.026371674357087958,
+            "width_fraction": 0.010918027854077694
+          },
+          "ess": [
+            3390.121320765266,
+            3397.8548219378836
+          ],
+          "gaussian_pass": true,
+          "joint_pass": false,
+          "numerical_previous": {
+            "mean_sd": 0.01226484209360045,
+            "endpoint_sd": 0.02712210017661019,
+            "width_fraction": 0.014565908261447325
+          },
+          "joint_kl": 0.02707259995326631,
+          "gaussian_kl": 0.0019685103612525623
+        }
+      ],
+      "numerical": true,
+      "numerical_current": {
+        "mean_sd": 0.009679182748741818,
+        "endpoint_sd": 0.026371674357087958,
+        "width_fraction": 0.010918027854077694
+      },
+      "ess": [
+        3390.121320765266,
+        3397.8548219378836
+      ],
+      "gaussian_pass": true,
+      "joint_pass": false,
+      "numerical_previous": {
+        "mean_sd": 0.01226484209360045,
+        "endpoint_sd": 0.02712210017661019,
+        "width_fraction": 0.014565908261447325
+      },
+      "joint_kl": 0.02707259995326631,
+      "gaussian_kl": 0.0019685103612525623
+    },
+    "streaks": {
+      "original": 2,
+      "gaussian": 2,
+      "joint": 0
+    },
+    "rules": {
+      "original": null,
+      "precision_refined": null,
+      "guarded": null
+    },
+    "audit_calls": 0,
+    "posterior_evaluation": 4,
+    "posterior_comparisons": 3,
+    "bo_batches": 30,
+    "elapsed_seconds": 6.475766666000709,
+    "recorded_unix": 1789171867.823066,
+    "timing": {
+      "labels": 0.3831833389122039,
+      "fit": 2.2943943337886594,
+      "acquisition": 3.169654162134975,
+      "stability": 0.593802748946473,
+      "audit": 0.0
+    }
+  },
+  {
+    "points": 178,
+    "sha256": "edd930342dc7aec63c485324c92cbe9172fc8ae2a035dc9f081af1d7775612b6",
+    "counter": 0,
+    "stability": {
+      "attempts": [
+        {
+          "power": 14,
+          "numerical": true,
+          "numerical_current": {
+            "mean_sd": 0.01741713456233142,
+            "endpoint_sd": 0.021436097529678032,
+            "width_fraction": 0.01214155951929019
+          },
+          "ess": [
+            3372.556335678942,
+            3383.7745491530245
+          ],
+          "gaussian_pass": true,
+          "joint_pass": false,
+          "numerical_previous": {
+            "mean_sd": 0.018017629836745857,
+            "endpoint_sd": 0.029590585489928378,
+            "width_fraction": 0.015570157498868697
+          },
+          "joint_kl": 0.006272988362573966,
+          "gaussian_kl": 0.0008587914434174948
+        }
+      ],
+      "numerical": true,
+      "numerical_current": {
+        "mean_sd": 0.01741713456233142,
+        "endpoint_sd": 0.021436097529678032,
+        "width_fraction": 0.01214155951929019
+      },
+      "ess": [
+        3372.556335678942,
+        3383.7745491530245
+      ],
+      "gaussian_pass": true,
+      "joint_pass": false,
+      "numerical_previous": {
+        "mean_sd": 0.018017629836745857,
+        "endpoint_sd": 0.029590585489928378,
+        "width_fraction": 0.015570157498868697
+      },
+      "joint_kl": 0.006272988362573966,
+      "gaussian_kl": 0.0008587914434174948
+    },
+    "streaks": {
+      "original": 3,
+      "gaussian": 3,
+      "joint": 0
+    },
+    "rules": {
+      "original": null,
+      "precision_refined": null,
+      "guarded": null
+    },
+    "audit_calls": 0,
+    "posterior_evaluation": 5,
+    "posterior_comparisons": 4,
+    "bo_batches": 40,
+    "elapsed_seconds": 7.995799124997575,
+    "recorded_unix": 1789171869.3430521,
+    "timing": {
+      "labels": 0.458607506880071,
+      "fit": 2.7984825848252513,
+      "acquisition": 3.934750244137831,
+      "stability": 0.7529555399087258,
+      "audit": 0.0
+    }
+  },
+  {
+    "points": 208,
+    "sha256": "d6b1816193409111effa8005fa9fb113adb2397cbd9da79c6ca920a93b568e35",
+    "counter": 0,
+    "stability": {
+      "attempts": [
+        {
+          "power": 14,
+          "numerical": true,
+          "numerical_current": {
+            "mean_sd": 0.01687775215831241,
+            "endpoint_sd": 0.01767529210368232,
+            "width_fraction": 0.007611650884000509
+          },
+          "ess": [
+            3372.0243410796465,
+            3376.2662486512277
+          ],
+          "gaussian_pass": true,
+          "joint_pass": false,
+          "numerical_previous": {
+            "mean_sd": 0.01817031580769909,
+            "endpoint_sd": 0.022288784748537894,
+            "width_fraction": 0.010553526990764839
+          },
+          "joint_kl": 0.013902297551437296,
+          "gaussian_kl": 0.0019345608870890985
+        }
+      ],
+      "numerical": true,
+      "numerical_current": {
+        "mean_sd": 0.01687775215831241,
+        "endpoint_sd": 0.01767529210368232,
+        "width_fraction": 0.007611650884000509
+      },
+      "ess": [
+        3372.0243410796465,
+        3376.2662486512277
+      ],
+      "gaussian_pass": true,
+      "joint_pass": false,
+      "numerical_previous": {
+        "mean_sd": 0.01817031580769909,
+        "endpoint_sd": 0.022288784748537894,
+        "width_fraction": 0.010553526990764839
+      },
+      "joint_kl": 0.013902297551437296,
+      "gaussian_kl": 0.0019345608870890985
+    },
+    "streaks": {
+      "original": 4,
+      "gaussian": 4,
+      "joint": 0
+    },
+    "rules": {
+      "original": null,
+      "precision_refined": null,
+      "guarded": null
+    },
+    "audit_calls": 0,
+    "posterior_evaluation": 6,
+    "posterior_comparisons": 5,
+    "bo_batches": 50,
+    "elapsed_seconds": 9.990539874997921,
+    "recorded_unix": 1789171871.337729,
+    "timing": {
+      "labels": 0.5390799228916876,
+      "fit": 3.4231880399165675,
+      "acquisition": 5.049960950098466,
+      "stability": 0.9075199989019893,
+      "audit": 0.0
+    }
+  },
+  {
+    "points": 238,
+    "sha256": "78ce51a3f4d911c63adbdf1200772096fd717fa4ae4a1f57741b7cd751b057c4",
+    "counter": 2,
+    "stability": {
+      "attempts": [
+        {
+          "power": 14,
+          "numerical": true,
+          "numerical_current": {
+            "mean_sd": 0.014680829127310233,
+            "endpoint_sd": 0.030627139193797615,
+            "width_fraction": 0.011024411093944364
+          },
+          "ess": [
+            3359.6378980407453,
+            3373.1447221767653
+          ],
+          "gaussian_pass": true,
+          "joint_pass": false,
+          "numerical_previous": {
+            "mean_sd": 0.015090882210566285,
+            "endpoint_sd": 0.027290949117086783,
+            "width_fraction": 0.013008487808741531
+          },
+          "joint_kl": 0.0012236817884880883,
+          "gaussian_kl": 0.0001807501211716911
+        }
+      ],
+      "numerical": true,
+      "numerical_current": {
+        "mean_sd": 0.014680829127310233,
+        "endpoint_sd": 0.030627139193797615,
+        "width_fraction": 0.011024411093944364
+      },
+      "ess": [
+        3359.6378980407453,
+        3373.1447221767653
+      ],
+      "gaussian_pass": true,
+      "joint_pass": false,
+      "numerical_previous": {
+        "mean_sd": 0.015090882210566285,
+        "endpoint_sd": 0.027290949117086783,
+        "width_fraction": 0.013008487808741531
+      },
+      "joint_kl": 0.0012236817884880883,
+      "gaussian_kl": 0.0001807501211716911
+    },
+    "streaks": {
+      "original": 5,
+      "gaussian": 5,
+      "joint": 0
+    },
+    "rules": {
+      "original": null,
+      "precision_refined": null,
+      "guarded": null
+    },
+    "audit_calls": 0,
+    "posterior_evaluation": 7,
+    "posterior_comparisons": 6,
+    "bo_batches": 60,
+    "elapsed_seconds": 11.570132082968485,
+    "recorded_unix": 1789171872.917272,
+    "timing": {
+      "labels": 0.61602808884345,
+      "fit": 3.9414997068815865,
+      "acquisition": 5.895183326909319,
+      "stability": 1.0245244159013964,
+      "audit": 0.0
+    }
+  },
+  {
+    "points": 268,
+    "sha256": "c8b9d073039662a3c6dc793ac681c060a271fd249209033cc05c08d2d8ada905",
+    "counter": 6,
+    "stability": {
+      "attempts": [
+        {
+          "power": 14,
+          "numerical": true,
+          "numerical_current": {
+            "mean_sd": 0.016078006761841124,
+            "endpoint_sd": 0.03257670634427449,
+            "width_fraction": 0.012455802306900132
+          },
+          "ess": [
+            3349.907107996686,
+            3369.3676891135697
+          ],
+          "gaussian_pass": true,
+          "joint_pass": true,
+          "numerical_previous": {
+            "mean_sd": 0.016024967246925568,
+            "endpoint_sd": 0.031192054832626763,
+            "width_fraction": 0.013500541500695684
+          },
+          "joint_kl": 0.000694266921845962,
+          "gaussian_kl": 0.00010737795855408905
+        }
+      ],
+      "numerical": true,
+      "numerical_current": {
+        "mean_sd": 0.016078006761841124,
+        "endpoint_sd": 0.03257670634427449,
+        "width_fraction": 0.012455802306900132
+      },
+      "ess": [
+        3349.907107996686,
+        3369.3676891135697
+      ],
+      "gaussian_pass": true,
+      "joint_pass": true,
+      "numerical_previous": {
+        "mean_sd": 0.016024967246925568,
+        "endpoint_sd": 0.031192054832626763,
+        "width_fraction": 0.013500541500695684
+      },
+      "joint_kl": 0.000694266921845962,
+      "gaussian_kl": 0.00010737795855408905
+    },
+    "streaks": {
+      "original": 6,
+      "gaussian": 6,
+      "joint": 1
+    },
+    "rules": {
+      "original": {
+        "training": 268,
+        "audit": 0,
+        "total": 268
+      },
+      "precision_refined": {
+        "training": 268,
+        "audit": 0,
+        "total": 268
+      },
+      "guarded": null
+    },
+    "audit_calls": 0,
+    "posterior_evaluation": 8,
+    "posterior_comparisons": 7,
+    "bo_batches": 70,
+    "elapsed_seconds": 13.641714332974516,
+    "recorded_unix": 1789171874.98879,
+    "timing": {
+      "labels": 0.6956818818580359,
+      "fit": 4.621963705867529,
+      "acquisition": 7.023963242012542,
+      "stability": 1.1812961249379441,
+      "audit": 0.0
+    }
+  },
+  {
+    "points": 298,
+    "sha256": "23d8eba10ac2b3619e0c5e7a8a8ba1eb31e1fd741470a3f6d27b33c6d4f160a9",
+    "counter": 2,
+    "stability": {
+      "attempts": [
+        {
+          "power": 14,
+          "numerical": true,
+          "numerical_current": {
+            "mean_sd": 0.015839559365713473,
+            "endpoint_sd": 0.031234062244695184,
+            "width_fraction": 0.010909200018905052
+          },
+          "ess": [
+            3345.0572457807766,
+            3358.9427839806203
+          ],
+          "gaussian_pass": true,
+          "joint_pass": true,
+          "numerical_previous": {
+            "mean_sd": 0.015858236105484293,
+            "endpoint_sd": 0.03159259825121777,
+            "width_fraction": 0.011165334043258701
+          },
+          "joint_kl": 0.0005505485553910637,
+          "gaussian_kl": 1.8780130232265435e-05
+        }
+      ],
+      "numerical": true,
+      "numerical_current": {
+        "mean_sd": 0.015839559365713473,
+        "endpoint_sd": 0.031234062244695184,
+        "width_fraction": 0.010909200018905052
+      },
+      "ess": [
+        3345.0572457807766,
+        3358.9427839806203
+      ],
+      "gaussian_pass": true,
+      "joint_pass": true,
+      "numerical_previous": {
+        "mean_sd": 0.015858236105484293,
+        "endpoint_sd": 0.03159259825121777,
+        "width_fraction": 0.011165334043258701
+      },
+      "joint_kl": 0.0005505485553910637,
+      "gaussian_kl": 1.8780130232265435e-05
+    },
+    "streaks": {
+      "original": 7,
+      "gaussian": 7,
+      "joint": 2
+    },
+    "rules": {
+      "original": {
+        "training": 268,
+        "audit": 0,
+        "total": 268
+      },
+      "precision_refined": {
+        "training": 268,
+        "audit": 0,
+        "total": 268
+      },
+      "guarded": null
+    },
+    "audit_calls": 0,
+    "posterior_evaluation": 9,
+    "posterior_comparisons": 8,
+    "bo_batches": 80,
+    "elapsed_seconds": 15.766427916008979,
+    "recorded_unix": 1789171877.113436,
+    "timing": {
+      "labels": 0.7800242138910107,
+      "fit": 5.368830790859647,
+      "acquisition": 8.169582033995539,
+      "stability": 1.2974059579428285,
+      "audit": 0.0
+    }
+  },
+  {
+    "points": 328,
+    "sha256": "3cbc08eed590e08639f6eaf4dc12f48b97530b61e0937b2f516c3bbb13bbe8dc",
+    "counter": 0,
+    "stability": {
+      "attempts": [
+        {
+          "power": 14,
+          "numerical": true,
+          "numerical_current": {
+            "mean_sd": 0.0173956726846865,
+            "endpoint_sd": 0.03310855889924264,
+            "width_fraction": 0.013465037946926994
+          },
+          "ess": [
+            3342.4572299481083,
+            3360.623552300818
+          ],
+          "gaussian_pass": true,
+          "joint_pass": true,
+          "numerical_previous": {
+            "mean_sd": 0.017563895322612173,
+            "endpoint_sd": 0.03456168663264161,
+            "width_fraction": 0.012714560518611862
+          },
+          "joint_kl": 0.000350747987004014,
+          "gaussian_kl": 5.4214444623390534e-05
+        }
+      ],
+      "numerical": true,
+      "numerical_current": {
+        "mean_sd": 0.0173956726846865,
+        "endpoint_sd": 0.03310855889924264,
+        "width_fraction": 0.013465037946926994
+      },
+      "ess": [
+        3342.4572299481083,
+        3360.623552300818
+      ],
+      "gaussian_pass": true,
+      "joint_pass": true,
+      "numerical_previous": {
+        "mean_sd": 0.017563895322612173,
+        "endpoint_sd": 0.03456168663264161,
+        "width_fraction": 0.012714560518611862
+      },
+      "joint_kl": 0.000350747987004014,
+      "gaussian_kl": 5.4214444623390534e-05
+    },
+    "streaks": {
+      "original": 8,
+      "gaussian": 8,
+      "joint": 3
+    },
+    "rules": {
+      "original": {
+        "training": 268,
+        "audit": 0,
+        "total": 268
+      },
+      "precision_refined": {
+        "training": 268,
+        "audit": 0,
+        "total": 268
+      },
+      "guarded": null
+    },
+    "audit_calls": 0,
+    "posterior_evaluation": 10,
+    "posterior_comparisons": 9,
+    "bo_batches": 90,
+    "elapsed_seconds": 17.492808749957476,
+    "recorded_unix": 1789171878.839763,
+    "timing": {
+      "labels": 0.8546317558502778,
+      "fit": 6.063531248772051,
+      "acquisition": 8.97961336496519,
+      "stability": 1.4145099999150261,
+      "audit": 0.0
+    }
+  },
+  {
+    "points": 358,
+    "sha256": "dabfec552a07012fb6fdfbb697513d6dc6ae260ed8b542562af653f11f012937",
+    "counter": 13,
+    "stability": {
+      "attempts": [
+        {
+          "power": 14,
+          "numerical": true,
+          "numerical_current": {
+            "mean_sd": 0.01931231673485601,
+            "endpoint_sd": 0.03465137934050326,
+            "width_fraction": 0.011850044536444004
+          },
+          "ess": [
+            3337.332997412857,
+            3357.122088297758
+          ],
+          "gaussian_pass": true,
+          "joint_pass": true,
+          "numerical_previous": {
+            "mean_sd": 0.019243182637355045,
+            "endpoint_sd": 0.034691095874084345,
+            "width_fraction": 0.011656755679749997
+          },
+          "joint_kl": 7.885961500455393e-05,
+          "gaussian_kl": 3.904035724922039e-06
+        }
+      ],
+      "numerical": true,
+      "numerical_current": {
+        "mean_sd": 0.01931231673485601,
+        "endpoint_sd": 0.03465137934050326,
+        "width_fraction": 0.011850044536444004
+      },
+      "ess": [
+        3337.332997412857,
+        3357.122088297758
+      ],
+      "gaussian_pass": true,
+      "joint_pass": true,
+      "numerical_previous": {
+        "mean_sd": 0.019243182637355045,
+        "endpoint_sd": 0.034691095874084345,
+        "width_fraction": 0.011656755679749997
+      },
+      "joint_kl": 7.885961500455393e-05,
+      "gaussian_kl": 3.904035724922039e-06
+    },
+    "streaks": {
+      "original": 9,
+      "gaussian": 9,
+      "joint": 4
+    },
+    "rules": {
+      "original": {
+        "training": 268,
+        "audit": 0,
+        "total": 268
+      },
+      "precision_refined": {
+        "training": 268,
+        "audit": 0,
+        "total": 268
+      },
+      "guarded": {
+        "training": 358,
+        "audit": 96,
+        "total": 454
+      }
+    },
+    "audit_calls": 96,
+    "posterior_evaluation": 11,
+    "posterior_comparisons": 10,
+    "bo_batches": 100,
+    "elapsed_seconds": 19.64477633300703,
+    "recorded_unix": 1789171880.9916632,
+    "timing": {
+      "labels": 0.9307780478266068,
+      "fit": 6.790104165789671,
+      "acquisition": 9.879209781996906,
+      "stability": 1.5326582498964854,
+      "audit": 0.29759120900416747
+    }
+  },
+  {
+    "points": 388,
+    "sha256": "6961c5aedad4b31c83ded3c6783f698b9ff336164d27aefafd4c69593873bd3b",
+    "counter": 10,
+    "stability": {
+      "attempts": [
+        {
+          "power": 14,
+          "numerical": true,
+          "numerical_current": {
+            "mean_sd": 0.015408684797073597,
+            "endpoint_sd": 0.03600628901236819,
+            "width_fraction": 0.012700964757472066
+          },
+          "ess": [
+            3336.286878727887,
+            3351.899287593437
+          ],
+          "gaussian_pass": true,
+          "joint_pass": true,
+          "numerical_previous": {
+            "mean_sd": 0.015623795115694636,
+            "endpoint_sd": 0.0357239163754536,
+            "width_fraction": 0.01287965069151853
+          },
+          "joint_kl": 0.00018759976929794562,
+          "gaussian_kl": 5.182488016508557e-06
+        }
+      ],
+      "numerical": true,
+      "numerical_current": {
+        "mean_sd": 0.015408684797073597,
+        "endpoint_sd": 0.03600628901236819,
+        "width_fraction": 0.012700964757472066
+      },
+      "ess": [
+        3336.286878727887,
+        3351.899287593437
+      ],
+      "gaussian_pass": true,
+      "joint_pass": true,
+      "numerical_previous": {
+        "mean_sd": 0.015623795115694636,
+        "endpoint_sd": 0.0357239163754536,
+        "width_fraction": 0.01287965069151853
+      },
+      "joint_kl": 0.00018759976929794562,
+      "gaussian_kl": 5.182488016508557e-06
+    },
+    "streaks": {
+      "original": 10,
+      "gaussian": 10,
+      "joint": 5
+    },
+    "rules": {
+      "original": {
+        "training": 268,
+        "audit": 0,
+        "total": 268
+      },
+      "precision_refined": {
+        "training": 268,
+        "audit": 0,
+        "total": 268
+      },
+      "guarded": {
+        "training": 358,
+        "audit": 96,
+        "total": 454
+      }
+    },
+    "audit_calls": 96,
+    "posterior_evaluation": 12,
+    "posterior_comparisons": 11,
+    "bo_batches": 110,
+    "elapsed_seconds": 21.630666915967595,
+    "recorded_unix": 1789171882.977491,
+    "timing": {
+      "labels": 1.0070752557949163,
+      "fit": 7.657230453623924,
+      "acquisition": 10.746519655920565,
+      "stability": 1.6722599999047816,
+      "audit": 0.29759120900416747
+    }
+  },
+  {
+    "points": 418,
+    "sha256": "1c8a9b2cdd9c04e21710c3a5918abb348385ab8e8c1755cc56e4406ede186814",
+    "counter": 10,
+    "stability": {
+      "attempts": [
+        {
+          "power": 14,
+          "numerical": true,
+          "numerical_current": {
+            "mean_sd": 0.019043735117042472,
+            "endpoint_sd": 0.03597373698502523,
+            "width_fraction": 0.012280248329518795
+          },
+          "ess": [
+            3334.7505073018274,
+            3358.2650928389003
+          ],
+          "gaussian_pass": true,
+          "joint_pass": true,
+          "numerical_previous": {
+            "mean_sd": 0.018914290706710538,
+            "endpoint_sd": 0.03573719517992785,
+            "width_fraction": 0.012349156234318315
+          },
+          "joint_kl": 2.6197517758356893e-05,
+          "gaussian_kl": 8.34966696672268e-07
+        }
+      ],
+      "numerical": true,
+      "numerical_current": {
+        "mean_sd": 0.019043735117042472,
+        "endpoint_sd": 0.03597373698502523,
+        "width_fraction": 0.012280248329518795
+      },
+      "ess": [
+        3334.7505073018274,
+        3358.2650928389003
+      ],
+      "gaussian_pass": true,
+      "joint_pass": true,
+      "numerical_previous": {
+        "mean_sd": 0.018914290706710538,
+        "endpoint_sd": 0.03573719517992785,
+        "width_fraction": 0.012349156234318315
+      },
+      "joint_kl": 2.6197517758356893e-05,
+      "gaussian_kl": 8.34966696672268e-07
+    },
+    "streaks": {
+      "original": 11,
+      "gaussian": 11,
+      "joint": 6
+    },
+    "rules": {
+      "original": {
+        "training": 268,
+        "audit": 0,
+        "total": 268
+      },
+      "precision_refined": {
+        "training": 268,
+        "audit": 0,
+        "total": 268
+      },
+      "guarded": {
+        "training": 358,
+        "audit": 96,
+        "total": 454
+      }
+    },
+    "audit_calls": 96,
+    "posterior_evaluation": 13,
+    "posterior_comparisons": 12,
+    "bo_batches": 120,
+    "elapsed_seconds": 23.819089249998797,
+    "recorded_unix": 1789171885.165845,
+    "timing": {
+      "labels": 1.0841812568251044,
+      "fit": 8.59298432955984,
+      "acquisition": 11.738199696992524,
+      "stability": 1.8176949159242213,
+      "audit": 0.29759120900416747
+    }
+  },
+  {
+    "points": 448,
+    "sha256": "67268158e4bc5b91f50d75125ee3108e82dc72a6ddf9ee0bfb9c9b469f8566dc",
+    "counter": 1,
+    "stability": {
+      "attempts": [
+        {
+          "power": 14,
+          "numerical": true,
+          "numerical_current": {
+            "mean_sd": 0.017988404430396975,
+            "endpoint_sd": 0.034812294093801335,
+            "width_fraction": 0.012724328160158338
+          },
+          "ess": [
+            3336.2054944783854,
+            3355.1165207925264
+          ],
+          "gaussian_pass": true,
+          "joint_pass": true,
+          "numerical_previous": {
+            "mean_sd": 0.01808417088298223,
+            "endpoint_sd": 0.03484914880865759,
+            "width_fraction": 0.012783255681072081
+          },
+          "joint_kl": 3.4761360444444326e-05,
+          "gaussian_kl": 1.2453012550039944e-06
+        }
+      ],
+      "numerical": true,
+      "numerical_current": {
+        "mean_sd": 0.017988404430396975,
+        "endpoint_sd": 0.034812294093801335,
+        "width_fraction": 0.012724328160158338
+      },
+      "ess": [
+        3336.2054944783854,
+        3355.1165207925264
+      ],
+      "gaussian_pass": true,
+      "joint_pass": true,
+      "numerical_previous": {
+        "mean_sd": 0.01808417088298223,
+        "endpoint_sd": 0.03484914880865759,
+        "width_fraction": 0.012783255681072081
+      },
+      "joint_kl": 3.4761360444444326e-05,
+      "gaussian_kl": 1.2453012550039944e-06
+    },
+    "streaks": {
+      "original": 12,
+      "gaussian": 12,
+      "joint": 7
+    },
+    "rules": {
+      "original": {
+        "training": 268,
+        "audit": 0,
+        "total": 268
+      },
+      "precision_refined": {
+        "training": 268,
+        "audit": 0,
+        "total": 268
+      },
+      "guarded": {
+        "training": 358,
+        "audit": 96,
+        "total": 454
+      }
+    },
+    "audit_calls": 96,
+    "posterior_evaluation": 14,
+    "posterior_comparisons": 13,
+    "bo_batches": 130,
+    "elapsed_seconds": 26.173236915958114,
+    "recorded_unix": 1789171887.5199192,
+    "timing": {
+      "labels": 1.1639261308591813,
+      "fit": 9.570962579688057,
+      "acquisition": 12.873402778990567,
+      "stability": 1.9358295829151757,
+      "audit": 0.29759120900416747
+    }
+  },
+  {
+    "points": 478,
+    "sha256": "7dc32133e8f166579e7bef415cbdafb2f4c9fb9edebc7f20ce8f881aae1e4409",
+    "counter": 0,
+    "stability": {
+      "attempts": [
+        {
+          "power": 14,
+          "numerical": true,
+          "numerical_current": {
+            "mean_sd": 0.01959681412477953,
+            "endpoint_sd": 0.02642853411522265,
+            "width_fraction": 0.011654381918222434
+          },
+          "ess": [
+            3336.0232880581148,
+            3355.357826868518
+          ],
+          "gaussian_pass": true,
+          "joint_pass": true,
+          "numerical_previous": {
+            "mean_sd": 0.019668983753189914,
+            "endpoint_sd": 0.02743402667221813,
+            "width_fraction": 0.011701203231829993
+          },
+          "joint_kl": 6.87029488143363e-06,
+          "gaussian_kl": 3.707145053155614e-07
+        }
+      ],
+      "numerical": true,
+      "numerical_current": {
+        "mean_sd": 0.01959681412477953,
+        "endpoint_sd": 0.02642853411522265,
+        "width_fraction": 0.011654381918222434
+      },
+      "ess": [
+        3336.0232880581148,
+        3355.357826868518
+      ],
+      "gaussian_pass": true,
+      "joint_pass": true,
+      "numerical_previous": {
+        "mean_sd": 0.019668983753189914,
+        "endpoint_sd": 0.02743402667221813,
+        "width_fraction": 0.011701203231829993
+      },
+      "joint_kl": 6.87029488143363e-06,
+      "gaussian_kl": 3.707145053155614e-07
+    },
+    "streaks": {
+      "original": 13,
+      "gaussian": 13,
+      "joint": 8
+    },
+    "rules": {
+      "original": {
+        "training": 268,
+        "audit": 0,
+        "total": 268
+      },
+      "precision_refined": {
+        "training": 268,
+        "audit": 0,
+        "total": 268
+      },
+      "guarded": {
+        "training": 358,
+        "audit": 96,
+        "total": 454
+      }
+    },
+    "audit_calls": 96,
+    "posterior_evaluation": 15,
+    "posterior_comparisons": 14,
+    "bo_batches": 140,
+    "elapsed_seconds": 28.938116875011474,
+    "recorded_unix": 1789171890.2847118,
+    "timing": {
+      "labels": 1.2440057137864642,
+      "fit": 10.925016331661027,
+      "acquisition": 14.004641778883524,
+      "stability": 2.0904324999428354,
+      "audit": 0.29759120900416747
+    }
+  },
+  {
+    "points": 508,
+    "sha256": "0e59d3a0c367ce7580ac62f457d8eb5c8224f3c85a18fe190cc85157d56a3db1",
+    "counter": 6,
+    "stability": {
+      "attempts": [
+        {
+          "power": 14,
+          "numerical": true,
+          "numerical_current": {
+            "mean_sd": 0.014940348227410558,
+            "endpoint_sd": 0.03441139375427756,
+            "width_fraction": 0.013425577568194402
+          },
+          "ess": [
+            3337.818820472361,
+            3362.198403117652
+          ],
+          "gaussian_pass": true,
+          "joint_pass": true,
+          "numerical_previous": {
+            "mean_sd": 0.014963361829015902,
+            "endpoint_sd": 0.03449266469751187,
+            "width_fraction": 0.013438001919224174
+          },
+          "joint_kl": 3.42068588885939e-06,
+          "gaussian_kl": 3.3704411706025894e-08
+        }
+      ],
+      "numerical": true,
+      "numerical_current": {
+        "mean_sd": 0.014940348227410558,
+        "endpoint_sd": 0.03441139375427756,
+        "width_fraction": 0.013425577568194402
+      },
+      "ess": [
+        3337.818820472361,
+        3362.198403117652
+      ],
+      "gaussian_pass": true,
+      "joint_pass": true,
+      "numerical_previous": {
+        "mean_sd": 0.014963361829015902,
+        "endpoint_sd": 0.03449266469751187,
+        "width_fraction": 0.013438001919224174
+      },
+      "joint_kl": 3.42068588885939e-06,
+      "gaussian_kl": 3.3704411706025894e-08
+    },
+    "streaks": {
+      "original": 14,
+      "gaussian": 14,
+      "joint": 9
+    },
+    "rules": {
+      "original": {
+        "training": 268,
+        "audit": 0,
+        "total": 268
+      },
+      "precision_refined": {
+        "training": 268,
+        "audit": 0,
+        "total": 268
+      },
+      "guarded": {
+        "training": 358,
+        "audit": 96,
+        "total": 454
+      }
+    },
+    "audit_calls": 96,
+    "posterior_evaluation": 16,
+    "posterior_comparisons": 15,
+    "bo_batches": 150,
+    "elapsed_seconds": 31.348280915990472,
+    "recorded_unix": 1789171892.6948009,
+    "timing": {
+      "labels": 1.334284087701235,
+      "fit": 12.12348599859979,
+      "acquisition": 14.953121778962668,
+      "stability": 2.2132530419621617,
+      "audit": 0.29759120900416747
+    }
+  },
+  {
+    "points": 538,
+    "sha256": "00e46a765dcd80814ba40d3fc51f21d591215de4461a4a9215948b0df0466ff9",
+    "counter": 4,
+    "stability": {
+      "attempts": [
+        {
+          "power": 14,
+          "numerical": true,
+          "numerical_current": {
+            "mean_sd": 0.016514386810780404,
+            "endpoint_sd": 0.03270578424799875,
+            "width_fraction": 0.01253711908618027
+          },
+          "ess": [
+            3342.452680659362,
+            3362.664262783038
+          ],
+          "gaussian_pass": true,
+          "joint_pass": true,
+          "numerical_previous": {
+            "mean_sd": 0.016561483025557554,
+            "endpoint_sd": 0.03237014661698229,
+            "width_fraction": 0.012634246289844553
+          },
+          "joint_kl": 2.8730575248721478e-05,
+          "gaussian_kl": 1.7247085262184214e-06
+        }
+      ],
+      "numerical": true,
+      "numerical_current": {
+        "mean_sd": 0.016514386810780404,
+        "endpoint_sd": 0.03270578424799875,
+        "width_fraction": 0.01253711908618027
+      },
+      "ess": [
+        3342.452680659362,
+        3362.664262783038
+      ],
+      "gaussian_pass": true,
+      "joint_pass": true,
+      "numerical_previous": {
+        "mean_sd": 0.016561483025557554,
+        "endpoint_sd": 0.03237014661698229,
+        "width_fraction": 0.012634246289844553
+      },
+      "joint_kl": 2.8730575248721478e-05,
+      "gaussian_kl": 1.7247085262184214e-06
+    },
+    "streaks": {
+      "original": 15,
+      "gaussian": 15,
+      "joint": 10
+    },
+    "rules": {
+      "original": {
+        "training": 268,
+        "audit": 0,
+        "total": 268
+      },
+      "precision_refined": {
+        "training": 268,
+        "audit": 0,
+        "total": 268
+      },
+      "guarded": {
+        "training": 358,
+        "audit": 96,
+        "total": 454
+      }
+    },
+    "audit_calls": 96,
+    "posterior_evaluation": 17,
+    "posterior_comparisons": 16,
+    "bo_batches": 160,
+    "elapsed_seconds": 33.73361662495881,
+    "recorded_unix": 1789171895.080061,
+    "timing": {
+      "labels": 1.4092033377382904,
+      "fit": 13.410124248592183,
+      "acquisition": 15.81180323503213,
+      "stability": 2.3296311669400893,
+      "audit": 0.29759120900416747
+    }
+  },
+  {
+    "points": 568,
+    "sha256": "5e34f1c2a307b653f2f0faac89101f5157d07bc9e858d4dac85dc1cb5dd3ef1f",
+    "counter": 14,
+    "stability": {
+      "attempts": [
+        {
+          "power": 14,
+          "numerical": true,
+          "numerical_current": {
+            "mean_sd": 0.016239792278359654,
+            "endpoint_sd": 0.034024682213018714,
+            "width_fraction": 0.01321844525749305
+          },
+          "ess": [
+            3340.5608569739356,
+            3363.2626395482484
+          ],
+          "gaussian_pass": true,
+          "joint_pass": true,
+          "numerical_previous": {
+            "mean_sd": 0.016251819253069722,
+            "endpoint_sd": 0.03380716060102597,
+            "width_fraction": 0.013152228998248416
+          },
+          "joint_kl": 1.670242323721374e-05,
+          "gaussian_kl": 1.8594505934999006e-07
+        }
+      ],
+      "numerical": true,
+      "numerical_current": {
+        "mean_sd": 0.016239792278359654,
+        "endpoint_sd": 0.034024682213018714,
+        "width_fraction": 0.01321844525749305
+      },
+      "ess": [
+        3340.5608569739356,
+        3363.2626395482484
+      ],
+      "gaussian_pass": true,
+      "joint_pass": true,
+      "numerical_previous": {
+        "mean_sd": 0.016251819253069722,
+        "endpoint_sd": 0.03380716060102597,
+        "width_fraction": 0.013152228998248416
+      },
+      "joint_kl": 1.670242323721374e-05,
+      "gaussian_kl": 1.8594505934999006e-07
+    },
+    "streaks": {
+      "original": 16,
+      "gaussian": 16,
+      "joint": 11
+    },
+    "rules": {
+      "original": {
+        "training": 268,
+        "audit": 0,
+        "total": 268
+      },
+      "precision_refined": {
+        "training": 268,
+        "audit": 0,
+        "total": 268
+      },
+      "guarded": {
+        "training": 358,
+        "audit": 96,
+        "total": 454
+      }
+    },
+    "audit_calls": 96,
+    "posterior_evaluation": 18,
+    "posterior_comparisons": 17,
+    "bo_batches": 170,
+    "elapsed_seconds": 36.31552266597282,
+    "recorded_unix": 1789171897.661887,
+    "timing": {
+      "labels": 1.4873098387033679,
+      "fit": 14.67866779351607,
+      "acquisition": 16.87876961089205,
+      "stability": 2.445364749932196,
+      "audit": 0.29759120900416747
+    }
+  },
+  {
+    "points": 598,
+    "sha256": "49d16782ebee2893de3e3baa3c48f9cfe28df43d3db53e887f8a2ee5db4972b0",
+    "counter": 21,
+    "stability": {
+      "attempts": [
+        {
+          "power": 14,
+          "numerical": true,
+          "numerical_current": {
+            "mean_sd": 0.017857849477405943,
+            "endpoint_sd": 0.035347586921673696,
+            "width_fraction": 0.01324746144418798
+          },
+          "ess": [
+            3342.7850770212367,
+            3356.6052541381223
+          ],
+          "gaussian_pass": true,
+          "joint_pass": true,
+          "numerical_previous": {
+            "mean_sd": 0.017815232033227178,
+            "endpoint_sd": 0.035325319478687875,
+            "width_fraction": 0.013239611543287566
+          },
+          "joint_kl": 9.045036618394574e-06,
+          "gaussian_kl": 2.6626076010671795e-07
+        }
+      ],
+      "numerical": true,
+      "numerical_current": {
+        "mean_sd": 0.017857849477405943,
+        "endpoint_sd": 0.035347586921673696,
+        "width_fraction": 0.01324746144418798
+      },
+      "ess": [
+        3342.7850770212367,
+        3356.6052541381223
+      ],
+      "gaussian_pass": true,
+      "joint_pass": true,
+      "numerical_previous": {
+        "mean_sd": 0.017815232033227178,
+        "endpoint_sd": 0.035325319478687875,
+        "width_fraction": 0.013239611543287566
+      },
+      "joint_kl": 9.045036618394574e-06,
+      "gaussian_kl": 2.6626076010671795e-07
+    },
+    "streaks": {
+      "original": 17,
+      "gaussian": 17,
+      "joint": 12
+    },
+    "rules": {
+      "original": {
+        "training": 268,
+        "audit": 0,
+        "total": 268
+      },
+      "precision_refined": {
+        "training": 268,
+        "audit": 0,
+        "total": 268
+      },
+      "guarded": {
+        "training": 358,
+        "audit": 96,
+        "total": 454
+      }
+    },
+    "audit_calls": 96,
+    "posterior_evaluation": 19,
+    "posterior_comparisons": 18,
+    "bo_batches": 180,
+    "elapsed_seconds": 39.41495483298786,
+    "recorded_unix": 1789171900.7612212,
+    "timing": {
+      "labels": 1.5706662136944942,
+      "fit": 16.347473874338903,
+      "acquisition": 18.046012734936085,
+      "stability": 2.562898208911065,
+      "audit": 0.29759120900416747
+    }
+  },
+  {
+    "points": 628,
+    "sha256": "3ac316c61eae579b03e34b2cb13017c97c0e85bcbda905b295cb940548d9e9c5",
+    "counter": 16,
+    "stability": {
+      "attempts": [
+        {
+          "power": 14,
+          "numerical": true,
+          "numerical_current": {
+            "mean_sd": 0.017800582699084053,
+            "endpoint_sd": 0.03149575440645522,
+            "width_fraction": 0.011095664460782917
+          },
+          "ess": [
+            3340.9362718925254,
+            3358.177896249728
+          ],
+          "gaussian_pass": true,
+          "joint_pass": true,
+          "numerical_previous": {
+            "mean_sd": 0.01782091423833058,
+            "endpoint_sd": 0.03108752562444584,
+            "width_fraction": 0.01112676264750423
+          },
+          "joint_kl": 3.842437022030782e-06,
+          "gaussian_kl": 1.6683117820548432e-07
+        }
+      ],
+      "numerical": true,
+      "numerical_current": {
+        "mean_sd": 0.017800582699084053,
+        "endpoint_sd": 0.03149575440645522,
+        "width_fraction": 0.011095664460782917
+      },
+      "ess": [
+        3340.9362718925254,
+        3358.177896249728
+      ],
+      "gaussian_pass": true,
+      "joint_pass": true,
+      "numerical_previous": {
+        "mean_sd": 0.01782091423833058,
+        "endpoint_sd": 0.03108752562444584,
+        "width_fraction": 0.01112676264750423
+      },
+      "joint_kl": 3.842437022030782e-06,
+      "gaussian_kl": 1.6683117820548432e-07
+    },
+    "streaks": {
+      "original": 18,
+      "gaussian": 18,
+      "joint": 13
+    },
+    "rules": {
+      "original": {
+        "training": 268,
+        "audit": 0,
+        "total": 268
+      },
+      "precision_refined": {
+        "training": 268,
+        "audit": 0,
+        "total": 268
+      },
+      "guarded": {
+        "training": 358,
+        "audit": 96,
+        "total": 454
+      }
+    },
+    "audit_calls": 96,
+    "posterior_evaluation": 20,
+    "posterior_comparisons": 19,
+    "bo_batches": 190,
+    "elapsed_seconds": 42.84769166598562,
+    "recorded_unix": 1789171904.193851,
+    "timing": {
+      "labels": 1.6514220465905964,
+      "fit": 18.417882041365374,
+      "acquisition": 19.139187900989782,
+      "stability": 2.688672458869405,
+      "audit": 0.29759120900416747
+    }
+  },
+  {
+    "points": 658,
+    "sha256": "46894275a90eeee15b3d21274a07703c26bd788056644a86de03f57089b99241",
+    "counter": 11,
+    "stability": {
+      "attempts": [
+        {
+          "power": 14,
+          "numerical": true,
+          "numerical_current": {
+            "mean_sd": 0.018792837643332803,
+            "endpoint_sd": 0.026869932710438162,
+            "width_fraction": 0.011971253348868949
+          },
+          "ess": [
+            3340.631419516519,
+            3358.130593914467
+          ],
+          "gaussian_pass": true,
+          "joint_pass": true,
+          "numerical_previous": {
+            "mean_sd": 0.018695092458937964,
+            "endpoint_sd": 0.026977377827628934,
+            "width_fraction": 0.011953241490749944
+          },
+          "joint_kl": 1.5593211198108133e-05,
+          "gaussian_kl": 2.053607701668625e-07
+        }
+      ],
+      "numerical": true,
+      "numerical_current": {
+        "mean_sd": 0.018792837643332803,
+        "endpoint_sd": 0.026869932710438162,
+        "width_fraction": 0.011971253348868949
+      },
+      "ess": [
+        3340.631419516519,
+        3358.130593914467
+      ],
+      "gaussian_pass": true,
+      "joint_pass": true,
+      "numerical_previous": {
+        "mean_sd": 0.018695092458937964,
+        "endpoint_sd": 0.026977377827628934,
+        "width_fraction": 0.011953241490749944
+      },
+      "joint_kl": 1.5593211198108133e-05,
+      "gaussian_kl": 2.053607701668625e-07
+    },
+    "streaks": {
+      "original": 19,
+      "gaussian": 19,
+      "joint": 14
+    },
+    "rules": {
+      "original": {
+        "training": 268,
+        "audit": 0,
+        "total": 268
+      },
+      "precision_refined": {
+        "training": 268,
+        "audit": 0,
+        "total": 268
+      },
+      "guarded": {
+        "training": 358,
+        "audit": 96,
+        "total": 454
+      }
+    },
+    "audit_calls": 96,
+    "posterior_evaluation": 21,
+    "posterior_comparisons": 20,
+    "bo_batches": 200,
+    "elapsed_seconds": 46.388852040981874,
+    "recorded_unix": 1789171907.7349,
+    "timing": {
+      "labels": 1.7309173805988394,
+      "fit": 20.7113116235123,
+      "acquisition": 20.084530150925275,
+      "stability": 2.843157917901408,
+      "audit": 0.29759120900416747
+    }
+  },
+  {
+    "points": 688,
+    "sha256": "3e9530eee0bfa64a899333d1c12cebf8955206421c1e58475d722c31dbbe8ed5",
+    "counter": 41,
+    "stability": {
+      "attempts": [
+        {
+          "power": 14,
+          "numerical": true,
+          "numerical_current": {
+            "mean_sd": 0.020013636802968856,
+            "endpoint_sd": 0.02620291602405603,
+            "width_fraction": 0.01017921821086265
+          },
+          "ess": [
+            3338.39365487578,
+            3360.7747124509083
+          ],
+          "gaussian_pass": true,
+          "joint_pass": true,
+          "numerical_previous": {
+            "mean_sd": 0.019998511088395007,
+            "endpoint_sd": 0.026295693733045356,
+            "width_fraction": 0.010111015891180575
+          },
+          "joint_kl": 1.3460366758286172e-06,
+          "gaussian_kl": 3.271727688769488e-08
+        }
+      ],
+      "numerical": true,
+      "numerical_current": {
+        "mean_sd": 0.020013636802968856,
+        "endpoint_sd": 0.02620291602405603,
+        "width_fraction": 0.01017921821086265
+      },
+      "ess": [
+        3338.39365487578,
+        3360.7747124509083
+      ],
+      "gaussian_pass": true,
+      "joint_pass": true,
+      "numerical_previous": {
+        "mean_sd": 0.019998511088395007,
+        "endpoint_sd": 0.026295693733045356,
+        "width_fraction": 0.010111015891180575
+      },
+      "joint_kl": 1.3460366758286172e-06,
+      "gaussian_kl": 3.271727688769488e-08
+    },
+    "streaks": {
+      "original": 20,
+      "gaussian": 20,
+      "joint": 15
+    },
+    "rules": {
+      "original": {
+        "training": 268,
+        "audit": 0,
+        "total": 268
+      },
+      "precision_refined": {
+        "training": 268,
+        "audit": 0,
+        "total": 268
+      },
+      "guarded": {
+        "training": 358,
+        "audit": 96,
+        "total": 454
+      }
+    },
+    "audit_calls": 96,
+    "posterior_evaluation": 22,
+    "posterior_comparisons": 21,
+    "bo_batches": 210,
+    "elapsed_seconds": 49.98108420800418,
+    "recorded_unix": 1789171911.327019,
+    "timing": {
+      "labels": 1.814768381707836,
+      "fit": 22.653323623468168,
+      "acquisition": 21.419183361926116,
+      "stability": 3.0084500008961186,
+      "audit": 0.29759120900416747
+    }
+  },
+  {
+    "points": 718,
+    "sha256": "8b0bb8e295619eb642e24dbd8f2a7e9971120c96cc3cd32c507cbf05608662fc",
+    "counter": 19,
+    "stability": {
+      "attempts": [
+        {
+          "power": 14,
+          "numerical": true,
+          "numerical_current": {
+            "mean_sd": 0.021651728931317577,
+            "endpoint_sd": 0.03350731794540183,
+            "width_fraction": 0.011848598960333856
+          },
+          "ess": [
+            3340.026049291633,
+            3358.741605670157
+          ],
+          "gaussian_pass": true,
+          "joint_pass": true,
+          "numerical_previous": {
+            "mean_sd": 0.021670028547720464,
+            "endpoint_sd": 0.033671846093219215,
+            "width_fraction": 0.012039381962960283
+          },
+          "joint_kl": 6.441868842438182e-06,
+          "gaussian_kl": 8.282837526962794e-08
+        }
+      ],
+      "numerical": true,
+      "numerical_current": {
+        "mean_sd": 0.021651728931317577,
+        "endpoint_sd": 0.03350731794540183,
+        "width_fraction": 0.011848598960333856
+      },
+      "ess": [
+        3340.026049291633,
+        3358.741605670157
+      ],
+      "gaussian_pass": true,
+      "joint_pass": true,
+      "numerical_previous": {
+        "mean_sd": 0.021670028547720464,
+        "endpoint_sd": 0.033671846093219215,
+        "width_fraction": 0.012039381962960283
+      },
+      "joint_kl": 6.441868842438182e-06,
+      "gaussian_kl": 8.282837526962794e-08
+    },
+    "streaks": {
+      "original": 21,
+      "gaussian": 21,
+      "joint": 16
+    },
+    "rules": {
+      "original": {
+        "training": 268,
+        "audit": 0,
+        "total": 268
+      },
+      "precision_refined": {
+        "training": 268,
+        "audit": 0,
+        "total": 268
+      },
+      "guarded": {
+        "training": 358,
+        "audit": 96,
+        "total": 454
+      }
+    },
+    "audit_calls": 96,
+    "posterior_evaluation": 23,
+    "posterior_comparisons": 22,
+    "bo_batches": 220,
+    "elapsed_seconds": 54.383672458003275,
+    "recorded_unix": 1789171915.72947,
+    "timing": {
+      "labels": 1.8954012137255631,
+      "fit": 25.4340819165227,
+      "acquisition": 22.72326965490356,
+      "stability": 3.1769282098975964,
+      "audit": 0.29759120900416747
+    }
+  },
+  {
+    "points": 748,
+    "sha256": "c6d588ffb658cc0a519bfb71c580ad493161cbee9b9e0cb4484e93be61af312d",
+    "counter": 49,
+    "stability": {
+      "attempts": [
+        {
+          "power": 14,
+          "numerical": true,
+          "numerical_current": {
+            "mean_sd": 0.01600732086222924,
+            "endpoint_sd": 0.0315881666810285,
+            "width_fraction": 0.012683520187276587
+          },
+          "ess": [
+            3344.834314720699,
+            3365.6837126747637
+          ],
+          "gaussian_pass": true,
+          "joint_pass": true,
+          "numerical_previous": {
+            "mean_sd": 0.016007229151175105,
+            "endpoint_sd": 0.031379188037499714,
+            "width_fraction": 0.012684503154323457
+          },
+          "joint_kl": 8.976617281305515e-07,
+          "gaussian_kl": 2.178562752419566e-08
+        }
+      ],
+      "numerical": true,
+      "numerical_current": {
+        "mean_sd": 0.01600732086222924,
+        "endpoint_sd": 0.0315881666810285,
+        "width_fraction": 0.012683520187276587
+      },
+      "ess": [
+        3344.834314720699,
+        3365.6837126747637
+      ],
+      "gaussian_pass": true,
+      "joint_pass": true,
+      "numerical_previous": {
+        "mean_sd": 0.016007229151175105,
+        "endpoint_sd": 0.031379188037499714,
+        "width_fraction": 0.012684503154323457
+      },
+      "joint_kl": 8.976617281305515e-07,
+      "gaussian_kl": 2.178562752419566e-08
+    },
+    "streaks": {
+      "original": 22,
+      "gaussian": 22,
+      "joint": 17
+    },
+    "rules": {
+      "original": {
+        "training": 268,
+        "audit": 0,
+        "total": 268
+      },
+      "precision_refined": {
+        "training": 268,
+        "audit": 0,
+        "total": 268
+      },
+      "guarded": {
+        "training": 358,
+        "audit": 96,
+        "total": 454
+      }
+    },
+    "audit_calls": 96,
+    "posterior_evaluation": 24,
+    "posterior_comparisons": 23,
+    "bo_batches": 230,
+    "elapsed_seconds": 58.06472612498328,
+    "recorded_unix": 1789171919.410408,
+    "timing": {
+      "labels": 1.9741928378934972,
+      "fit": 27.681957916531246,
+      "acquisition": 23.87662636488676,
+      "stability": 3.3092502098879777,
+      "audit": 0.29759120900416747
+    }
+  },
+  {
+    "points": 778,
+    "sha256": "f24a25cc7a4c8d85101100f0d0e14fec2c73aedf6970e3f843643484038203b4",
+    "counter": 79,
+    "stability": {
+      "attempts": [
+        {
+          "power": 14,
+          "numerical": true,
+          "numerical_current": {
+            "mean_sd": 0.016865268140414336,
+            "endpoint_sd": 0.03476291348253183,
+            "width_fraction": 0.011771594146270381
+          },
+          "ess": [
+            3346.6423972725497,
+            3365.291593349608
+          ],
+          "gaussian_pass": true,
+          "joint_pass": true,
+          "numerical_previous": {
+            "mean_sd": 0.01687058126074693,
+            "endpoint_sd": 0.03476316546468332,
+            "width_fraction": 0.011725822938819075
+          },
+          "joint_kl": 1.961304841258634e-06,
+          "gaussian_kl": 2.434618995295068e-08
+        }
+      ],
+      "numerical": true,
+      "numerical_current": {
+        "mean_sd": 0.016865268140414336,
+        "endpoint_sd": 0.03476291348253183,
+        "width_fraction": 0.011771594146270381
+      },
+      "ess": [
+        3346.6423972725497,
+        3365.291593349608
+      ],
+      "gaussian_pass": true,
+      "joint_pass": true,
+      "numerical_previous": {
+        "mean_sd": 0.01687058126074693,
+        "endpoint_sd": 0.03476316546468332,
+        "width_fraction": 0.011725822938819075
+      },
+      "joint_kl": 1.961304841258634e-06,
+      "gaussian_kl": 2.434618995295068e-08
+    },
+    "streaks": {
+      "original": 23,
+      "gaussian": 23,
+      "joint": 18
+    },
+    "rules": {
+      "original": {
+        "training": 268,
+        "audit": 0,
+        "total": 268
+      },
+      "precision_refined": {
+        "training": 268,
+        "audit": 0,
+        "total": 268
+      },
+      "guarded": {
+        "training": 358,
+        "audit": 96,
+        "total": 454
+      }
+    },
+    "audit_calls": 96,
+    "posterior_evaluation": 25,
+    "posterior_comparisons": 24,
+    "bo_batches": 240,
+    "elapsed_seconds": 62.304694124963135,
+    "recorded_unix": 1789171923.650243,
+    "timing": {
+      "labels": 2.0548225028906018,
+      "fit": 30.515689084480982,
+      "acquisition": 24.954714741907082,
+      "stability": 3.482943501905538,
+      "audit": 0.29759120900416747
+    }
+  },
+  {
+    "points": 808,
+    "sha256": "0a1804463e665eb753b327ece8d523aa76fc0716b47e14fb45e855450d95162a",
+    "counter": 109,
+    "stability": {
+      "attempts": [
+        {
+          "power": 14,
+          "numerical": true,
+          "numerical_current": {
+            "mean_sd": 0.017306615619010476,
+            "endpoint_sd": 0.03294843367419251,
+            "width_fraction": 0.012197760902880272
+          },
+          "ess": [
+            3343.202325455248,
+            3363.1243712207724
+          ],
+          "gaussian_pass": true,
+          "joint_pass": true,
+          "numerical_previous": {
+            "mean_sd": 0.017336317079409677,
+            "endpoint_sd": 0.03292851689267842,
+            "width_fraction": 0.012278460786114831
+          },
+          "joint_kl": 4.194439539432914e-06,
+          "gaussian_kl": 1.3480727023562622e-07
+        }
+      ],
+      "numerical": true,
+      "numerical_current": {
+        "mean_sd": 0.017306615619010476,
+        "endpoint_sd": 0.03294843367419251,
+        "width_fraction": 0.012197760902880272
+      },
+      "ess": [
+        3343.202325455248,
+        3363.1243712207724
+      ],
+      "gaussian_pass": true,
+      "joint_pass": true,
+      "numerical_previous": {
+        "mean_sd": 0.017336317079409677,
+        "endpoint_sd": 0.03292851689267842,
+        "width_fraction": 0.012278460786114831
+      },
+      "joint_kl": 4.194439539432914e-06,
+      "gaussian_kl": 1.3480727023562622e-07
+    },
+    "streaks": {
+      "original": 24,
+      "gaussian": 24,
+      "joint": 19
+    },
+    "rules": {
+      "original": {
+        "training": 268,
+        "audit": 0,
+        "total": 268
+      },
+      "precision_refined": {
+        "training": 268,
+        "audit": 0,
+        "total": 268
+      },
+      "guarded": {
+        "training": 358,
+        "audit": 96,
+        "total": 454
+      }
+    },
+    "audit_calls": 96,
+    "posterior_evaluation": 26,
+    "posterior_comparisons": 25,
+    "bo_batches": 250,
+    "elapsed_seconds": 67.22195120796096,
+    "recorded_unix": 1789171928.5673459,
+    "timing": {
+      "labels": 2.137711543997284,
+      "fit": 33.587657375552226,
+      "acquisition": 26.51475015998585,
+      "stability": 3.607524668914266,
+      "audit": 0.29759120900416747
+    }
+  },
+  {
+    "points": 838,
+    "sha256": "3e5228b8012ae1784f7805ac661d76c0636844319e1a083819e7ab8a127b9194",
+    "counter": 5,
+    "stability": {
+      "attempts": [
+        {
+          "power": 14,
+          "numerical": true,
+          "numerical_current": {
+            "mean_sd": 0.016498454599578563,
+            "endpoint_sd": 0.027237318862415847,
+            "width_fraction": 0.01207115041555884
+          },
+          "ess": [
+            3348.275880800657,
+            3370.3368187559245
+          ],
+          "gaussian_pass": true,
+          "joint_pass": true,
+          "numerical_previous": {
+            "mean_sd": 0.016432820267724416,
+            "endpoint_sd": 0.027302009249405165,
+            "width_fraction": 0.01220478849347817
+          },
+          "joint_kl": 9.7301171747317e-06,
+          "gaussian_kl": 7.662152157195123e-08
+        }
+      ],
+      "numerical": true,
+      "numerical_current": {
+        "mean_sd": 0.016498454599578563,
+        "endpoint_sd": 0.027237318862415847,
+        "width_fraction": 0.01207115041555884
+      },
+      "ess": [
+        3348.275880800657,
+        3370.3368187559245
+      ],
+      "gaussian_pass": true,
+      "joint_pass": true,
+      "numerical_previous": {
+        "mean_sd": 0.016432820267724416,
+        "endpoint_sd": 0.027302009249405165,
+        "width_fraction": 0.01220478849347817
+      },
+      "joint_kl": 9.7301171747317e-06,
+      "gaussian_kl": 7.662152157195123e-08
+    },
+    "streaks": {
+      "original": 25,
+      "gaussian": 25,
+      "joint": 20
+    },
+    "rules": {
+      "original": {
+        "training": 268,
+        "audit": 0,
+        "total": 268
+      },
+      "precision_refined": {
+        "training": 268,
+        "audit": 0,
+        "total": 268
+      },
+      "guarded": {
+        "training": 358,
+        "audit": 96,
+        "total": 454
+      }
+    },
+    "audit_calls": 96,
+    "posterior_evaluation": 27,
+    "posterior_comparisons": 26,
+    "bo_batches": 260,
+    "elapsed_seconds": 72.20420108299004,
+    "recorded_unix": 1789171933.549439,
+    "timing": {
+      "labels": 2.2193715018802322,
+      "fit": 36.78795374959009,
+      "acquisition": 27.993730410118587,
+      "stability": 3.751497960940469,
+      "audit": 0.29759120900416747
+    }
+  },
+  {
+    "points": 868,
+    "sha256": "c078d2f7429f65c5a21197a554fbc73ee5694e2d18316c50c17db50c88888a2e",
+    "counter": 35,
+    "stability": {
+      "attempts": [
+        {
+          "power": 14,
+          "numerical": true,
+          "numerical_current": {
+            "mean_sd": 0.017095413726081157,
+            "endpoint_sd": 0.03344411978787061,
+            "width_fraction": 0.012479660932469772
+          },
+          "ess": [
+            3348.5954298707534,
+            3372.777636093613
+          ],
+          "gaussian_pass": true,
+          "joint_pass": true,
+          "numerical_previous": {
+            "mean_sd": 0.017099963874355834,
+            "endpoint_sd": 0.033123137665286684,
+            "width_fraction": 0.012463842028280547
+          },
+          "joint_kl": 1.3238298648947326e-06,
+          "gaussian_kl": 1.0799365846025921e-08
+        }
+      ],
+      "numerical": true,
+      "numerical_current": {
+        "mean_sd": 0.017095413726081157,
+        "endpoint_sd": 0.03344411978787061,
+        "width_fraction": 0.012479660932469772
+      },
+      "ess": [
+        3348.5954298707534,
+        3372.777636093613
+      ],
+      "gaussian_pass": true,
+      "joint_pass": true,
+      "numerical_previous": {
+        "mean_sd": 0.017099963874355834,
+        "endpoint_sd": 0.033123137665286684,
+        "width_fraction": 0.012463842028280547
+      },
+      "joint_kl": 1.3238298648947326e-06,
+      "gaussian_kl": 1.0799365846025921e-08
+    },
+    "streaks": {
+      "original": 26,
+      "gaussian": 26,
+      "joint": 21
+    },
+    "rules": {
+      "original": {
+        "training": 268,
+        "audit": 0,
+        "total": 268
+      },
+      "precision_refined": {
+        "training": 268,
+        "audit": 0,
+        "total": 268
+      },
+      "guarded": {
+        "training": 358,
+        "audit": 96,
+        "total": 454
+      }
+    },
+    "audit_calls": 96,
+    "posterior_evaluation": 28,
+    "posterior_comparisons": 27,
+    "bo_batches": 270,
+    "elapsed_seconds": 76.88165395800024,
+    "recorded_unix": 1789171938.2267451,
+    "timing": {
+      "labels": 2.295577209908515,
+      "fit": 40.07835074857576,
+      "acquisition": 29.077255452168174,
+      "stability": 3.8970012949430384,
+      "audit": 0.29759120900416747
+    }
+  },
+  {
+    "points": 898,
+    "sha256": "8150f69c8dd90ad668e678c5b0632bd2cf177632ad38b931beacd4ede7aef19f",
+    "counter": 65,
+    "stability": {
+      "attempts": [
+        {
+          "power": 14,
+          "numerical": true,
+          "numerical_current": {
+            "mean_sd": 0.019010809530805237,
+            "endpoint_sd": 0.03169287463763209,
+            "width_fraction": 0.012588637194108632
+          },
+          "ess": [
+            3346.9837167327773,
+            3371.8240657698348
+          ],
+          "gaussian_pass": true,
+          "joint_pass": true,
+          "numerical_previous": {
+            "mean_sd": 0.018993151734706677,
+            "endpoint_sd": 0.031673763943517876,
+            "width_fraction": 0.012571408029079967
+          },
+          "joint_kl": 1.0835627747497444e-06,
+          "gaussian_kl": 2.0130197064816002e-08
+        }
+      ],
+      "numerical": true,
+      "numerical_current": {
+        "mean_sd": 0.019010809530805237,
+        "endpoint_sd": 0.03169287463763209,
+        "width_fraction": 0.012588637194108632
+      },
+      "ess": [
+        3346.9837167327773,
+        3371.8240657698348
+      ],
+      "gaussian_pass": true,
+      "joint_pass": true,
+      "numerical_previous": {
+        "mean_sd": 0.018993151734706677,
+        "endpoint_sd": 0.031673763943517876,
+        "width_fraction": 0.012571408029079967
+      },
+      "joint_kl": 1.0835627747497444e-06,
+      "gaussian_kl": 2.0130197064816002e-08
+    },
+    "streaks": {
+      "original": 27,
+      "gaussian": 27,
+      "joint": 22
+    },
+    "rules": {
+      "original": {
+        "training": 268,
+        "audit": 0,
+        "total": 268
+      },
+      "precision_refined": {
+        "training": 268,
+        "audit": 0,
+        "total": 268
+      },
+      "guarded": {
+        "training": 358,
+        "audit": 96,
+        "total": 454
+      }
+    },
+    "audit_calls": 96,
+    "posterior_evaluation": 29,
+    "posterior_comparisons": 28,
+    "bo_batches": 280,
+    "elapsed_seconds": 82.27696200000355,
+    "recorded_unix": 1789171943.6218839,
+    "timing": {
+      "labels": 2.372519167896826,
+      "fit": 43.95136253949022,
+      "acquisition": 30.275546784163453,
+      "stability": 4.062118086905684,
+      "audit": 0.29759120900416747
+    }
+  },
+  {
+    "points": 928,
+    "sha256": "0dd502f3048fd4ea8a95d7c2f990b021c948a2ee8ae403464093194e0dc30ff9",
+    "counter": 1,
+    "stability": {
+      "attempts": [
+        {
+          "power": 14,
+          "numerical": true,
+          "numerical_current": {
+            "mean_sd": 0.015876405717581407,
+            "endpoint_sd": 0.03351083751961735,
+            "width_fraction": 0.01249781003006123
+          },
+          "ess": [
+            3346.765548919401,
+            3371.2413730638214
+          ],
+          "gaussian_pass": true,
+          "joint_pass": true,
+          "numerical_previous": {
+            "mean_sd": 0.015768009251955276,
+            "endpoint_sd": 0.033525860523732985,
+            "width_fraction": 0.012733759260591615
+          },
+          "joint_kl": 4.189471616456788e-06,
+          "gaussian_kl": 7.857993278292952e-08
+        }
+      ],
+      "numerical": true,
+      "numerical_current": {
+        "mean_sd": 0.015876405717581407,
+        "endpoint_sd": 0.03351083751961735,
+        "width_fraction": 0.01249781003006123
+      },
+      "ess": [
+        3346.765548919401,
+        3371.2413730638214
+      ],
+      "gaussian_pass": true,
+      "joint_pass": true,
+      "numerical_previous": {
+        "mean_sd": 0.015768009251955276,
+        "endpoint_sd": 0.033525860523732985,
+        "width_fraction": 0.012733759260591615
+      },
+      "joint_kl": 4.189471616456788e-06,
+      "gaussian_kl": 7.857993278292952e-08
+    },
+    "streaks": {
+      "original": 28,
+      "gaussian": 28,
+      "joint": 23
+    },
+    "rules": {
+      "original": {
+        "training": 268,
+        "audit": 0,
+        "total": 268
+      },
+      "precision_refined": {
+        "training": 268,
+        "audit": 0,
+        "total": 268
+      },
+      "guarded": {
+        "training": 358,
+        "audit": 96,
+        "total": 454
+      }
+    },
+    "audit_calls": 96,
+    "posterior_evaluation": 30,
+    "posterior_comparisons": 29,
+    "bo_batches": 290,
+    "elapsed_seconds": 87.8623102909769,
+    "recorded_unix": 1789171949.207057,
+    "timing": {
+      "labels": 2.4535645858268254,
+      "fit": 47.55151024740189,
+      "acquisition": 31.95629715814721,
+      "stability": 4.196997294900939,
+      "audit": 0.29759120900416747
+    }
+  },
+  {
+    "points": 958,
+    "sha256": "81fe82997ee6aba84adb6d6d9c3fcc426063efc7edba18cea7394f94c21a55c7",
+    "counter": 31,
+    "stability": {
+      "attempts": [
+        {
+          "power": 14,
+          "numerical": true,
+          "numerical_current": {
+            "mean_sd": 0.018780322325686834,
+            "endpoint_sd": 0.02635835893685363,
+            "width_fraction": 0.01111781318450511
+          },
+          "ess": [
+            3344.938589398941,
+            3368.464480896065
+          ],
+          "gaussian_pass": true,
+          "joint_pass": true,
+          "numerical_previous": {
+            "mean_sd": 0.018789434954545776,
+            "endpoint_sd": 0.026417232080559513,
+            "width_fraction": 0.011078984394828906
+          },
+          "joint_kl": 1.1822330924250408e-06,
+          "gaussian_kl": 4.200383330044133e-08
+        }
+      ],
+      "numerical": true,
+      "numerical_current": {
+        "mean_sd": 0.018780322325686834,
+        "endpoint_sd": 0.02635835893685363,
+        "width_fraction": 0.01111781318450511
+      },
+      "ess": [
+        3344.938589398941,
+        3368.464480896065
+      ],
+      "gaussian_pass": true,
+      "joint_pass": true,
+      "numerical_previous": {
+        "mean_sd": 0.018789434954545776,
+        "endpoint_sd": 0.026417232080559513,
+        "width_fraction": 0.011078984394828906
+      },
+      "joint_kl": 1.1822330924250408e-06,
+      "gaussian_kl": 4.200383330044133e-08
+    },
+    "streaks": {
+      "original": 29,
+      "gaussian": 29,
+      "joint": 24
+    },
+    "rules": {
+      "original": {
+        "training": 268,
+        "audit": 0,
+        "total": 268
+      },
+      "precision_refined": {
+        "training": 268,
+        "audit": 0,
+        "total": 268
+      },
+      "guarded": {
+        "training": 358,
+        "audit": 96,
+        "total": 454
+      }
+    },
+    "audit_calls": 96,
+    "posterior_evaluation": 31,
+    "posterior_comparisons": 30,
+    "bo_batches": 300,
+    "elapsed_seconds": 94.02249920798931,
+    "recorded_unix": 1789171955.367053,
+    "timing": {
+      "labels": 2.5314323779311962,
+      "fit": 52.08859986939933,
+      "acquisition": 33.25315440708073,
+      "stability": 4.356517711887136,
+      "audit": 0.29759120900416747
+    }
+  },
+  {
+    "points": 988,
+    "sha256": "9fc8fc82143042e3233660985e1f0173eb9df879a652541405430c34c82bbd72",
+    "counter": 26,
+    "stability": {
+      "attempts": [
+        {
+          "power": 14,
+          "numerical": true,
+          "numerical_current": {
+            "mean_sd": 0.019060591667724197,
+            "endpoint_sd": 0.0261777714587949,
+            "width_fraction": 0.011418725351848291
+          },
+          "ess": [
+            3346.7864885163012,
+            3370.9261290806226
+          ],
+          "gaussian_pass": true,
+          "joint_pass": true,
+          "numerical_previous": {
+            "mean_sd": 0.019084738989411758,
+            "endpoint_sd": 0.026178006944221743,
+            "width_fraction": 0.011399426304484539
+          },
+          "joint_kl": 1.209657009859108e-06,
+          "gaussian_kl": 1.0411922879427493e-08
+        }
+      ],
+      "numerical": true,
+      "numerical_current": {
+        "mean_sd": 0.019060591667724197,
+        "endpoint_sd": 0.0261777714587949,
+        "width_fraction": 0.011418725351848291
+      },
+      "ess": [
+        3346.7864885163012,
+        3370.9261290806226
+      ],
+      "gaussian_pass": true,
+      "joint_pass": true,
+      "numerical_previous": {
+        "mean_sd": 0.019084738989411758,
+        "endpoint_sd": 0.026178006944221743,
+        "width_fraction": 0.011399426304484539
+      },
+      "joint_kl": 1.209657009859108e-06,
+      "gaussian_kl": 1.0411922879427493e-08
+    },
+    "streaks": {
+      "original": 30,
+      "gaussian": 30,
+      "joint": 25
+    },
+    "rules": {
+      "original": {
+        "training": 268,
+        "audit": 0,
+        "total": 268
+      },
+      "precision_refined": {
+        "training": 268,
+        "audit": 0,
+        "total": 268
+      },
+      "guarded": {
+        "training": 358,
+        "audit": 96,
+        "total": 454
+      }
+    },
+    "audit_calls": 96,
+    "posterior_evaluation": 32,
+    "posterior_comparisons": 31,
+    "bo_batches": 310,
+    "elapsed_seconds": 100.73545308300527,
+    "recorded_unix": 1789171962.079796,
+    "timing": {
+      "labels": 2.608525420888327,
+      "fit": 57.11805457947776,
+      "acquisition": 34.62783907511039,
+      "stability": 4.49293179588858,
+      "audit": 0.29759120900416747
+    }
+  },
+  {
+    "points": 1018,
+    "sha256": "02ca8da8a576fc80e2102b77c3500b0901bbabee239e3e81dbd2084b4e209174",
+    "counter": 24,
+    "stability": {
+      "attempts": [
+        {
+          "power": 14,
+          "numerical": true,
+          "numerical_current": {
+            "mean_sd": 0.017472229550514428,
+            "endpoint_sd": 0.03350972688798527,
+            "width_fraction": 0.012709216273925072
+          },
+          "ess": [
+            3346.553882610786,
+            3365.043747755499
+          ],
+          "gaussian_pass": true,
+          "joint_pass": true,
+          "numerical_previous": {
+            "mean_sd": 0.017480324912013852,
+            "endpoint_sd": 0.0333647422888698,
+            "width_fraction": 0.012709672426256535
+          },
+          "joint_kl": 2.074981925234191e-06,
+          "gaussian_kl": 1.6837484295706417e-08
+        }
+      ],
+      "numerical": true,
+      "numerical_current": {
+        "mean_sd": 0.017472229550514428,
+        "endpoint_sd": 0.03350972688798527,
+        "width_fraction": 0.012709216273925072
+      },
+      "ess": [
+        3346.553882610786,
+        3365.043747755499
+      ],
+      "gaussian_pass": true,
+      "joint_pass": true,
+      "numerical_previous": {
+        "mean_sd": 0.017480324912013852,
+        "endpoint_sd": 0.0333647422888698,
+        "width_fraction": 0.012709672426256535
+      },
+      "joint_kl": 2.074981925234191e-06,
+      "gaussian_kl": 1.6837484295706417e-08
+    },
+    "streaks": {
+      "original": 31,
+      "gaussian": 31,
+      "joint": 26
+    },
+    "rules": {
+      "original": {
+        "training": 268,
+        "audit": 0,
+        "total": 268
+      },
+      "precision_refined": {
+        "training": 268,
+        "audit": 0,
+        "total": 268
+      },
+      "guarded": {
+        "training": 358,
+        "audit": 96,
+        "total": 454
+      }
+    },
+    "audit_calls": 96,
+    "posterior_evaluation": 33,
+    "posterior_comparisons": 32,
+    "bo_batches": 320,
+    "elapsed_seconds": 108.28620079095708,
+    "recorded_unix": 1789171969.630455,
+    "timing": {
+      "labels": 2.6847404638538137,
+      "fit": 62.90092832961818,
+      "acquisition": 36.00510494905757,
+      "stability": 4.710707379854284,
+      "audit": 0.29759120900416747
+    }
+  },
+  {
+    "points": 1048,
+    "sha256": "df7c026c747d5ba45cc2887bed7ca795f18a8e186ccb0ae77697d4be7c3c73ff",
+    "counter": 54,
+    "stability": {
+      "attempts": [
+        {
+          "power": 14,
+          "numerical": true,
+          "numerical_current": {
+            "mean_sd": 0.014392664771566907,
+            "endpoint_sd": 0.03391180929988035,
+            "width_fraction": 0.012596931898049224
+          },
+          "ess": [
+            3347.963651254883,
+            3372.440621243346
+          ],
+          "gaussian_pass": true,
+          "joint_pass": true,
+          "numerical_previous": {
+            "mean_sd": 0.014373973764621748,
+            "endpoint_sd": 0.033832346302593345,
+            "width_fraction": 0.012565584217723913
+          },
+          "joint_kl": 1.6134326991273656e-06,
+          "gaussian_kl": 8.483261204617065e-09
+        }
+      ],
+      "numerical": true,
+      "numerical_current": {
+        "mean_sd": 0.014392664771566907,
+        "endpoint_sd": 0.03391180929988035,
+        "width_fraction": 0.012596931898049224
+      },
+      "ess": [
+        3347.963651254883,
+        3372.440621243346
+      ],
+      "gaussian_pass": true,
+      "joint_pass": true,
+      "numerical_previous": {
+        "mean_sd": 0.014373973764621748,
+        "endpoint_sd": 0.033832346302593345,
+        "width_fraction": 0.012565584217723913
+      },
+      "joint_kl": 1.6134326991273656e-06,
+      "gaussian_kl": 8.483261204617065e-09
+    },
+    "streaks": {
+      "original": 32,
+      "gaussian": 32,
+      "joint": 27
+    },
+    "rules": {
+      "original": {
+        "training": 268,
+        "audit": 0,
+        "total": 268
+      },
+      "precision_refined": {
+        "training": 268,
+        "audit": 0,
+        "total": 268
+      },
+      "guarded": {
+        "training": 358,
+        "audit": 96,
+        "total": 454
+      }
+    },
+    "audit_calls": 96,
+    "posterior_evaluation": 34,
+    "posterior_comparisons": 33,
+    "bo_batches": 330,
+    "elapsed_seconds": 116.75624237500597,
+    "recorded_unix": 1789171978.100084,
+    "timing": {
+      "labels": 2.7629626738489605,
+      "fit": 69.41945586865768,
+      "acquisition": 37.5192368660355,
+      "stability": 4.960764129878953,
+      "audit": 0.29759120900416747
+    }
+  },
+  {
+    "points": 1078,
+    "sha256": "e6c70184232846c6bbbfbae03300986198ac8df86d5697c923205e8498705c05",
+    "counter": 15,
+    "stability": {
+      "attempts": [
+        {
+          "power": 14,
+          "numerical": true,
+          "numerical_current": {
+            "mean_sd": 0.01684542700449609,
+            "endpoint_sd": 0.034965006597487226,
+            "width_fraction": 0.012237010532288872
+          },
+          "ess": [
+            3346.8617856153587,
+            3371.1138882045216
+          ],
+          "gaussian_pass": true,
+          "joint_pass": true,
+          "numerical_previous": {
+            "mean_sd": 0.016871403308403782,
+            "endpoint_sd": 0.03479227749430151,
+            "width_fraction": 0.01224072905588569
+          },
+          "joint_kl": 1.7722595688708895e-06,
+          "gaussian_kl": 1.124548187902974e-08
+        }
+      ],
+      "numerical": true,
+      "numerical_current": {
+        "mean_sd": 0.01684542700449609,
+        "endpoint_sd": 0.034965006597487226,
+        "width_fraction": 0.012237010532288872
+      },
+      "ess": [
+        3346.8617856153587,
+        3371.1138882045216
+      ],
+      "gaussian_pass": true,
+      "joint_pass": true,
+      "numerical_previous": {
+        "mean_sd": 0.016871403308403782,
+        "endpoint_sd": 0.03479227749430151,
+        "width_fraction": 0.01224072905588569
+      },
+      "joint_kl": 1.7722595688708895e-06,
+      "gaussian_kl": 1.124548187902974e-08
+    },
+    "streaks": {
+      "original": 33,
+      "gaussian": 33,
+      "joint": 28
+    },
+    "rules": {
+      "original": {
+        "training": 268,
+        "audit": 0,
+        "total": 268
+      },
+      "precision_refined": {
+        "training": 268,
+        "audit": 0,
+        "total": 268
+      },
+      "guarded": {
+        "training": 358,
+        "audit": 96,
+        "total": 454
+      }
+    },
+    "audit_calls": 96,
+    "posterior_evaluation": 35,
+    "posterior_comparisons": 34,
+    "bo_batches": 340,
+    "elapsed_seconds": 125.65070083300816,
+    "recorded_unix": 1789171986.994263,
+    "timing": {
+      "labels": 2.848268424917478,
+      "fit": 75.95189882774139,
+      "acquisition": 39.500120865995996,
+      "stability": 5.132195587852038,
+      "audit": 0.29759120900416747
+    }
+  },
+  {
+    "points": 1108,
+    "sha256": "2849faa3c77c9b78b75d9b45baa8d3ebb92227a711624b3a5370c7931b055648",
+    "counter": 45,
+    "stability": {
+      "attempts": [
+        {
+          "power": 14,
+          "numerical": true,
+          "numerical_current": {
+            "mean_sd": 0.01966588030213349,
+            "endpoint_sd": 0.03354851880601112,
+            "width_fraction": 0.013250654727534616
+          },
+          "ess": [
+            3348.363228718472,
+            3370.0995294913178
+          ],
+          "gaussian_pass": true,
+          "joint_pass": true,
+          "numerical_previous": {
+            "mean_sd": 0.019661343886631592,
+            "endpoint_sd": 0.03354697068854049,
+            "width_fraction": 0.013233997175634338
+          },
+          "joint_kl": 6.859041873082604e-07,
+          "gaussian_kl": 4.768272887645253e-09
+        }
+      ],
+      "numerical": true,
+      "numerical_current": {
+        "mean_sd": 0.01966588030213349,
+        "endpoint_sd": 0.03354851880601112,
+        "width_fraction": 0.013250654727534616
+      },
+      "ess": [
+        3348.363228718472,
+        3370.0995294913178
+      ],
+      "gaussian_pass": true,
+      "joint_pass": true,
+      "numerical_previous": {
+        "mean_sd": 0.019661343886631592,
+        "endpoint_sd": 0.03354697068854049,
+        "width_fraction": 0.013233997175634338
+      },
+      "joint_kl": 6.859041873082604e-07,
+      "gaussian_kl": 4.768272887645253e-09
+    },
+    "streaks": {
+      "original": 34,
+      "gaussian": 34,
+      "joint": 29
+    },
+    "rules": {
+      "original": {
+        "training": 268,
+        "audit": 0,
+        "total": 268
+      },
+      "precision_refined": {
+        "training": 268,
+        "audit": 0,
+        "total": 268
+      },
+      "guarded": {
+        "training": 358,
+        "audit": 96,
+        "total": 454
+      }
+    },
+    "audit_calls": 96,
+    "posterior_evaluation": 36,
+    "posterior_comparisons": 35,
+    "bo_batches": 350,
+    "elapsed_seconds": 132.95050820795586,
+    "recorded_unix": 1789171994.293841,
+    "timing": {
+      "labels": 2.929749672941398,
+      "fit": 81.40497661969857,
+      "acquisition": 41.03765173989814,
+      "stability": 5.25509062880883,
+      "audit": 0.29759120900416747
+    }
+  },
+  {
+    "points": 1138,
+    "sha256": "6214a538142cc687297a5f1b449f9d818bee4ab5c3e4e3c9d975339eaa211132",
+    "counter": 75,
+    "stability": {
+      "attempts": [
+        {
+          "power": 14,
+          "numerical": true,
+          "numerical_current": {
+            "mean_sd": 0.01600292743374161,
+            "endpoint_sd": 0.03354283829930018,
+            "width_fraction": 0.012958075362066834
+          },
+          "ess": [
+            3351.238862638916,
+            3373.1284424734977
+          ],
+          "gaussian_pass": true,
+          "joint_pass": true,
+          "numerical_previous": {
+            "mean_sd": 0.016026873412608587,
+            "endpoint_sd": 0.03356167699200897,
+            "width_fraction": 0.01294650780385842
+          },
+          "joint_kl": 3.0009318185955763e-07,
+          "gaussian_kl": 3.3205811433845156e-09
+        }
+      ],
+      "numerical": true,
+      "numerical_current": {
+        "mean_sd": 0.01600292743374161,
+        "endpoint_sd": 0.03354283829930018,
+        "width_fraction": 0.012958075362066834
+      },
+      "ess": [
+        3351.238862638916,
+        3373.1284424734977
+      ],
+      "gaussian_pass": true,
+      "joint_pass": true,
+      "numerical_previous": {
+        "mean_sd": 0.016026873412608587,
+        "endpoint_sd": 0.03356167699200897,
+        "width_fraction": 0.01294650780385842
+      },
+      "joint_kl": 3.0009318185955763e-07,
+      "gaussian_kl": 3.3205811433845156e-09
+    },
+    "streaks": {
+      "original": 35,
+      "gaussian": 35,
+      "joint": 30
+    },
+    "rules": {
+      "original": {
+        "training": 268,
+        "audit": 0,
+        "total": 268
+      },
+      "precision_refined": {
+        "training": 268,
+        "audit": 0,
+        "total": 268
+      },
+      "guarded": {
+        "training": 358,
+        "audit": 96,
+        "total": 454
+      }
+    },
+    "audit_calls": 96,
+    "posterior_evaluation": 37,
+    "posterior_comparisons": 36,
+    "bo_batches": 360,
+    "elapsed_seconds": 142.00965645798715,
+    "recorded_unix": 1789172003.352705,
+    "timing": {
+      "labels": 3.00925192295108,
+      "fit": 88.55476720252773,
+      "acquisition": 42.59295211499557,
+      "stability": 5.423381003784016,
+      "audit": 0.29759120900416747
+    }
+  },
+  {
+    "points": 1168,
+    "sha256": "d453e512f6b26e048f634651ca9d700840c8c03826e9e0fce508cbace760a9d8",
+    "counter": 14,
+    "stability": {
+      "attempts": [
+        {
+          "power": 14,
+          "numerical": true,
+          "numerical_current": {
+            "mean_sd": 0.01662203112127309,
+            "endpoint_sd": 0.03361142178230561,
+            "width_fraction": 0.012802721585421173
+          },
+          "ess": [
+            3346.1632564368397,
+            3369.98038851533
+          ],
+          "gaussian_pass": true,
+          "joint_pass": true,
+          "numerical_previous": {
+            "mean_sd": 0.016614537363334132,
+            "endpoint_sd": 0.03315865946668344,
+            "width_fraction": 0.012773163602864734
+          },
+          "joint_kl": 5.417705418472627e-07,
+          "gaussian_kl": 8.88676510157893e-09
+        }
+      ],
+      "numerical": true,
+      "numerical_current": {
+        "mean_sd": 0.01662203112127309,
+        "endpoint_sd": 0.03361142178230561,
+        "width_fraction": 0.012802721585421173
+      },
+      "ess": [
+        3346.1632564368397,
+        3369.98038851533
+      ],
+      "gaussian_pass": true,
+      "joint_pass": true,
+      "numerical_previous": {
+        "mean_sd": 0.016614537363334132,
+        "endpoint_sd": 0.03315865946668344,
+        "width_fraction": 0.012773163602864734
+      },
+      "joint_kl": 5.417705418472627e-07,
+      "gaussian_kl": 8.88676510157893e-09
+    },
+    "streaks": {
+      "original": 36,
+      "gaussian": 36,
+      "joint": 31
+    },
+    "rules": {
+      "original": {
+        "training": 268,
+        "audit": 0,
+        "total": 268
+      },
+      "precision_refined": {
+        "training": 268,
+        "audit": 0,
+        "total": 268
+      },
+      "guarded": {
+        "training": 358,
+        "audit": 96,
+        "total": 454
+      }
+    },
+    "audit_calls": 96,
+    "posterior_evaluation": 38,
+    "posterior_comparisons": 37,
+    "bo_batches": 370,
+    "elapsed_seconds": 150.14066741598072,
+    "recorded_unix": 1789172011.4834611,
+    "timing": {
+      "labels": 3.086347756907344,
+      "fit": 95.01383682759479,
+      "acquisition": 43.95457332197111,
+      "stability": 5.548148003756069,
+      "audit": 0.29759120900416747
+    }
+  },
+  {
+    "points": 1198,
+    "sha256": "982761bd7b94e84b41aaf848c733318cd54fe1be5c5a20b8780524733e8271f0",
+    "counter": 25,
+    "stability": {
+      "attempts": [
+        {
+          "power": 14,
+          "numerical": true,
+          "numerical_current": {
+            "mean_sd": 0.016513575497651346,
+            "endpoint_sd": 0.03437986571787326,
+            "width_fraction": 0.013019138779388095
+          },
+          "ess": [
+            3350.6520243697137,
+            3369.4973065133563
+          ],
+          "gaussian_pass": true,
+          "joint_pass": true,
+          "numerical_previous": {
+            "mean_sd": 0.01653025852492653,
+            "endpoint_sd": 0.0344060995850606,
+            "width_fraction": 0.01303031118533915
+          },
+          "joint_kl": 6.495338270764152e-07,
+          "gaussian_kl": 1.060261212160185e-09
+        }
+      ],
+      "numerical": true,
+      "numerical_current": {
+        "mean_sd": 0.016513575497651346,
+        "endpoint_sd": 0.03437986571787326,
+        "width_fraction": 0.013019138779388095
+      },
+      "ess": [
+        3350.6520243697137,
+        3369.4973065133563
+      ],
+      "gaussian_pass": true,
+      "joint_pass": true,
+      "numerical_previous": {
+        "mean_sd": 0.01653025852492653,
+        "endpoint_sd": 0.0344060995850606,
+        "width_fraction": 0.01303031118533915
+      },
+      "joint_kl": 6.495338270764152e-07,
+      "gaussian_kl": 1.060261212160185e-09
+    },
+    "streaks": {
+      "original": 37,
+      "gaussian": 37,
+      "joint": 32
+    },
+    "rules": {
+      "original": {
+        "training": 268,
+        "audit": 0,
+        "total": 268
+      },
+      "precision_refined": {
+        "training": 268,
+        "audit": 0,
+        "total": 268
+      },
+      "guarded": {
+        "training": 358,
+        "audit": 96,
+        "total": 454
+      }
+    },
+    "audit_calls": 96,
+    "posterior_evaluation": 39,
+    "posterior_comparisons": 38,
+    "bo_batches": 380,
+    "elapsed_seconds": 159.51208554097684,
+    "recorded_unix": 1789172020.8545852,
+    "timing": {
+      "labels": 3.1648893808596767,
+      "fit": 102.46943703742,
+      "acquisition": 45.48272102983901,
+      "stability": 5.744687503785826,
+      "audit": 0.29759120900416747
+    }
+  },
+  {
+    "points": 1228,
+    "sha256": "c36d5e51715c87b9a3e01e48895dc02a3a1027a9f0c58f1ad023e0dbf484ab92",
+    "counter": 55,
+    "stability": {
+      "attempts": [
+        {
+          "power": 14,
+          "numerical": true,
+          "numerical_current": {
+            "mean_sd": 0.01689698838891145,
+            "endpoint_sd": 0.03380222872210225,
+            "width_fraction": 0.012576114875624711
+          },
+          "ess": [
+            3352.0508718864385,
+            3367.4622649203275
+          ],
+          "gaussian_pass": true,
+          "joint_pass": true,
+          "numerical_previous": {
+            "mean_sd": 0.016885120998327997,
+            "endpoint_sd": 0.03377655737962221,
+            "width_fraction": 0.01257162606110196
+          },
+          "joint_kl": 1.042362181911716e-06,
+          "gaussian_kl": 4.814880938397437e-09
+        }
+      ],
+      "numerical": true,
+      "numerical_current": {
+        "mean_sd": 0.01689698838891145,
+        "endpoint_sd": 0.03380222872210225,
+        "width_fraction": 0.012576114875624711
+      },
+      "ess": [
+        3352.0508718864385,
+        3367.4622649203275
+      ],
+      "gaussian_pass": true,
+      "joint_pass": true,
+      "numerical_previous": {
+        "mean_sd": 0.016885120998327997,
+        "endpoint_sd": 0.03377655737962221,
+        "width_fraction": 0.01257162606110196
+      },
+      "joint_kl": 1.042362181911716e-06,
+      "gaussian_kl": 4.814880938397437e-09
+    },
+    "streaks": {
+      "original": 38,
+      "gaussian": 38,
+      "joint": 33
+    },
+    "rules": {
+      "original": {
+        "training": 268,
+        "audit": 0,
+        "total": 268
+      },
+      "precision_refined": {
+        "training": 268,
+        "audit": 0,
+        "total": 268
+      },
+      "guarded": {
+        "training": 358,
+        "audit": 96,
+        "total": 454
+      }
+    },
+    "audit_calls": 96,
+    "posterior_evaluation": 40,
+    "posterior_comparisons": 39,
+    "bo_batches": 390,
+    "elapsed_seconds": 169.1074769999832,
+    "recorded_unix": 1789172030.449676,
+    "timing": {
+      "labels": 3.2461963417590596,
+      "fit": 109.86542491125874,
+      "acquisition": 47.35746502992697,
+      "stability": 5.866779294796288,
+      "audit": 0.29759120900416747
+    }
+  },
+  {
+    "points": 1258,
+    "sha256": "d665028ecbf6a90fdd0e1462e97ce2d3a815c451a82d215c94bcef4bc1589645",
+    "counter": 85,
+    "stability": {
+      "attempts": [
+        {
+          "power": 14,
+          "numerical": true,
+          "numerical_current": {
+            "mean_sd": 0.015654240355960962,
+            "endpoint_sd": 0.033680739267028637,
+            "width_fraction": 0.01319024452583184
+          },
+          "ess": [
+            3348.8089218613554,
+            3373.3383186525148
+          ],
+          "gaussian_pass": true,
+          "joint_pass": true,
+          "numerical_previous": {
+            "mean_sd": 0.015651776629848534,
+            "endpoint_sd": 0.03368615102990241,
+            "width_fraction": 0.013205232976026382
+          },
+          "joint_kl": 3.5222248677275094e-07,
+          "gaussian_kl": 1.3804646314952151e-09
+        }
+      ],
+      "numerical": true,
+      "numerical_current": {
+        "mean_sd": 0.015654240355960962,
+        "endpoint_sd": 0.033680739267028637,
+        "width_fraction": 0.01319024452583184
+      },
+      "ess": [
+        3348.8089218613554,
+        3373.3383186525148
+      ],
+      "gaussian_pass": true,
+      "joint_pass": true,
+      "numerical_previous": {
+        "mean_sd": 0.015651776629848534,
+        "endpoint_sd": 0.03368615102990241,
+        "width_fraction": 0.013205232976026382
+      },
+      "joint_kl": 3.5222248677275094e-07,
+      "gaussian_kl": 1.3804646314952151e-09
+    },
+    "streaks": {
+      "original": 39,
+      "gaussian": 39,
+      "joint": 34
+    },
+    "rules": {
+      "original": {
+        "training": 268,
+        "audit": 0,
+        "total": 268
+      },
+      "precision_refined": {
+        "training": 268,
+        "audit": 0,
+        "total": 268
+      },
+      "guarded": {
+        "training": 358,
+        "audit": 96,
+        "total": 454
+      }
+    },
+    "audit_calls": 96,
+    "posterior_evaluation": 41,
+    "posterior_comparisons": 40,
+    "bo_batches": 400,
+    "elapsed_seconds": 179.56856004096335,
+    "recorded_unix": 1789172040.910431,
+    "timing": {
+      "labels": 3.323354256572202,
+      "fit": 118.4698782042251,
+      "acquisition": 48.894352446950506,
+      "stability": 5.9905535858124495,
+      "audit": 0.29759120900416747
+    }
+  }
+]

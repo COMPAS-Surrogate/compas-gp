@@ -1,0 +1,218 @@
+{
+  "integrations": [
+    {
+      "replicate": 0,
+      "size": 32,
+      "draws": 262144,
+      "loss_per_expected_event": 0.006391114893112311,
+      "standard_error": 4.968000455063655e-05,
+      "rate_ratio": 1.004951629024522
+    },
+    {
+      "replicate": 0,
+      "size": 128,
+      "draws": 262144,
+      "loss_per_expected_event": 0.0010134900195705762,
+      "standard_error": 6.787919380708153e-06,
+      "rate_ratio": 0.9849418325378934
+    },
+    {
+      "replicate": 0,
+      "size": 256,
+      "draws": 262144,
+      "loss_per_expected_event": 0.00039968387887765546,
+      "standard_error": 1.6013857877044636e-06,
+      "rate_ratio": 0.9888979916375025
+    },
+    {
+      "replicate": 1,
+      "size": 32,
+      "draws": 262144,
+      "loss_per_expected_event": 0.0063660658391508146,
+      "standard_error": 2.0989154369624324e-05,
+      "rate_ratio": 1.004951629024522
+    },
+    {
+      "replicate": 1,
+      "size": 128,
+      "draws": 262144,
+      "loss_per_expected_event": 0.0010098374133880382,
+      "standard_error": 3.4500375701429424e-06,
+      "rate_ratio": 0.9849418325378934
+    },
+    {
+      "replicate": 1,
+      "size": 256,
+      "draws": 262144,
+      "loss_per_expected_event": 0.0004006104234362967,
+      "standard_error": 1.1518332166184176e-06,
+      "rate_ratio": 0.9888979916375025
+    }
+  ],
+  "curves": [
+    {
+      "size": 32,
+      "expected": [
+        10,
+        30,
+        50,
+        100,
+        200,
+        300,
+        500,
+        750,
+        1000,
+        1500,
+        2250,
+        3000
+      ],
+      "loss": [
+        0.06378590366131562,
+        0.19135771098394688,
+        0.3189295183065781,
+        0.6378590366131562,
+        1.2757180732263125,
+        1.9135771098394687,
+        3.189295183065781,
+        4.783942774598672,
+        6.378590366131562,
+        9.567885549197344,
+        14.351828323796015,
+        19.135771098394688
+      ],
+      "numerical_se": [
+        0.00026965938947601974,
+        0.0008089781684280593,
+        0.0013482969473800988,
+        0.0026965938947601975,
+        0.005393187789520395,
+        0.008089781684280593,
+        0.013482969473800987,
+        0.02022445421070148,
+        0.026965938947601974,
+        0.04044890842140296,
+        0.06067336263210445,
+        0.08089781684280592
+      ],
+      "numerically_resolved": true,
+      "loss_per_expected_event": 0.0063785903661315625
+    },
+    {
+      "size": 128,
+      "expected": [
+        10,
+        30,
+        50,
+        100,
+        200,
+        300,
+        500,
+        750,
+        1000,
+        1500,
+        2250,
+        3000
+      ],
+      "loss": [
+        0.010116637164793073,
+        0.030349911494379215,
+        0.05058318582396536,
+        0.10116637164793071,
+        0.20233274329586143,
+        0.30349911494379217,
+        0.5058318582396536,
+        0.7587477873594803,
+        1.0116637164793072,
+        1.5174955747189607,
+        2.276243362078441,
+        3.0349911494379214
+      ],
+      "numerical_se": [
+        3.807184286135594e-05,
+        0.00011421552858406782,
+        0.0001903592143067797,
+        0.0003807184286135594,
+        0.0007614368572271188,
+        0.0011421552858406781,
+        0.001903592143067797,
+        0.0028553882146016953,
+        0.003807184286135594,
+        0.005710776429203391,
+        0.008566164643805087,
+        0.011421552858406781
+      ],
+      "numerically_resolved": true,
+      "loss_per_expected_event": 0.0010116637164793072
+    },
+    {
+      "size": 256,
+      "expected": [
+        10,
+        30,
+        50,
+        100,
+        200,
+        300,
+        500,
+        750,
+        1000,
+        1500,
+        2250,
+        3000
+      ],
+      "loss": [
+        0.00400147151156976,
+        0.012004414534709282,
+        0.020007357557848802,
+        0.040014715115697604,
+        0.08002943023139521,
+        0.12004414534709282,
+        0.200073575578488,
+        0.30011036336773206,
+        0.400147151156976,
+        0.6002207267354641,
+        0.9003310901031961,
+        1.2004414534709282
+      ],
+      "numerical_se": [
+        9.863006894410265e-06,
+        2.958902068323079e-05,
+        4.931503447205132e-05,
+        9.863006894410263e-05,
+        0.00019726013788820527,
+        0.00029589020683230794,
+        0.0004931503447205132,
+        0.0007397255170807698,
+        0.0009863006894410265,
+        0.0014794510341615396,
+        0.0022191765512423094,
+        0.002958902068323079
+      ],
+      "numerically_resolved": true,
+      "loss_per_expected_event": 0.00040014715115697604
+    }
+  ],
+  "scope": "Expected log-likelihood loss at the fiducial injection, nominal uncertain measurements; finite nested 512M comparison population",
+  "scaling": "Exact linear exposure scaling; the 12 marked event counts are not independent simulations",
+  "numerical_uncertainty": "Monte Carlo error of the expectation, not COMPAS variability or catalogue scatter",
+  "source_sha256": {
+    "docs/studies/paper_completion/population_likelihood_loss.py": "30bb2e9fb004deb5b8ca23dc5061af371c4fb025c6b7738640469a69e06dddfd",
+    "docs/studies/population_stability/block_results/block_00.npz": "854afd6e6a6ec3c4965f24f371b003d16c106f51cc3bbac69b01d58dcdf22d15",
+    "docs/studies/population_stability/block_results/block_01.npz": "14ed697cfdba05af901db9549e256a9d6603d098b92b265ead03727f792b2542",
+    "docs/studies/population_stability/block_results/block_02.npz": "1a16b00495d6abd37e7d5471041a0aea423a2c2512539fbf3261ea75ab028a95",
+    "docs/studies/population_stability/block_results/block_03.npz": "f3814a0b83631099127cea187deecfcd4d6a210ceab08e72db787c06bf8d8b7d",
+    "docs/studies/population_stability/block_results/block_04.npz": "d2ebb117e55beac67ecc23fba30032594b3618f6c4a237fe75e7e0533a058f85",
+    "docs/studies/population_stability/block_results/block_05.npz": "9b81b5c30e11320bc161ec4640e2eef5eaff24369f1382d6dca446a0cad49941",
+    "docs/studies/population_stability/block_results/block_06.npz": "4c5efa4fb45ebf12ed5978e14c5456048ce75c38251c911a642d68549c2b22d7",
+    "docs/studies/population_stability/block_results/block_07.npz": "b6e4d8e4b50e527430462bd73054138e700f4a30832ab0dae52d402462a586ee",
+    "docs/studies/population_stability/block_results/block_08.npz": "357eb766fd16be85e30b7a2d20c93e9825e363edd0811a7b3cfcd274f3828545",
+    "docs/studies/population_stability/block_results/block_09.npz": "0d163b5ba328bd403f6c9218aa8759be93f1fb499a9597936416feb00cdac75c",
+    "docs/studies/population_stability/block_results/block_10.npz": "8a79f40f8854043b9568493ee9f5a428151a26f14f54d2d275c1207730d0359c",
+    "docs/studies/population_stability/block_results/block_11.npz": "744401009d25141df322c5601dde507451a93a4ab9e15b1172e667fee0f9d206",
+    "docs/studies/population_stability/block_results/block_12.npz": "9c4489923b5e4fb8fb5266384a38610aa37a1d248567e4d2e37aa0fec00f47b3",
+    "docs/studies/population_stability/block_results/block_13.npz": "8f21f0ade1d596a9ad6ce602bf925f18300e50acfc4e5337b80946b35fa981f2",
+    "docs/studies/population_stability/block_results/block_14.npz": "7f0f3ffdbc9196b1fb690e1c32a3a5f1872de0d255b7b755a244916a79caafa4",
+    "docs/studies/population_stability/block_results/block_15.npz": "751cc8a1166bd3f827118414a120cf280e6c0237fa36fe6e2cd946c2502238ff"
+  },
+  "state": "complete"
+}

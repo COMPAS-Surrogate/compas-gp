@@ -1,0 +1,33 @@
+{
+  "name": "t0_n10_perfect_c201_bo",
+  "truth_index": 0,
+  "expected_events": 10,
+  "mode": "perfect",
+  "case": 201,
+  "strategy": "bo",
+  "iteration": 2,
+  "outcome": "accurate",
+  "stop": {
+    "state": "stopped",
+    "selected": {
+      "training": 238,
+      "audit": 96,
+      "total": 334
+    },
+    "posterior_evaluation": 7,
+    "posterior_comparisons": 6,
+    "bo_batches": 60,
+    "trajectory_elapsed_seconds": 11.229132665961515,
+    "trajectory_checkpoint_unix": 1789177453.5926762,
+    "audit_replay_seconds": 0.47635983396321535,
+    "decision_recorded_unix": 1789177615.9101539,
+    "diagnostic_endpoint": 1258,
+    "post_stop_labels": 1020,
+    "stop_is_shadow_replay": true,
+    "reference_accessed": false
+  },
+  "late_reference_accepted": true,
+  "checkpoints": 41,
+  "maximum_directed_kl": 0.0009945514070321191,
+  "symmetric_kl_to_late_gp": 0.0008556926115644298
+}
